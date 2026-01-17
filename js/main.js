@@ -207,11 +207,12 @@ function generateProjectCards() {
     // Media section - video autoplay or image
     let mediaHtml = '';
     if (project.videoId) {
-      // YouTube iframe with autoplay, mute, and loop
+      // YouTube iframe with autoplay, mute, loop, and optional start time
+      const startTime = project.videoStart || 0;
       mediaHtml = `
         <div class="project-card-media" data-video-id="${project.videoId}">
           <iframe
-            src="https://www.youtube.com/embed/${project.videoId}?autoplay=1&mute=1&loop=1&playlist=${project.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube.com/embed/${project.videoId}?autoplay=1&mute=1&loop=1&playlist=${project.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&start=${startTime}"
             allow="autoplay; encrypted-media"
             allowfullscreen
             loading="lazy"

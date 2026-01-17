@@ -218,6 +218,7 @@
       },
       "videoUrl": "https://www.youtube.com/embed/DDTdn_jTqTk",
       "videoId": "DDTdn_jTqTk",
+      "videoStart": 50,
       "images": [],
       "technologies": "Unreal Engine 5.4 / Blueprints",
       "role": {
@@ -283,6 +284,7 @@
       },
       "videoUrl": "https://www.youtube.com/embed/IAFDb1A4BvU",
       "videoId": "IAFDb1A4BvU",
+      "videoStart": 0,
       "images": [],
       "technologies": "Unreal Engine / Blueprints / RPC",
       "role": {
@@ -404,6 +406,7 @@
       },
       "videoUrl": "https://www.youtube.com/embed/cvBhtapsJg0",
       "videoId": "cvBhtapsJg0",
+      "videoStart": 47,
       "images": [],
       "technologies": "Unreal Engine / Blueprints",
       "role": {
@@ -466,6 +469,7 @@
       },
       "videoUrl": "https://www.youtube.com/embed/xx8IPcbil-U",
       "videoId": "xx8IPcbil-U",
+      "videoStart": 0,
       "images": [],
       "technologies": "Unreal Engine / C++ / Blueprints",
       "role": {
@@ -528,6 +532,7 @@
       },
       "videoUrl": "https://www.youtube.com/embed/8MQ6IRRHSyM",
       "videoId": "8MQ6IRRHSyM",
+      "videoStart": 0,
       "images": [],
       "technologies": "Unreal Engine / C++",
       "role": {
