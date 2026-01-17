@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for name in green-rebirth clean-dream vrecycle temple-trap vivaldi tower-defense)",
+      "Bash(do cp arcanthys.html \"$name.html\")",
+      "Bash(done)"
+    ]
+  }
+}

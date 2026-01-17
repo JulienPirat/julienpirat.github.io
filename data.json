@@ -49,6 +49,7 @@
       "viewOnGitHub": "Voir sur GitHub",
       "date": "Date",
       "team": "Equipe",
+      "duration": "Duree",
       "role": "Role",
       "overview": "Apercu",
       "technicalDetails": "Details techniques",
@@ -90,6 +91,7 @@
       "viewOnGitHub": "View on GitHub",
       "date": "Date",
       "team": "Team",
+      "duration": "Duration",
       "role": "Role",
       "overview": "Overview",
       "technicalDetails": "Technical Details",
@@ -116,6 +118,10 @@
     {
       "id": "arcanthys",
       "name": "Arcanthys",
+      "subtitle": {
+        "fr": "Platformer 3D/2D Mobile",
+        "en": "3D/2D Mobile Platformer"
+      },
       "category": {
         "fr": "En developpement",
         "en": "In Development"
@@ -145,15 +151,21 @@
         ]
       },
       "videoUrl": "",
+      "videoId": "",
       "images": ["Assets/Images/affiche_arcanthys.png"],
-      "technologies": "Unreal Engine 5, C++, Blueprints, GAS, BehaviorTree, Perforce",
+      "technologies": "Unreal Engine 5 / C++ / Blueprints",
       "role": {
         "fr": "Programmeur Gameplay",
         "en": "Gameplay Programmer"
       },
+      "teamSize": 12,
       "team": {
         "fr": "12 developpeurs (Ashen Bloom Studio)",
         "en": "12 developers (Ashen Bloom Studio)"
+      },
+      "duration": {
+        "fr": "En cours",
+        "en": "Ongoing"
       },
       "date": "2025",
       "status": {
@@ -161,12 +173,17 @@
         "en": "In Development"
       },
       "links": {
-        "itch": ""
+        "itch": "",
+        "github": ""
       }
     },
     {
       "id": "green-rebirth",
       "name": "Green Rebirth",
+      "subtitle": {
+        "fr": "Jeu Serieux Environnemental",
+        "en": "Environmental Serious Game"
+      },
       "category": {
         "fr": "Game Jam",
         "en": "Game Jam"
@@ -200,27 +217,38 @@
         "en": "Best Prototype"
       },
       "videoUrl": "https://www.youtube.com/embed/DDTdn_jTqTk",
+      "videoId": "DDTdn_jTqTk",
       "images": [],
-      "technologies": "Unreal Engine 5.4, Blueprints, Perforce",
+      "technologies": "Unreal Engine 5.4 / Blueprints",
       "role": {
         "fr": "Programmeur Gameplay",
         "en": "Gameplay Programmer"
       },
+      "teamSize": 8,
       "team": {
         "fr": "8 membres (7 devs + 1 artiste)",
         "en": "8 members (7 devs + 1 artist)"
+      },
+      "duration": {
+        "fr": "48 heures",
+        "en": "48 hours"
       },
       "date": {
         "fr": "Juin 2024",
         "en": "June 2024"
       },
       "links": {
-        "itch": "https://guillaume-clerc.itch.io/green-rebirth"
+        "itch": "https://guillaume-clerc.itch.io/green-rebirth",
+        "github": ""
       }
     },
     {
       "id": "clean-dream",
       "name": "Clean Dream",
+      "subtitle": {
+        "fr": "Jeu Co-op Multijoueur",
+        "en": "Multiplayer Co-op Game"
+      },
       "category": {
         "fr": "Concours",
         "en": "Competition"
@@ -254,27 +282,38 @@
         ]
       },
       "videoUrl": "https://www.youtube.com/embed/IAFDb1A4BvU",
+      "videoId": "IAFDb1A4BvU",
       "images": [],
-      "technologies": "Unreal Engine, Blueprints, Reseau/RPC, Perforce, Jira",
+      "technologies": "Unreal Engine / Blueprints / RPC",
       "role": {
         "fr": "Programmeur Gameplay (Specialisation Reseau)",
         "en": "Gameplay Programmer (Networking Focus)"
       },
+      "teamSize": 8,
       "team": {
         "fr": "8 developpeurs",
         "en": "8 developers"
+      },
+      "duration": {
+        "fr": "3 mois",
+        "en": "3 months"
       },
       "date": {
         "fr": "Mai 2024",
         "en": "May 2024"
       },
       "links": {
-        "itch": ""
+        "itch": "",
+        "github": ""
       }
     },
     {
       "id": "vrecycle",
       "name": "VRecycle",
+      "subtitle": {
+        "fr": "Jeu Serieux VR",
+        "en": "VR Serious Game"
+      },
       "category": {
         "fr": "Universitaire",
         "en": "University"
@@ -302,15 +341,21 @@
         ]
       },
       "videoUrl": "",
+      "videoId": "",
       "images": [],
-      "technologies": "Unreal Engine, VR, GameplayTags, Blueprints, Perforce",
+      "technologies": "Unreal Engine / VR / Blueprints",
       "role": {
         "fr": "Programmeur Gameplay",
         "en": "Gameplay Programmer"
       },
+      "teamSize": 6,
       "team": {
         "fr": "6 developpeurs",
         "en": "6 developers"
+      },
+      "duration": {
+        "fr": "2 mois",
+        "en": "2 months"
       },
       "date": {
         "fr": "Mai 2024",
@@ -318,12 +363,17 @@
       },
       "institution": "UQAC",
       "links": {
-        "itch": ""
+        "itch": "",
+        "github": ""
       }
     },
     {
       "id": "temple-trap",
       "name": "TempleTrap",
+      "subtitle": {
+        "fr": "Puzzle Co-op 3D",
+        "en": "3D Co-op Puzzle"
+      },
       "category": {
         "fr": "Universitaire",
         "en": "University"
@@ -353,15 +403,21 @@
         ]
       },
       "videoUrl": "https://www.youtube.com/embed/cvBhtapsJg0",
+      "videoId": "cvBhtapsJg0",
       "images": [],
-      "technologies": "Unreal Engine, Blueprints, Perforce",
+      "technologies": "Unreal Engine / Blueprints",
       "role": {
         "fr": "Programmeur Gameplay",
         "en": "Gameplay Programmer"
       },
+      "teamSize": 4,
       "team": {
         "fr": "4 developpeurs",
         "en": "4 developers"
+      },
+      "duration": {
+        "fr": "2 mois",
+        "en": "2 months"
       },
       "date": {
         "fr": "Decembre 2023",
@@ -369,12 +425,17 @@
       },
       "institution": "UQAC",
       "links": {
-        "itch": "https://guillaume-clerc.itch.io/temple-trap"
+        "itch": "https://guillaume-clerc.itch.io/temple-trap",
+        "github": ""
       }
     },
     {
       "id": "vivaldi",
       "name": "Vivaldi",
+      "subtitle": {
+        "fr": "Roguelite 3D",
+        "en": "3D Roguelite"
+      },
       "category": {
         "fr": "Universitaire",
         "en": "University"
@@ -404,15 +465,21 @@
         ]
       },
       "videoUrl": "https://www.youtube.com/embed/xx8IPcbil-U",
+      "videoId": "xx8IPcbil-U",
       "images": [],
-      "technologies": "Unreal Engine, C++, Blueprints, BehaviorTree, EQS, Perforce",
+      "technologies": "Unreal Engine / C++ / Blueprints",
       "role": {
         "fr": "Programmeur IA",
         "en": "AI Programmer"
       },
+      "teamSize": 7,
       "team": {
         "fr": "7 developpeurs",
         "en": "7 developers"
+      },
+      "duration": {
+        "fr": "3 mois",
+        "en": "3 months"
       },
       "date": {
         "fr": "Mai 2023",
@@ -420,12 +487,17 @@
       },
       "institution": "UQAC",
       "links": {
-        "itch": "https://julien-pirat.itch.io/vivaldi"
+        "itch": "https://julien-pirat.itch.io/vivaldi",
+        "github": ""
       }
     },
     {
       "id": "tower-defense",
       "name": "TowerDefense",
+      "subtitle": {
+        "fr": "Tower Defense en C++",
+        "en": "C++ Tower Defense"
+      },
       "category": {
         "fr": "Personnel",
         "en": "Personal"
@@ -455,21 +527,28 @@
         ]
       },
       "videoUrl": "https://www.youtube.com/embed/8MQ6IRRHSyM",
+      "videoId": "8MQ6IRRHSyM",
       "images": [],
-      "technologies": "Unreal Engine, C++",
+      "technologies": "Unreal Engine / C++",
       "role": {
         "fr": "Developpeur Solo",
         "en": "Solo Developer"
       },
+      "teamSize": 1,
       "team": {
         "fr": "Solo",
         "en": "Solo"
+      },
+      "duration": {
+        "fr": "1 mois",
+        "en": "1 month"
       },
       "date": {
         "fr": "Mai 2023",
         "en": "May 2023"
       },
       "links": {
+        "itch": "",
         "github": "https://github.com/JulienPirat/TowerDefense_Unreal_CPP"
       }
     }

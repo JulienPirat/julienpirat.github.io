@@ -35,7 +35,9 @@ const ICONS = {
   gamepad: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg>`,
   calendar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
   users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  clock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
   arrowRight: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`,
+  arrowLeft: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>`,
   arrowUp: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>`,
   close: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`,
   github: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>`,
@@ -43,6 +45,7 @@ const ICONS = {
   itchio: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-1.224-.67-4.23-.97-8.87-.97-4.64 0-7.647.3-8.87.97z"/></svg>`,
   play: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>`,
   externalLink: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
+  fullscreen: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>`,
   cpu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>`,
   brain: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.54"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.54"/></svg>`,
   wrench: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`
@@ -201,48 +204,103 @@ function generateProjectCards() {
   if (!DOM.projectsGrid || !portfolioData) return;
 
   const cards = portfolioData.projects.map((project, index) => {
-    const imageHtml = project.images && project.images.length > 0
-      ? `<img src="${project.images[0]}" alt="${project.name}" loading="lazy">`
-      : `<div class="project-card-placeholder">${ICONS.gamepad}</div>`;
+    // Media section - video thumbnail or image
+    let mediaHtml = '';
+    if (project.videoId) {
+      // YouTube thumbnail with play overlay
+      mediaHtml = `
+        <div class="project-card-media" data-video-id="${project.videoId}">
+          <img src="https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg"
+               alt="${project.name}"
+               loading="lazy"
+               onerror="this.src='https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg'">
+          <button class="project-card-fullscreen" aria-label="Fullscreen">${ICONS.fullscreen}</button>
+        </div>
+      `;
+    } else if (project.images && project.images.length > 0) {
+      mediaHtml = `
+        <div class="project-card-media">
+          <img src="${project.images[0]}" alt="${project.name}" loading="lazy">
+        </div>
+      `;
+    } else {
+      mediaHtml = `
+        <div class="project-card-media">
+          <div class="project-card-placeholder">${ICONS.gamepad}</div>
+        </div>
+      `;
+    }
 
+    // Get translated content
+    const role = getText(project.role);
+    const shortDesc = getText(project.shortDescription);
+    const duration = getText(project.duration);
     const award = getText(project.award);
+
+    // Award badge
     const awardHtml = award
       ? `<span class="project-card-award">${ICONS.trophy} ${award}</span>`
       : '';
 
-    const tagsHtml = project.tags.slice(0, 4).map(tag =>
-      `<span class="project-tag">${tag}</span>`
-    ).join('');
+    // Links
+    let linksHtml = '';
+    if (project.links) {
+      if (project.links.github) {
+        linksHtml += `
+          <a href="${project.links.github}" target="_blank" rel="noopener noreferrer"
+             class="project-card-link project-card-link--github"
+             onclick="event.stopPropagation()">
+            ${ICONS.github} GitHub
+          </a>
+        `;
+      }
+      if (project.links.itch) {
+        linksHtml += `
+          <a href="${project.links.itch}" target="_blank" rel="noopener noreferrer"
+             class="project-card-link project-card-link--itch"
+             onclick="event.stopPropagation()">
+            ${ICONS.itchio} itch.io
+          </a>
+        `;
+      }
+    }
 
-    const category = getText(project.category);
-    const shortDesc = getText(project.shortDescription);
-    const date = getText(project.date);
+    // View details link
+    linksHtml += `
+      <a href="projects/${project.id}.html"
+         class="project-card-link project-card-link--details">
+        ${getUI('viewDetails')} ${ICONS.arrowRight}
+      </a>
+    `;
 
     return `
       <article class="project-card animate-fade-in-up animate-delay-${(index % 4) + 1}"
                data-id="${project.id}"
                data-category="${project.categoryId}"
-               data-type="project"
-               role="button"
-               tabindex="0"
-               aria-label="${currentLang === 'fr' ? 'Voir les details de' : 'View details of'} ${project.name}">
-        <div class="project-card-image">
-          ${imageHtml}
-          <span class="project-card-badge">${category}</span>
-          ${awardHtml}
-        </div>
+               data-type="project">
+        ${mediaHtml}
         <div class="project-card-content">
-          <h3 class="project-card-title">${project.name}</h3>
-          <p class="project-card-description">${shortDesc}</p>
-          <div class="project-card-tags">${tagsHtml}</div>
-          <div class="project-card-footer">
-            <div class="project-card-meta">
-              ${ICONS.calendar}
-              <span>${date}</span>
-            </div>
-            <span class="project-card-action">
-              ${getUI('viewDetails')} ${ICONS.arrowRight}
+          <div class="project-card-header">
+            <h3 class="project-card-title">${project.name}${awardHtml}</h3>
+            <p class="project-card-subtitle">${role}</p>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-meta-item">
+              ${ICONS.users}
+              <span>${project.teamSize}</span>
             </span>
+            <span class="project-card-meta-item">
+              ${ICONS.clock}
+              <span>${duration}</span>
+            </span>
+            <span class="project-card-meta-item project-card-meta-tech">
+              ${ICONS.code}
+              <span>${project.technologies}</span>
+            </span>
+          </div>
+          <p class="project-card-description">${shortDesc}</p>
+          <div class="project-card-links">
+            ${linksHtml}
           </div>
         </div>
       </article>
@@ -250,6 +308,9 @@ function generateProjectCards() {
   }).join('');
 
   DOM.projectsGrid.innerHTML = cards;
+
+  // Setup video hover behavior
+  setupVideoHover();
 }
 
 function generateSystemCards() {
@@ -286,11 +347,7 @@ function setupEventListeners() {
   // Filter buttons
   DOM.filterContainer?.addEventListener('click', handleFilterClick);
 
-  // Project cards
-  DOM.projectsGrid?.addEventListener('click', handleCardClick);
-  DOM.projectsGrid?.addEventListener('keydown', handleCardKeydown);
-
-  // System cards
+  // System cards (still use modal)
   DOM.systemsGrid?.addEventListener('click', handleCardClick);
   DOM.systemsGrid?.addEventListener('keydown', handleCardKeydown);
 
@@ -369,12 +426,12 @@ function filterCards(filter) {
 }
 
 function handleCardClick(e) {
-  const card = e.target.closest('.project-card, .system-card');
+  // Only handle system cards (project cards use links now)
+  const card = e.target.closest('.system-card');
   if (!card) return;
 
   const id = card.dataset.id;
-  const type = card.dataset.type;
-  openModal(id, type);
+  openModal(id, 'system');
 }
 
 function handleCardKeydown(e) {
@@ -696,4 +753,52 @@ function debounce(func, wait) {
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
   };
+}
+
+// ========== VIDEO HOVER BEHAVIOR ==========
+function setupVideoHover() {
+  const cards = document.querySelectorAll('.project-card-media[data-video-id]');
+
+  cards.forEach(card => {
+    let iframe = null;
+    let hoverTimeout = null;
+
+    card.addEventListener('mouseenter', () => {
+      const videoId = card.dataset.videoId;
+      if (!videoId) return;
+
+      // Delay before loading video to avoid accidental loads
+      hoverTimeout = setTimeout(() => {
+        if (!iframe) {
+          iframe = document.createElement('iframe');
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&modestbranding=1`;
+          iframe.allow = 'autoplay; encrypted-media';
+          iframe.allowFullscreen = true;
+          iframe.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;';
+          card.appendChild(iframe);
+        }
+      }, 500);
+    });
+
+    card.addEventListener('mouseleave', () => {
+      clearTimeout(hoverTimeout);
+      if (iframe) {
+        iframe.remove();
+        iframe = null;
+      }
+    });
+
+    // Fullscreen button
+    const fullscreenBtn = card.querySelector('.project-card-fullscreen');
+    if (fullscreenBtn) {
+      fullscreenBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const videoId = card.dataset.videoId;
+        if (videoId) {
+          window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+        }
+      });
+    }
+  });
 }
