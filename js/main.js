@@ -204,16 +204,19 @@ function generateProjectCards() {
   if (!DOM.projectsGrid || !portfolioData) return;
 
   const cards = portfolioData.projects.map((project, index) => {
-    // Media section - video thumbnail or image
+    // Media section - video autoplay or image
     let mediaHtml = '';
     if (project.videoId) {
-      // YouTube thumbnail with play overlay
+      // YouTube iframe with autoplay, mute, and loop
       mediaHtml = `
         <div class="project-card-media" data-video-id="${project.videoId}">
-          <img src="https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg"
-               alt="${project.name}"
-               loading="lazy"
-               onerror="this.src='https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg'">
+          <iframe
+            src="https://www.youtube.com/embed/${project.videoId}?autoplay=1&mute=1&loop=1&playlist=${project.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            loading="lazy"
+            title="${project.name}">
+          </iframe>
           <button class="project-card-fullscreen" aria-label="Fullscreen">${ICONS.fullscreen}</button>
         </div>
       `;
@@ -309,8 +312,8 @@ function generateProjectCards() {
 
   DOM.projectsGrid.innerHTML = cards;
 
-  // Setup video hover behavior
-  setupVideoHover();
+  // Setup fullscreen buttons for videos
+  setupFullscreenButtons();
 }
 
 function generateSystemCards() {
@@ -755,40 +758,11 @@ function debounce(func, wait) {
   };
 }
 
-// ========== VIDEO HOVER BEHAVIOR ==========
-function setupVideoHover() {
+// ========== FULLSCREEN BUTTONS ==========
+function setupFullscreenButtons() {
   const cards = document.querySelectorAll('.project-card-media[data-video-id]');
 
   cards.forEach(card => {
-    let iframe = null;
-    let hoverTimeout = null;
-
-    card.addEventListener('mouseenter', () => {
-      const videoId = card.dataset.videoId;
-      if (!videoId) return;
-
-      // Delay before loading video to avoid accidental loads
-      hoverTimeout = setTimeout(() => {
-        if (!iframe) {
-          iframe = document.createElement('iframe');
-          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&modestbranding=1`;
-          iframe.allow = 'autoplay; encrypted-media';
-          iframe.allowFullscreen = true;
-          iframe.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;';
-          card.appendChild(iframe);
-        }
-      }, 500);
-    });
-
-    card.addEventListener('mouseleave', () => {
-      clearTimeout(hoverTimeout);
-      if (iframe) {
-        iframe.remove();
-        iframe = null;
-      }
-    });
-
-    // Fullscreen button
     const fullscreenBtn = card.querySelector('.project-card-fullscreen');
     if (fullscreenBtn) {
       fullscreenBtn.addEventListener('click', (e) => {
