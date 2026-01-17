@@ -1,12 +1,13 @@
 /**
  * JULIEN PIRAT - PORTFOLIO
  * Main JavaScript Module
- * Handles: Data loading, card generation, filtering, modal interactions
+ * Handles: Data loading, card generation, filtering, modal interactions, language switching
  */
 
 // ========== GLOBAL STATE ==========
 let portfolioData = null;
 let currentFilter = 'all';
+let currentLang = 'fr'; // Default language is French
 let allItems = [];
 
 // ========== DOM ELEMENTS ==========
@@ -18,7 +19,8 @@ const DOM = {
   modalOverlay: null,
   modalContent: null,
   scrollTopBtn: null,
-  loadingEl: null
+  loadingEl: null,
+  langBtns: null
 };
 
 // ========== ICONS ==========
@@ -38,7 +40,7 @@ const ICONS = {
   close: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`,
   github: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>`,
   linkedin: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>`,
-  itchio: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-1.224-.67-4.23-.97-8.87-.97-4.64 0-7.647.3-8.87.97zm12.04 7.162c-.463.463-.97.752-1.637.89-1.26.27-2.387-.076-3.166-.674a4.083 4.083 0 01-1.178.674 3.527 3.527 0 01-1.988.188 4.197 4.197 0 01-1.652-.864c-.474.4-.994.702-1.647.864a3.55 3.55 0 01-1.988-.188c-.32-.126-.605-.29-.867-.476-.13.094-.265.18-.407.26-.16.63-.295 1.48-.36 2.57-.016.27-.058 2.463-.058 2.963v1.85c-.02 2.174 2.38 5.472 4.52 5.97 2.42.563 4.12.04 5.37-.5 1.25.54 2.95 1.063 5.37.5 2.14-.5 4.54-3.796 4.52-5.97v-1.85c0-.5-.042-2.694-.057-2.963-.066-1.09-.2-1.94-.362-2.57a4.007 4.007 0 01-.406-.26c-.262.187-.547.35-.867.476a3.55 3.55 0 01-1.988.188c-.652-.162-1.173-.465-1.647-.864a4.2 4.2 0 01-1.652.864c-.683.143-1.35.076-1.988-.188a4.083 4.083 0 01-1.178-.674c-.318.257-.67.476-1.048.635.26.147.454.394.534.698.117.452.115 1.24-.178 1.98-.297.752-.792 1.236-1.275 1.432-.78.316-1.508-.04-1.887-.423-.4-.405-.535-.9-.535-1.303 0-.68.445-1.25.92-1.594.35-.253.74-.413 1.168-.478a4.397 4.397 0 00-.178-.106c-.45-.24-.862-.378-1.29-.417-.18.04-.37.055-.564.043-.38-.03-.65-.203-.98-.44-.02.01-.038.02-.057.03-.18.1-.35.188-.512.266.014.01.028.018.042.028.57.416 1.19 1.175 1.19 2.312 0 .612-.207 1.282-.77 1.853-.54.546-1.358.88-2.283.88-.927 0-1.745-.334-2.285-.88-.563-.57-.77-1.24-.77-1.853 0-1.137.62-1.896 1.19-2.312l.044-.03c-.16-.077-.33-.164-.51-.264a1.85 1.85 0 01-.06-.032c-.33.238-.6.41-.98.44-.194.013-.384-.002-.563-.042-.428.04-.84.176-1.29.417-.064.034-.123.07-.18.106.43.066.82.226 1.168.48.476.343.92.912.92 1.593 0 .404-.135.898-.535 1.303-.38.384-1.108.74-1.887.424-.484-.197-.978-.68-1.276-1.432-.293-.74-.295-1.527-.178-1.98.08-.303.275-.55.534-.697a4.098 4.098 0 01-1.047-.634c-.638.36-1.306.578-1.988.76a6.24 6.24 0 00-.406 2.283v.01c.024 1.726 1.022 3.085 2.55 3.69 1.058.42 2.37.564 4.004.437.043-.003.085-.006.127-.01 1.398-.104 2.87-.522 4.076-1.163a9.63 9.63 0 004.076 1.164c.043.003.085.006.128.01 1.633.126 2.945-.018 4.004-.437 1.527-.605 2.525-1.964 2.55-3.69v-.01a6.24 6.24 0 00-.407-2.282z"/></svg>`,
+  itchio: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-1.224-.67-4.23-.97-8.87-.97-4.64 0-7.647.3-8.87.97z"/></svg>`,
   play: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>`,
   externalLink: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
   cpu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>`,
@@ -60,20 +62,26 @@ const categoryIcons = {
 // ========== SYSTEM ICON MAPPING ==========
 const systemIcons = {
   'AI Systems': ICONS.brain,
+  'Systemes IA': ICONS.brain,
   'Performance': ICONS.cpu,
-  'Debug Tools': ICONS.wrench
+  'Debug Tools': ICONS.wrench,
+  'Outils de Debug': ICONS.wrench
 };
 
 // ========== INITIALIZATION ==========
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
+  // Load saved language preference or default to French
+  currentLang = localStorage.getItem('portfolioLang') || 'fr';
+
   cacheDOM();
   await loadData();
   generateFilters();
   generateCards();
   setupEventListeners();
   setupScrollEffects();
+  updateUILanguage();
   hideLoading();
 }
 
@@ -86,6 +94,49 @@ function cacheDOM() {
   DOM.modalContent = document.getElementById('modal-content');
   DOM.scrollTopBtn = document.getElementById('scroll-top');
   DOM.loadingEl = document.getElementById('loading');
+  DOM.langBtns = document.querySelectorAll('.lang-btn');
+}
+
+// ========== LANGUAGE FUNCTIONS ==========
+function getText(obj) {
+  if (typeof obj === 'string') return obj;
+  if (obj && typeof obj === 'object') {
+    return obj[currentLang] || obj['fr'] || obj['en'] || '';
+  }
+  return '';
+}
+
+function getUI(key) {
+  if (portfolioData && portfolioData.ui && portfolioData.ui[currentLang]) {
+    return portfolioData.ui[currentLang][key] || key;
+  }
+  return key;
+}
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('portfolioLang', lang);
+
+  // Update language buttons
+  DOM.langBtns.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
+  // Regenerate content
+  generateFilters();
+  generateCards();
+  updateUILanguage();
+}
+
+function updateUILanguage() {
+  // Update all data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    el.textContent = getUI(key);
+  });
+
+  // Update HTML lang attribute
+  document.documentElement.lang = currentLang;
 }
 
 // ========== DATA LOADING ==========
@@ -123,12 +174,14 @@ function showError(message) {
 function generateFilters() {
   if (!DOM.filterContainer || !portfolioData) return;
 
-  const filters = portfolioData.categories.map(cat => {
+  const categories = portfolioData.categories[currentLang] || portfolioData.categories['fr'];
+
+  const filters = categories.map(cat => {
     const icon = categoryIcons[cat.icon] || ICONS.grid;
     return `
-      <button class="filter-btn ${cat.id === 'all' ? 'active' : ''}"
+      <button class="filter-btn ${cat.id === currentFilter ? 'active' : ''}"
               data-filter="${cat.id}"
-              aria-label="Filter by ${cat.name}">
+              aria-label="${currentLang === 'fr' ? 'Filtrer par' : 'Filter by'} ${cat.name}">
         ${icon}
         <span>${cat.name}</span>
       </button>
@@ -152,38 +205,43 @@ function generateProjectCards() {
       ? `<img src="${project.images[0]}" alt="${project.name}" loading="lazy">`
       : `<div class="project-card-placeholder">${ICONS.gamepad}</div>`;
 
-    const awardHtml = project.award
-      ? `<span class="project-card-award">${ICONS.trophy} ${project.award}</span>`
+    const award = getText(project.award);
+    const awardHtml = award
+      ? `<span class="project-card-award">${ICONS.trophy} ${award}</span>`
       : '';
 
     const tagsHtml = project.tags.slice(0, 4).map(tag =>
       `<span class="project-tag">${tag}</span>`
     ).join('');
 
+    const category = getText(project.category);
+    const shortDesc = getText(project.shortDescription);
+    const date = getText(project.date);
+
     return `
       <article class="project-card animate-fade-in-up animate-delay-${(index % 4) + 1}"
                data-id="${project.id}"
-               data-category="${project.category.toLowerCase().replace(/\s+/g, '-')}"
+               data-category="${project.categoryId}"
                data-type="project"
                role="button"
                tabindex="0"
-               aria-label="View ${project.name} details">
+               aria-label="${currentLang === 'fr' ? 'Voir les details de' : 'View details of'} ${project.name}">
         <div class="project-card-image">
           ${imageHtml}
-          <span class="project-card-badge">${project.category}</span>
+          <span class="project-card-badge">${category}</span>
           ${awardHtml}
         </div>
         <div class="project-card-content">
           <h3 class="project-card-title">${project.name}</h3>
-          <p class="project-card-description">${project.shortDescription}</p>
+          <p class="project-card-description">${shortDesc}</p>
           <div class="project-card-tags">${tagsHtml}</div>
           <div class="project-card-footer">
             <div class="project-card-meta">
               ${ICONS.calendar}
-              <span>${project.date}</span>
+              <span>${date}</span>
             </div>
             <span class="project-card-action">
-              View Details ${ICONS.arrowRight}
+              ${getUI('viewDetails')} ${ICONS.arrowRight}
             </span>
           </div>
         </div>
@@ -198,7 +256,9 @@ function generateSystemCards() {
   if (!DOM.systemsGrid || !portfolioData) return;
 
   const cards = portfolioData.systems.map((system, index) => {
-    const icon = systemIcons[system.category] || ICONS.cog;
+    const categoryText = getText(system.category);
+    const icon = systemIcons[categoryText] || ICONS.cog;
+    const shortDesc = getText(system.shortDescription);
 
     return `
       <article class="system-card animate-fade-in-up animate-delay-${(index % 4) + 1}"
@@ -207,10 +267,10 @@ function generateSystemCards() {
                data-type="system"
                role="button"
                tabindex="0"
-               aria-label="View ${system.name} details">
+               aria-label="${currentLang === 'fr' ? 'Voir les details de' : 'View details of'} ${system.name}">
         <div class="system-card-icon">${icon}</div>
         <h3 class="system-card-title">${system.name}</h3>
-        <p class="system-card-description">${system.shortDescription}</p>
+        <p class="system-card-description">${shortDesc}</p>
         <span class="system-card-context">
           ${ICONS.rocket} ${system.context}
         </span>
@@ -245,6 +305,13 @@ function setupEventListeners() {
   // Smooth scroll for navigation
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', handleSmoothScroll);
+  });
+
+  // Language toggle
+  DOM.langBtns.forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    // Set initial active state
+    btn.classList.toggle('active', btn.dataset.lang === currentLang);
   });
 }
 
@@ -392,14 +459,23 @@ function generateProjectModalContent(project) {
     `;
   }
 
+  // Get translated content
+  const category = getText(project.category);
+  const role = getText(project.role);
+  const team = getText(project.team);
+  const fullDesc = getText(project.fullDescription);
+  const date = getText(project.date);
+  const award = getText(project.award);
+  const contributions = project.contributions ? getText(project.contributions) : [];
+
   // Award section
-  const awardHtml = project.award
-    ? `<div class="modal-award">${ICONS.trophy} ${project.award}</div>`
+  const awardHtml = award
+    ? `<div class="modal-award">${ICONS.trophy} ${award}</div>`
     : '';
 
   // Contributions list
-  const contributionsHtml = project.contributions
-    ? project.contributions.map(c => `
+  const contributionsHtml = Array.isArray(contributions) && contributions.length > 0
+    ? contributions.map(c => `
         <div class="modal-contribution"><span>${c}</span></div>
       `).join('')
     : '';
@@ -416,72 +492,72 @@ function generateProjectModalContent(project) {
     if (project.links.itch) {
       linkItems.push(`
         <a href="${project.links.itch}" target="_blank" rel="noopener noreferrer" class="modal-link">
-          ${ICONS.itchio} Play on itch.io
+          ${ICONS.itchio} ${getUI('playOnItch')}
         </a>
       `);
     }
     if (project.links.github) {
       linkItems.push(`
         <a href="${project.links.github}" target="_blank" rel="noopener noreferrer" class="modal-link">
-          ${ICONS.github} View on GitHub
+          ${ICONS.github} ${getUI('viewOnGitHub')}
         </a>
       `);
     }
     linksHtml = linkItems.length > 0
       ? `<div class="modal-section">
-           <h4 class="modal-section-title">Links</h4>
+           <h4 class="modal-section-title">${getUI('links')}</h4>
            <div class="modal-links">${linkItems.join('')}</div>
          </div>`
       : '';
   }
 
   return `
-    <button class="modal-close" aria-label="Close modal">${ICONS.close}</button>
+    <button class="modal-close" aria-label="${currentLang === 'fr' ? 'Fermer' : 'Close'}">${ICONS.close}</button>
     ${mediaHtml}
     <div class="modal-body">
       <div class="modal-header">
-        <span class="modal-badge">${project.category}</span>
+        <span class="modal-badge">${category}</span>
         <h2 class="modal-title">${project.name}</h2>
-        <p class="modal-subtitle">${project.role} | ${project.team}</p>
+        <p class="modal-subtitle">${role} | ${team}</p>
         ${awardHtml}
       </div>
 
       <div class="modal-section">
-        <h4 class="modal-section-title">Description</h4>
-        <p class="modal-description">${project.fullDescription}</p>
+        <h4 class="modal-section-title">${getUI('description')}</h4>
+        <p class="modal-description">${fullDesc}</p>
       </div>
 
       ${contributionsHtml ? `
         <div class="modal-section">
-          <h4 class="modal-section-title">My Contributions</h4>
+          <h4 class="modal-section-title">${getUI('contributions')}</h4>
           <div class="modal-contributions">${contributionsHtml}</div>
         </div>
       ` : ''}
 
       <div class="modal-section">
-        <h4 class="modal-section-title">Project Details</h4>
+        <h4 class="modal-section-title">${getUI('projectDetails')}</h4>
         <div class="modal-meta-grid">
           <div class="modal-meta-item">
-            <div class="modal-meta-label">Date</div>
-            <div class="modal-meta-value">${project.date}</div>
+            <div class="modal-meta-label">${getUI('date')}</div>
+            <div class="modal-meta-value">${date}</div>
           </div>
           <div class="modal-meta-item">
-            <div class="modal-meta-label">Team</div>
-            <div class="modal-meta-value">${project.team}</div>
+            <div class="modal-meta-label">${getUI('team')}</div>
+            <div class="modal-meta-value">${team}</div>
           </div>
           <div class="modal-meta-item">
-            <div class="modal-meta-label">Role</div>
-            <div class="modal-meta-value">${project.role}</div>
+            <div class="modal-meta-label">${getUI('role')}</div>
+            <div class="modal-meta-value">${role}</div>
           </div>
           <div class="modal-meta-item">
-            <div class="modal-meta-label">Technologies</div>
+            <div class="modal-meta-label">${getUI('technologies')}</div>
             <div class="modal-meta-value">${project.technologies}</div>
           </div>
         </div>
       </div>
 
       <div class="modal-section">
-        <h4 class="modal-section-title">Technologies</h4>
+        <h4 class="modal-section-title">${getUI('technologies')}</h4>
         <div class="modal-tags">${tagsHtml}</div>
       </div>
 
@@ -491,7 +567,11 @@ function generateProjectModalContent(project) {
 }
 
 function generateSystemModalContent(system) {
-  const icon = systemIcons[system.category] || ICONS.cog;
+  const categoryText = getText(system.category);
+  const icon = systemIcons[categoryText] || ICONS.cog;
+  const fullDesc = getText(system.fullDescription);
+  const shortDesc = getText(system.shortDescription);
+  const technicalDetails = system.technicalDetails ? getText(system.technicalDetails) : [];
 
   // Media section
   let mediaHtml = '';
@@ -511,8 +591,8 @@ function generateSystemModalContent(system) {
   }
 
   // Technical details
-  const technicalHtml = system.technicalDetails
-    ? system.technicalDetails.map(t => `
+  const technicalHtml = Array.isArray(technicalDetails) && technicalDetails.length > 0
+    ? technicalDetails.map(t => `
         <div class="modal-contribution"><span>${t}</span></div>
       `).join('')
     : '';
@@ -523,41 +603,41 @@ function generateSystemModalContent(system) {
   ).join('');
 
   return `
-    <button class="modal-close" aria-label="Close modal">${ICONS.close}</button>
+    <button class="modal-close" aria-label="${currentLang === 'fr' ? 'Fermer' : 'Close'}">${ICONS.close}</button>
     ${mediaHtml}
     <div class="modal-body">
       <div class="modal-header">
-        <span class="modal-badge">${system.category}</span>
+        <span class="modal-badge">${categoryText}</span>
         <h2 class="modal-title">${system.name}</h2>
-        <p class="modal-subtitle">Developed for ${system.context}</p>
+        <p class="modal-subtitle">${currentLang === 'fr' ? 'Developpe pour' : 'Developed for'} ${system.context}</p>
       </div>
 
       <div class="modal-section">
-        <h4 class="modal-section-title">Overview</h4>
-        <p class="modal-description">${system.fullDescription}</p>
+        <h4 class="modal-section-title">${getUI('overview')}</h4>
+        <p class="modal-description">${fullDesc}</p>
       </div>
 
       ${technicalHtml ? `
         <div class="modal-section">
-          <h4 class="modal-section-title">Technical Details</h4>
+          <h4 class="modal-section-title">${getUI('technicalDetails')}</h4>
           <div class="modal-contributions">${technicalHtml}</div>
         </div>
       ` : ''}
 
       <div class="modal-section">
-        <h4 class="modal-section-title">Technologies</h4>
+        <h4 class="modal-section-title">${getUI('technologies')}</h4>
         <div class="modal-tags">${tagsHtml}</div>
       </div>
 
       <div class="modal-section">
-        <h4 class="modal-section-title">Implementation Details</h4>
+        <h4 class="modal-section-title">${getUI('implementationDetails')}</h4>
         <div class="modal-meta-grid">
           <div class="modal-meta-item">
-            <div class="modal-meta-label">Technologies</div>
+            <div class="modal-meta-label">${getUI('technologies')}</div>
             <div class="modal-meta-value">${system.technologies}</div>
           </div>
           <div class="modal-meta-item">
-            <div class="modal-meta-label">Project Context</div>
+            <div class="modal-meta-label">${getUI('projectContext')}</div>
             <div class="modal-meta-value">${system.context}</div>
           </div>
         </div>

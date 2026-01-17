@@ -1,21 +1,113 @@
 {
   "profile": {
     "name": "Julien PIRAT",
-    "title": "Gameplay Programmer & R&D Engineer",
-    "subtitle": "Unreal Engine Specialist | AI Systems | Multiplayer",
-    "description": "Passionate game developer specializing in gameplay programming, AI systems, and multiplayer networking with Unreal Engine. Currently working on Arcanthys with Ashen Bloom Studio.",
-    "email": "contact@julienpirat.com",
+    "title": {
+      "fr": "Programmeur Gameplay & Ingenieur R&D",
+      "en": "Gameplay Programmer & R&D Engineer"
+    },
+    "subtitle": {
+      "fr": "Specialiste Unreal Engine | Systemes IA | Multijoueur",
+      "en": "Unreal Engine Specialist | AI Systems | Multiplayer"
+    },
+    "description": {
+      "fr": "Developpeur de jeux passionne, specialise dans la programmation gameplay, les systemes d'IA et le reseau multijoueur avec Unreal Engine. Actuellement en developpement sur Arcanthys avec Ashen Bloom Studio.",
+      "en": "Passionate game developer specializing in gameplay programming, AI systems, and multiplayer networking with Unreal Engine. Currently working on Arcanthys with Ashen Bloom Studio."
+    },
     "github": "https://github.com/JulienPirat",
     "linkedin": "https://linkedin.com/in/julienpirat",
     "itchio": "https://julien-pirat.itch.io"
+  },
+  "ui": {
+    "fr": {
+      "heroAvailable": "Disponible pour opportunites",
+      "heroIntro": "Salut, je suis",
+      "heroDescription": "Programmeur Gameplay & Ingenieur R&D specialise sur Unreal Engine. Je cree des experiences de jeu immersives a travers des systemes d'IA, du reseau multijoueur et des mecaniques de gameplay innovantes.",
+      "viewWork": "Voir mes projets",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "Projets",
+      "portfolioDescription": "Une collection de jeux et projets auxquels j'ai contribue, des game jams aux competitions professionnelles.",
+      "technicalLabel": "Technique",
+      "systemsTitle": "Systemes & Outils",
+      "systemsDescription": "Systemes et outils personnalises que j'ai developpes pour l'optimisation des performances, le comportement de l'IA et le debugging.",
+      "aboutLabel": "A propos",
+      "aboutTitle": "Developpeur de jeux passionne",
+      "aboutDescription": "Actuellement en developpement sur Arcanthys avec Ashen Bloom Studio, je suis passionne par la creation d'experiences de jeu engageantes a travers des systemes innovants et une architecture de code propre.",
+      "skillsTitle": "Competences techniques",
+      "skillsDescription": "Maitrise du C++, des Blueprints Unreal Engine, du Gameplay Ability System (GAS), de la programmation IA avec Behavior Trees et EQS, et du reseau multijoueur avec replication et RPCs.",
+      "teamTitle": "Experience en equipe",
+      "teamDescription": "Experience en developpement collaboratif avec des equipes de 4 a 12 developpeurs. Competent en gestion de versions avec Perforce, gestion de projet avec Jira, et communication efficace.",
+      "educationTitle": "Formation",
+      "educationDescription": "Etudes universitaires a l'UQAC (Canada) avec une specialisation en developpement de jeux, combinant connaissances theoriques et experience pratique sur divers genres de jeux.",
+      "footerText": "2025 Julien PIRAT. Construit avec passion pour le developpement de jeux.",
+      "viewDetails": "Voir details",
+      "description": "Description",
+      "contributions": "Mes contributions",
+      "projectDetails": "Details du projet",
+      "technologies": "Technologies",
+      "links": "Liens",
+      "playOnItch": "Jouer sur itch.io",
+      "viewOnGitHub": "Voir sur GitHub",
+      "date": "Date",
+      "team": "Equipe",
+      "role": "Role",
+      "overview": "Apercu",
+      "technicalDetails": "Details techniques",
+      "implementationDetails": "Details d'implementation",
+      "projectContext": "Contexte du projet",
+      "specialty": "Specialite",
+      "aiSystems": "Systemes IA",
+      "currentTeam": "Equipe actuelle",
+      "award": "Prix"
+    },
+    "en": {
+      "heroAvailable": "Available for opportunities",
+      "heroIntro": "Hi, I'm",
+      "heroDescription": "Gameplay Programmer & R&D Engineer specializing in Unreal Engine. I build immersive game experiences through AI systems, multiplayer networking, and innovative gameplay mechanics.",
+      "viewWork": "View My Work",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "Featured Projects",
+      "portfolioDescription": "A collection of games and projects I've contributed to, from game jams to professional competitions.",
+      "technicalLabel": "Technical",
+      "systemsTitle": "Systems & Tools",
+      "systemsDescription": "Custom systems and tools I've developed for performance optimization, AI behavior, and debugging.",
+      "aboutLabel": "About Me",
+      "aboutTitle": "Passionate Game Developer",
+      "aboutDescription": "Currently working on Arcanthys with Ashen Bloom Studio, I'm passionate about creating engaging gameplay experiences through innovative systems and clean code architecture.",
+      "skillsTitle": "Technical Skills",
+      "skillsDescription": "Proficient in C++, Unreal Engine Blueprints, Gameplay Ability System (GAS), AI programming with Behavior Trees and EQS, and multiplayer networking with replication and RPCs.",
+      "teamTitle": "Team Experience",
+      "teamDescription": "Experienced in collaborative development with teams of 4-12 developers. Skilled in version control with Perforce, project management with Jira, and effective communication.",
+      "educationTitle": "Education",
+      "educationDescription": "University studies at UQAC (Canada) with focus on game development, combining theoretical knowledge with practical project experience in various game genres.",
+      "footerText": "2025 Julien PIRAT. Built with passion for game development.",
+      "viewDetails": "View Details",
+      "description": "Description",
+      "contributions": "My Contributions",
+      "projectDetails": "Project Details",
+      "technologies": "Technologies",
+      "links": "Links",
+      "playOnItch": "Play on itch.io",
+      "viewOnGitHub": "View on GitHub",
+      "date": "Date",
+      "team": "Team",
+      "role": "Role",
+      "overview": "Overview",
+      "technicalDetails": "Technical Details",
+      "implementationDetails": "Implementation Details",
+      "projectContext": "Project Context",
+      "specialty": "Specialty",
+      "aiSystems": "AI Systems",
+      "currentTeam": "Current Team",
+      "award": "Award"
+    }
   },
   "skills": [
     "Unreal Engine 5",
     "C++",
     "Blueprints",
     "Gameplay Ability System (GAS)",
-    "AI (Behavior Trees, EQS)",
-    "Multiplayer/Networking",
+    "IA (Behavior Trees, EQS)",
+    "Multijoueur/Reseau",
     "Perforce",
     "JetBrains Rider",
     "Jira"
@@ -24,23 +116,50 @@
     {
       "id": "arcanthys",
       "name": "Arcanthys",
-      "category": "In Development",
-      "tags": ["Unreal Engine", "C++", "GAS", "AI", "BehaviorTree", "Mobile"],
-      "shortDescription": "3D/2D platformer for Android with Ashen Bloom Studio. Action, narrative, and exploration in a world shattered by magical catastrophe.",
-      "fullDescription": "In a world torn apart by a magical catastrophe, the Silver Eclipse, magic itself has shattered, spawning chaos and monstrosities. From this cataclysm was born a unique entity, pure and luminous... you.\n\nArcanthys is a 3D/2D platformer on Android, blending action, narrative, and exploration. Each zone tells the story of the scars left by the Eclipse. It's an indie game with stylized, colorful graphics to contrast with the dark narrative universe.\n\nAs you progress, you'll unlock new magical powers, face creatures deformed by corruption, and encounter the remnants of forgotten civilizations.",
-      "contributions": [
-        "Integration of Gameplay Ability System (GAS)",
-        "Implementation of abilities (Blueprint) and attributes (C++)",
-        "Enemy AI behaviors: BehaviorTree, Blackboard, DetourCrowd",
-        "Quest System implementation"
-      ],
+      "category": {
+        "fr": "En developpement",
+        "en": "In Development"
+      },
+      "categoryId": "in-development",
+      "tags": ["Unreal Engine", "C++", "GAS", "IA", "BehaviorTree", "Mobile"],
+      "shortDescription": {
+        "fr": "Jeu de plateforme 3D/2D sur Android avec Ashen Bloom Studio. Action, narration et exploration dans un monde brise par une catastrophe magique.",
+        "en": "3D/2D platformer for Android with Ashen Bloom Studio. Action, narrative, and exploration in a world shattered by magical catastrophe."
+      },
+      "fullDescription": {
+        "fr": "Dans un monde dechire par une catastrophe magique, l'Eclipse d'Argent, la magie elle-meme s'est brisee, engendrant chaos et monstruosites. De ce cataclysme est nee une entite unique, pure et lumineuse... vous.\n\nArcanthys est un jeu de plateforme en 3D/2D sur Android, melant action, narration et exploration, ou chaque zone raconte les cicatrices laissees par l'Eclipse. C'est un jeu inde aux graphismes stylises et colores pour contraster avec l'univers sombre du scenario.\n\nAu fil de votre periple, vous debloquerez de nouveaux pouvoirs magiques, affronterez des creatures deformees par la corruption, et croiserez les vestiges d'anciennes civilisations oubliees.",
+        "en": "In a world torn apart by a magical catastrophe, the Silver Eclipse, magic itself has shattered, spawning chaos and monstrosities. From this cataclysm was born a unique entity, pure and luminous... you.\n\nArcanthys is a 3D/2D platformer on Android, blending action, narrative, and exploration. Each zone tells the story of the scars left by the Eclipse. It's an indie game with stylized, colorful graphics to contrast with the dark narrative universe.\n\nAs you progress, you'll unlock new magical powers, face creatures deformed by corruption, and encounter the remnants of forgotten civilizations."
+      },
+      "contributions": {
+        "fr": [
+          "Integration du Gameplay Ability System (GAS) d'Unreal Engine",
+          "Realisation des competences (Blueprint) et attributs (C++)",
+          "Realisation des comportements des ennemis: BehaviorTree, Blackboard, DetourCrowd",
+          "Ajout du systeme de quetes"
+        ],
+        "en": [
+          "Integration of Unreal Engine's Gameplay Ability System (GAS)",
+          "Implementation of abilities (Blueprint) and attributes (C++)",
+          "Enemy AI behaviors: BehaviorTree, Blackboard, DetourCrowd",
+          "Quest system implementation"
+        ]
+      },
       "videoUrl": "",
       "images": ["Assets/Images/affiche_arcanthys.png"],
       "technologies": "Unreal Engine 5, C++, Blueprints, GAS, BehaviorTree, Perforce",
-      "role": "Gameplay Programmer",
-      "team": "12 developers (Ashen Bloom Studio)",
+      "role": {
+        "fr": "Programmeur Gameplay",
+        "en": "Gameplay Programmer"
+      },
+      "team": {
+        "fr": "12 developpeurs (Ashen Bloom Studio)",
+        "en": "12 developers (Ashen Bloom Studio)"
+      },
       "date": "2025",
-      "status": "In Development",
+      "status": {
+        "fr": "En developpement",
+        "en": "In Development"
+      },
       "links": {
         "itch": ""
       }
@@ -48,23 +167,53 @@
     {
       "id": "green-rebirth",
       "name": "Green Rebirth",
-      "category": "Game Jam",
-      "tags": ["Unreal Engine", "Blueprints", "Game Jam", "Serious Game"],
-      "shortDescription": "Award-winning serious game from CREATE Game Jam 2024. Help fairies restore a dying forest in this environmental experience.",
-      "fullDescription": "Green Rebirth was created during the CREATE Game Jam 2024 with a team of seven developers and one artist. It's a serious game with an environmental message where players have a few days to help little fairies restore a forest full of dead trees and trash.\n\nThe project was developed on Unreal Engine 5.4, primarily using Blueprints to optimize our time. We managed to scope appropriately for our skills, allowing us to dedicate time to polish.",
-      "contributions": [
-        "Flower propagation system implementation",
-        "Flower and tree placement system",
-        "Mouse sensitivity settings",
-        "Extensive gameplay bug fixing"
-      ],
-      "award": "Best Prototype",
+      "category": {
+        "fr": "Game Jam",
+        "en": "Game Jam"
+      },
+      "categoryId": "game-jam",
+      "tags": ["Unreal Engine", "Blueprints", "Game Jam", "Jeu serieux"],
+      "shortDescription": {
+        "fr": "Jeu serieux prime lors de la CREATE Game Jam 2024. Aidez les fees a restaurer une foret mourante dans cette experience environnementale.",
+        "en": "Award-winning serious game from CREATE Game Jam 2024. Help fairies restore a dying forest in this environmental experience."
+      },
+      "fullDescription": {
+        "fr": "Green Rebirth est un projet qui a ete realise lors de la CREATE Game Jam 2024. Pour ce projet, nous etions un groupe de sept developpeurs et d'une artiste.\n\nIl s'agit d'un jeu ou vous avez quelques jours pour aider les petites fees a restaurer une foret pleine d'arbres morts et d'ordures.\n\nCe projet a ete realise sur Unreal Engine 5.4, en grande partie en Blueprints pour optimiser notre temps. Nous avons pu avoir un scope adapte a nos competences, ce qui nous a permis de consacrer du temps au polish.",
+        "en": "Green Rebirth was created during the CREATE Game Jam 2024 with a team of seven developers and one artist.\n\nIt's a game where you have a few days to help little fairies restore a forest full of dead trees and trash.\n\nThe project was developed on Unreal Engine 5.4, primarily using Blueprints to optimize our time. We managed to scope appropriately for our skills, allowing us to dedicate time to polish."
+      },
+      "contributions": {
+        "fr": [
+          "Realisation du fonctionnement des fleurs qui se propagent",
+          "Realisation du systeme de placement des fleurs et des arbres",
+          "Ajout du parametre de sensibilite de la souris",
+          "Resolution de nombreux bugs de gameplay"
+        ],
+        "en": [
+          "Flower propagation system implementation",
+          "Flower and tree placement system",
+          "Mouse sensitivity settings",
+          "Extensive gameplay bug fixing"
+        ]
+      },
+      "award": {
+        "fr": "Meilleur Prototype",
+        "en": "Best Prototype"
+      },
       "videoUrl": "https://www.youtube.com/embed/DDTdn_jTqTk",
       "images": [],
       "technologies": "Unreal Engine 5.4, Blueprints, Perforce",
-      "role": "Gameplay Programmer",
-      "team": "8 members (7 devs + 1 artist)",
-      "date": "June 2024",
+      "role": {
+        "fr": "Programmeur Gameplay",
+        "en": "Gameplay Programmer"
+      },
+      "team": {
+        "fr": "8 membres (7 devs + 1 artiste)",
+        "en": "8 members (7 devs + 1 artist)"
+      },
+      "date": {
+        "fr": "Juin 2024",
+        "en": "June 2024"
+      },
       "links": {
         "itch": "https://guillaume-clerc.itch.io/green-rebirth"
       }
@@ -72,24 +221,53 @@
     {
       "id": "clean-dream",
       "name": "Clean Dream",
-      "category": "Competition",
-      "tags": ["Unreal Engine", "Multiplayer", "Networking", "Co-op", "Ubisoft"],
-      "shortDescription": "Multiplayer co-op game developed for the Ubisoft Competition 2024. Network replication and RPC implementation.",
-      "fullDescription": "Clean Dream was developed for the Ubisoft Competition 2024 with a team of eight developers. It's a networked cooperative game built on Unreal Engine.\n\nFor team coordination, we used Discord and Jira, along with Perforce for version control. My main contribution focused on mole behavior implementation and bug fixing for both gameplay and networking.\n\nThis project taught me the importance of communication in a team, even with people you don't know. Working with Game Designers gave me insight into professional game development workflows.",
-      "contributions": [
-        "Mole behavior implementation",
-        "Mole hole interaction system",
-        "Mob stunning mechanic with rocks",
-        "UI for mole hole interactions",
-        "Network replication and RPC implementation",
-        "Network and gameplay bug fixing"
-      ],
+      "category": {
+        "fr": "Concours",
+        "en": "Competition"
+      },
+      "categoryId": "competition",
+      "tags": ["Unreal Engine", "Multijoueur", "Reseau", "Co-op", "Ubisoft"],
+      "shortDescription": {
+        "fr": "Jeu multijoueur cooperatif developpe pour le concours Ubisoft 2024. Implementation de la replication reseau et des RPCs.",
+        "en": "Multiplayer co-op game developed for the Ubisoft Competition 2024. Network replication and RPC implementation."
+      },
+      "fullDescription": {
+        "fr": "Clean Dream est un projet qui a ete realise lors du concours Ubisoft de 2024. Pour ce projet, nous etions un groupe de huit developpeurs.\n\nIl s'agit d'un jeu cooperatif en reseau realise sur Unreal Engine. Pour assurer la coordination dans notre equipe, nous avons utilise Discord et Jira, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la realisation des taupes principalement ainsi que sur la resolution de bugs, que ce soit du cote de la programmation du gameplay ou du reseau.\n\nDans ce projet, j'ai pu cooperer avec des personnes que je ne connaissais pas avant. Cela m'a permis de me rendre compte que la communication dans une equipe est tres importante. De plus, le fait d'avoir des Game Designers dans l'equipe m'a permis d'obtenir un apercu du travail en entreprise.",
+        "en": "Clean Dream was developed for the Ubisoft Competition 2024 with a team of eight developers.\n\nIt's a networked cooperative game built on Unreal Engine. For team coordination, we used Discord and Jira, along with Perforce for version control.\n\nMy main contribution focused on mole behavior implementation and bug fixing for both gameplay and networking.\n\nThis project taught me the importance of communication in a team, even with people you don't know. Working with Game Designers gave me insight into professional game development workflows."
+      },
+      "contributions": {
+        "fr": [
+          "Realisation du comportement des taupes",
+          "Realisation de l'interaction avec les trous de taupes",
+          "Ajout de l'etourdissement des mobs avec un caillou",
+          "Ajout de l'UI pour les interactions avec les trous de taupes",
+          "Grandes utilisations du reseau impliquant la replication ainsi que les RPC",
+          "Resolution de nombreux bugs de reseau et de gameplay"
+        ],
+        "en": [
+          "Mole behavior implementation",
+          "Mole hole interaction system",
+          "Mob stunning mechanic with rocks",
+          "UI for mole hole interactions",
+          "Network replication and RPC implementation",
+          "Network and gameplay bug fixing"
+        ]
+      },
       "videoUrl": "https://www.youtube.com/embed/IAFDb1A4BvU",
       "images": [],
-      "technologies": "Unreal Engine, Blueprints, Networking/RPC, Perforce, Jira",
-      "role": "Gameplay Programmer (Networking Focus)",
-      "team": "8 developers",
-      "date": "May 2024",
+      "technologies": "Unreal Engine, Blueprints, Reseau/RPC, Perforce, Jira",
+      "role": {
+        "fr": "Programmeur Gameplay (Specialisation Reseau)",
+        "en": "Gameplay Programmer (Networking Focus)"
+      },
+      "team": {
+        "fr": "8 developpeurs",
+        "en": "8 developers"
+      },
+      "date": {
+        "fr": "Mai 2024",
+        "en": "May 2024"
+      },
       "links": {
         "itch": ""
       }
@@ -97,21 +275,47 @@
     {
       "id": "vrecycle",
       "name": "VRecycle",
-      "category": "University",
-      "tags": ["Unreal Engine", "VR", "Serious Game", "GameplayTags"],
-      "shortDescription": "VR serious game about waste sorting developed at UQAC. Educational experience raising awareness about recycling.",
-      "fullDescription": "VRecycle is a university project involving a team of six developers. It's a serious game in virtual reality built on Unreal Engine. The goal is to raise awareness about waste sorting for a wide audience.\n\nFor coordination, we used Discord and Perforce for version control. My contributions focused on waste modeling, the sorting system for bins, and player movement.",
-      "contributions": [
-        "All waste items implementation using GameplayTags",
-        "VR controller-based movement",
-        "Waste sorting system"
-      ],
+      "category": {
+        "fr": "Universitaire",
+        "en": "University"
+      },
+      "categoryId": "university",
+      "tags": ["Unreal Engine", "VR", "Jeu serieux", "GameplayTags"],
+      "shortDescription": {
+        "fr": "Jeu serieux en VR sur le tri des dechets developpe a l'UQAC. Experience educative de sensibilisation au recyclage.",
+        "en": "VR serious game about waste sorting developed at UQAC. Educational experience raising awareness about recycling."
+      },
+      "fullDescription": {
+        "fr": "VRecycle est un projet universitaire impliquant une equipe de six developpeurs. Il s'agit d'un jeu serieux en realite virtuelle realise sur Unreal Engine.\n\nLe but de notre jeu est de sensibiliser un large public au tri des dechets.\n\nPour assurer la coordination, nous avons utilise Discord ainsi que Perforce pour la gestion des versions. Ma contribution au projet a porte sur la modelisation des dechets, le systeme de tri dans les poubelles et le deplacement du joueur.",
+        "en": "VRecycle is a university project involving a team of six developers. It's a serious game in virtual reality built on Unreal Engine.\n\nThe goal is to raise awareness about waste sorting for a wide audience.\n\nFor coordination, we used Discord and Perforce for version control. My contributions focused on waste modeling, the sorting system for bins, and player movement."
+      },
+      "contributions": {
+        "fr": [
+          "Realisation de tous les dechets en utilisant les GameplayTags",
+          "Realisation du deplacement au controller",
+          "Realisation du systeme de tri des dechets"
+        ],
+        "en": [
+          "All waste items implementation using GameplayTags",
+          "VR controller-based movement",
+          "Waste sorting system"
+        ]
+      },
       "videoUrl": "",
       "images": [],
       "technologies": "Unreal Engine, VR, GameplayTags, Blueprints, Perforce",
-      "role": "Gameplay Programmer",
-      "team": "6 developers",
-      "date": "May 2024",
+      "role": {
+        "fr": "Programmeur Gameplay",
+        "en": "Gameplay Programmer"
+      },
+      "team": {
+        "fr": "6 developpeurs",
+        "en": "6 developers"
+      },
+      "date": {
+        "fr": "Mai 2024",
+        "en": "May 2024"
+      },
       "institution": "UQAC",
       "links": {
         "itch": ""
@@ -120,22 +324,49 @@
     {
       "id": "temple-trap",
       "name": "TempleTrap",
-      "category": "University",
+      "category": {
+        "fr": "Universitaire",
+        "en": "University"
+      },
+      "categoryId": "university",
       "tags": ["Unreal Engine", "Co-op", "Puzzle", "3D"],
-      "shortDescription": "3D cooperative puzzle game with duel elements developed at UQAC. Rising water mechanics and respawn systems.",
-      "fullDescription": "TempleTrap is a university project involving a team of four developers. It's a 3D cooperative game built on Unreal Engine.\n\nFor coordination, we used Discord and Perforce for version control. My contributions focused on the rising water at the end of levels, temporary and permanent player deaths, and artistic elements like torches and lighting.",
-      "contributions": [
-        "End-of-level system implementation",
-        "Pillar movement bug fixes",
-        "Player respawn and death management",
-        "Artistic elements (torches, lighting)"
-      ],
+      "shortDescription": {
+        "fr": "Jeu de puzzle cooperatif en 3D avec elements de duel developpe a l'UQAC. Mecaniques d'eau montante et systemes de reapparition.",
+        "en": "3D cooperative puzzle game with duel elements developed at UQAC. Rising water mechanics and respawn systems."
+      },
+      "fullDescription": {
+        "fr": "TempleTrap est un projet universitaire impliquant une equipe de quatre developpeurs. Il s'agit d'un jeu en cooperation en 3D realise sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la realisation de l'eau qui monte a la fin d'un niveau. J'ai egalement contribue aux morts temporaires et definitives des joueurs. J'ai aussi ajoute certains elements artistiques, comme les torches et quelques lumieres.",
+        "en": "TempleTrap is a university project involving a team of four developers. It's a 3D cooperative game built on Unreal Engine.\n\nFor coordination, we used Discord and Perforce for version control.\n\nMy contributions focused on the rising water at the end of levels, temporary and permanent player deaths, and artistic elements like torches and lighting."
+      },
+      "contributions": {
+        "fr": [
+          "Implementation d'un systeme de fin de niveau",
+          "Correction de bugs lies aux deplacements d'un pilier",
+          "Implementation du mecanisme de reapparition et de gestion de la mort des joueurs",
+          "Ajout des elements artistiques"
+        ],
+        "en": [
+          "End-of-level system implementation",
+          "Pillar movement bug fixes",
+          "Player respawn and death management",
+          "Artistic elements (torches, lighting)"
+        ]
+      },
       "videoUrl": "https://www.youtube.com/embed/cvBhtapsJg0",
       "images": [],
       "technologies": "Unreal Engine, Blueprints, Perforce",
-      "role": "Gameplay Programmer",
-      "team": "4 developers",
-      "date": "December 2023",
+      "role": {
+        "fr": "Programmeur Gameplay",
+        "en": "Gameplay Programmer"
+      },
+      "team": {
+        "fr": "4 developpeurs",
+        "en": "4 developers"
+      },
+      "date": {
+        "fr": "Decembre 2023",
+        "en": "December 2023"
+      },
       "institution": "UQAC",
       "links": {
         "itch": "https://guillaume-clerc.itch.io/temple-trap"
@@ -144,22 +375,49 @@
     {
       "id": "vivaldi",
       "name": "Vivaldi",
-      "category": "University",
-      "tags": ["Unreal Engine", "Roguelite", "AI", "EQS", "C++", "3D"],
-      "shortDescription": "3D roguelite with advanced AI systems using Behavior Trees and Environment Query System (EQS).",
-      "fullDescription": "Vivaldi is a university project involving a team of seven developers. It's a 3D roguelite built on Unreal Engine.\n\nFor coordination, we used Teams and Discord, along with Perforce for version control. My contributions focused on AI implementation and bug fixing for both programming and artistic elements.",
-      "contributions": [
-        "AI Task system implementation",
-        "Two AI types: melee combat and ranged combat",
-        "Environment Query System (EQS) integration",
-        "Hybrid Blueprint/C++ AI development"
-      ],
+      "category": {
+        "fr": "Universitaire",
+        "en": "University"
+      },
+      "categoryId": "university",
+      "tags": ["Unreal Engine", "Roguelite", "IA", "EQS", "C++", "3D"],
+      "shortDescription": {
+        "fr": "Roguelite en 3D avec systemes d'IA avances utilisant les Behavior Trees et l'Environment Query System (EQS).",
+        "en": "3D roguelite with advanced AI systems using Behavior Trees and Environment Query System (EQS)."
+      },
+      "fullDescription": {
+        "fr": "Vivaldi est un projet universitaire impliquant une equipe de sept developpeurs. Il s'agit d'un roguelite en 3D realise sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Teams et Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la realisation des intelligences artificielles ainsi que sur la resolution de bugs, que ce soit du cote de la programmation ou du cote artistique.",
+        "en": "Vivaldi is a university project involving a team of seven developers. It's a 3D roguelite built on Unreal Engine.\n\nFor coordination, we used Teams and Discord, along with Perforce for version control.\n\nMy contributions focused on AI implementation and bug fixing for both programming and artistic elements."
+      },
+      "contributions": {
+        "fr": [
+          "Utilisation des Tasks pour la gestion des intelligences artificielles",
+          "Realisation de deux intelligences artificielles, l'une pour le combat rapproche et l'autre pour le combat a distance",
+          "Utilisation de l'Environment Query System (EQS)",
+          "Utilisation des Blueprints et du C++ pour la realisation des intelligences artificielles"
+        ],
+        "en": [
+          "AI Task system implementation",
+          "Two AI types: melee combat and ranged combat",
+          "Environment Query System (EQS) integration",
+          "Hybrid Blueprint/C++ AI development"
+        ]
+      },
       "videoUrl": "https://www.youtube.com/embed/xx8IPcbil-U",
       "images": [],
       "technologies": "Unreal Engine, C++, Blueprints, BehaviorTree, EQS, Perforce",
-      "role": "AI Programmer",
-      "team": "7 developers",
-      "date": "May 2023",
+      "role": {
+        "fr": "Programmeur IA",
+        "en": "AI Programmer"
+      },
+      "team": {
+        "fr": "7 developpeurs",
+        "en": "7 developers"
+      },
+      "date": {
+        "fr": "Mai 2023",
+        "en": "May 2023"
+      },
       "institution": "UQAC",
       "links": {
         "itch": "https://julien-pirat.itch.io/vivaldi"
@@ -168,22 +426,49 @@
     {
       "id": "tower-defense",
       "name": "TowerDefense",
-      "category": "Personal",
+      "category": {
+        "fr": "Personnel",
+        "en": "Personal"
+      },
+      "categoryId": "personal",
       "tags": ["Unreal Engine", "C++", "DataTables", "Tower Defense"],
-      "shortDescription": "Tower defense game built in C++ to improve Unreal Engine skills. Wave system using DataTables.",
-      "fullDescription": "This personal project aimed to create a small system for positioning actors in a level. I continued developing it into a tower defense game to improve my skills when starting with Unreal Engine.\n\nThe project features a complete tower defense gameplay loop with turret placement, movement, and destruction, plus an enemy wave system using DataTables.",
-      "contributions": [
-        "Turret placement in valid locations",
-        "Turret movement system",
-        "Turret destruction",
-        "Wave spawn system using DataTables"
-      ],
+      "shortDescription": {
+        "fr": "Jeu de tower defense construit en C++ pour ameliorer mes competences sur Unreal Engine. Systeme de vagues utilisant les DataTables.",
+        "en": "Tower defense game built in C++ to improve Unreal Engine skills. Wave system using DataTables."
+      },
+      "fullDescription": {
+        "fr": "Ce projet avait pour but de realiser un petit systeme permettant de positionner des acteurs sur un niveau. J'ai ensuite poursuivi pour creer un petit jeu de tower defense dans le but d'ameliorer mes competences lors de mes debuts dans Unreal Engine.\n\nLe projet comprend une boucle de gameplay complete de tower defense avec le placement, le deplacement et la destruction des tourelles, ainsi qu'un systeme de vagues d'ennemis utilisant les DataTables.",
+        "en": "This personal project aimed to create a small system for positioning actors in a level. I continued developing it into a tower defense game to improve my skills when starting with Unreal Engine.\n\nThe project features a complete tower defense gameplay loop with turret placement, movement, and destruction, plus an enemy wave system using DataTables."
+      },
+      "contributions": {
+        "fr": [
+          "Positionner des tourelles dans des emplacements valides",
+          "Deplacer des tourelles",
+          "Detruire des tourelles",
+          "Creer un systeme de vagues pour l'apparition des ennemis en utilisant des DataTables"
+        ],
+        "en": [
+          "Turret placement in valid locations",
+          "Turret movement system",
+          "Turret destruction",
+          "Wave spawn system using DataTables"
+        ]
+      },
       "videoUrl": "https://www.youtube.com/embed/8MQ6IRRHSyM",
       "images": [],
       "technologies": "Unreal Engine, C++",
-      "role": "Solo Developer",
-      "team": "Solo",
-      "date": "May 2023",
+      "role": {
+        "fr": "Developpeur Solo",
+        "en": "Solo Developer"
+      },
+      "team": {
+        "fr": "Solo",
+        "en": "Solo"
+      },
+      "date": {
+        "fr": "Mai 2023",
+        "en": "May 2023"
+      },
       "links": {
         "github": "https://github.com/JulienPirat/TowerDefense_Unreal_CPP"
       }
@@ -193,16 +478,34 @@
     {
       "id": "detour-crowd",
       "name": "DetourCrowd Navigation",
-      "category": "AI Systems",
-      "tags": ["AI", "Navigation", "Unreal Engine", "Performance"],
-      "shortDescription": "DetourCrowd system for improved navigation and dynamic avoidance between AI agents.",
-      "fullDescription": "Implementation of Unreal Engine's DetourCrowd system to improve navigation and dynamic avoidance between AI agents. This system enables smoother and more realistic agent movement, especially in dense environments or during crowd crossings.\n\nThe system significantly improves the natural feel of AI movement when multiple agents need to navigate in the same area, preventing the common issues of agents getting stuck or moving through each other.",
-      "technicalDetails": [
-        "Dynamic obstacle avoidance",
-        "Crowd simulation optimization",
-        "Path smoothing algorithms",
-        "Dense environment handling"
-      ],
+      "category": {
+        "fr": "Systemes IA",
+        "en": "AI Systems"
+      },
+      "categoryId": "ai-systems",
+      "tags": ["IA", "Navigation", "Unreal Engine", "Performance"],
+      "shortDescription": {
+        "fr": "Systeme DetourCrowd pour ameliorer la navigation et l'evitement dynamique entre IA.",
+        "en": "DetourCrowd system for improved navigation and dynamic avoidance between AI agents."
+      },
+      "fullDescription": {
+        "fr": "Mise en place du systeme DetourCrowd d'Unreal Engine pour ameliorer la navigation et l'evitement dynamique entre IA. Ce systeme permet des deplacements plus fluides et realistes des agents, notamment dans des environnements denses ou lors de croisements de foule.\n\nLe systeme ameliore considerablement le ressenti naturel des mouvements de l'IA lorsque plusieurs agents doivent naviguer dans la meme zone, evitant les problemes courants d'agents bloques ou se traversant.",
+        "en": "Implementation of Unreal Engine's DetourCrowd system to improve navigation and dynamic avoidance between AI agents. This system enables smoother and more realistic agent movement, especially in dense environments or during crowd crossings.\n\nThe system significantly improves the natural feel of AI movement when multiple agents need to navigate in the same area, preventing common issues of agents getting stuck or moving through each other."
+      },
+      "technicalDetails": {
+        "fr": [
+          "Evitement dynamique des obstacles",
+          "Optimisation de la simulation de foule",
+          "Algorithmes de lissage de trajectoire",
+          "Gestion des environnements denses"
+        ],
+        "en": [
+          "Dynamic obstacle avoidance",
+          "Crowd simulation optimization",
+          "Path smoothing algorithms",
+          "Dense environment handling"
+        ]
+      },
       "images": ["Assets/Gifs/DetourCrowd.gif"],
       "technologies": "Unreal Engine, C++, AI Navigation",
       "context": "Arcanthys"
@@ -210,16 +513,34 @@
     {
       "id": "ai-pooling",
       "name": "AI Object Pooling",
-      "category": "Performance",
-      "tags": ["AI", "Performance", "Optimization", "Unreal Engine"],
-      "shortDescription": "AI pooling system for reusing agents instead of destroy/recreate cycles.",
-      "fullDescription": "Implementation of an AI pooling system to reuse agents rather than destroying and recreating them at each spawn. This approach significantly reduces CPU cost and performance spikes during large-scale crowd testing.\n\nThe pooling system maintains a collection of pre-instantiated AI agents that can be activated and deactivated as needed, avoiding the expensive operations of spawning and destroying actors.",
-      "technicalDetails": [
-        "Object pool management",
-        "Agent state reset system",
-        "Memory optimization",
-        "Spawn/despawn performance improvement"
-      ],
+      "category": {
+        "fr": "Performance",
+        "en": "Performance"
+      },
+      "categoryId": "performance",
+      "tags": ["IA", "Performance", "Optimisation", "Unreal Engine"],
+      "shortDescription": {
+        "fr": "Systeme de pooling d'IA pour reutiliser les agents plutot que de les detruire/recreer.",
+        "en": "AI pooling system for reusing agents instead of destroy/recreate cycles."
+      },
+      "fullDescription": {
+        "fr": "Mise en place d'un systeme de pooling d'IA afin de reutiliser les agents plutot que de les detruire et recreer a chaque apparition. Cette approche reduit considerablement le cout CPU et les pics de performance lors des tests de foule a grande echelle.\n\nLe systeme de pooling maintient une collection d'agents IA pre-instancies qui peuvent etre actives et desactives selon les besoins, evitant les operations couteuses de spawn et de destruction d'acteurs.",
+        "en": "Implementation of an AI pooling system to reuse agents rather than destroying and recreating them at each spawn. This approach significantly reduces CPU cost and performance spikes during large-scale crowd testing.\n\nThe pooling system maintains a collection of pre-instantiated AI agents that can be activated and deactivated as needed, avoiding the expensive operations of spawning and destroying actors."
+      },
+      "technicalDetails": {
+        "fr": [
+          "Gestion du pool d'objets",
+          "Systeme de reinitialisation de l'etat des agents",
+          "Optimisation memoire",
+          "Amelioration des performances de spawn/despawn"
+        ],
+        "en": [
+          "Object pool management",
+          "Agent state reset system",
+          "Memory optimization",
+          "Spawn/despawn performance improvement"
+        ]
+      },
       "images": [],
       "technologies": "Unreal Engine, C++",
       "context": "Arcanthys"
@@ -227,28 +548,57 @@
     {
       "id": "visual-logger",
       "name": "Visual Logger Customization",
-      "category": "Debug Tools",
-      "tags": ["AI", "Debug", "Tools", "Unreal Engine"],
-      "shortDescription": "Customized Visual Logger for analyzing AI behavior during simulation.",
-      "fullDescription": "Utilization and customization of Unreal Engine's Visual Logger to analyze AI behavior during simulation. This tool allows visualization of decisions, behaviors, and movements directly in the engine for faster and more precise debugging.\n\nThe custom implementation adds project-specific logging categories and visualization helpers that make it easier to understand complex AI decision-making processes.",
-      "technicalDetails": [
-        "Custom logging categories",
-        "AI decision visualization",
-        "Behavior tree state tracking",
-        "Movement path visualization"
-      ],
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["IA", "Debug", "Outils", "Unreal Engine"],
+      "shortDescription": {
+        "fr": "Personnalisation du Visual Logger pour analyser le comportement des IA.",
+        "en": "Customized Visual Logger for analyzing AI behavior during simulation."
+      },
+      "fullDescription": {
+        "fr": "Utilisation et personnalisation du Visual Logger d'Unreal Engine pour analyser le comportement des IA pendant la simulation. Permet de visualiser les decisions, comportements et deplacements directement dans le moteur pour un debug plus precis et rapide.\n\nL'implementation personnalisee ajoute des categories de logging specifiques au projet et des aides a la visualisation qui facilitent la comprehension des processus de prise de decision complexes de l'IA.",
+        "en": "Utilization and customization of Unreal Engine's Visual Logger to analyze AI behavior during simulation. This tool allows visualization of decisions, behaviors, and movements directly in the engine for faster and more precise debugging.\n\nThe custom implementation adds project-specific logging categories and visualization helpers that make it easier to understand complex AI decision-making processes."
+      },
+      "technicalDetails": {
+        "fr": [
+          "Categories de logging personnalisees",
+          "Visualisation des decisions de l'IA",
+          "Suivi de l'etat du Behavior Tree",
+          "Visualisation des trajectoires de mouvement"
+        ],
+        "en": [
+          "Custom logging categories",
+          "AI decision visualization",
+          "Behavior tree state tracking",
+          "Movement path visualization"
+        ]
+      },
       "images": ["Assets/Gifs/VisualLogger.gif"],
       "technologies": "Unreal Engine, C++",
       "context": "Arcanthys"
     }
   ],
-  "categories": [
-    { "id": "all", "name": "All", "icon": "grid" },
-    { "id": "in-development", "name": "In Development", "icon": "rocket" },
-    { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
-    { "id": "competition", "name": "Competition", "icon": "award" },
-    { "id": "university", "name": "University", "icon": "graduation-cap" },
-    { "id": "personal", "name": "Personal", "icon": "code" },
-    { "id": "systems", "name": "Systems & Tools", "icon": "cog" }
-  ]
+  "categories": {
+    "fr": [
+      { "id": "all", "name": "Tous", "icon": "grid" },
+      { "id": "in-development", "name": "En developpement", "icon": "rocket" },
+      { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
+      { "id": "competition", "name": "Concours", "icon": "award" },
+      { "id": "university", "name": "Universitaire", "icon": "graduation-cap" },
+      { "id": "personal", "name": "Personnel", "icon": "code" },
+      { "id": "systems", "name": "Systemes & Outils", "icon": "cog" }
+    ],
+    "en": [
+      { "id": "all", "name": "All", "icon": "grid" },
+      { "id": "in-development", "name": "In Development", "icon": "rocket" },
+      { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
+      { "id": "competition", "name": "Competition", "icon": "award" },
+      { "id": "university", "name": "University", "icon": "graduation-cap" },
+      { "id": "personal", "name": "Personal", "icon": "code" },
+      { "id": "systems", "name": "Systems & Tools", "icon": "cog" }
+    ]
+  }
 }
