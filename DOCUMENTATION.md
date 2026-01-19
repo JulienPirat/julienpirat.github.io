@@ -5,12 +5,12 @@
 1. [Architecture du site](#architecture-du-site)
 2. [Comment fonctionne le site](#comment-fonctionne-le-site)
 3. [Systeme multilingue (FR/EN)](#systeme-multilingue-fren)
-4. [Ajouter un projet](#ajouter-un-projet)
-5. [Modifier un projet](#modifier-un-projet)
-6. [Supprimer un projet](#supprimer-un-projet)
-7. [Ajouter un systeme](#ajouter-un-systeme)
-8. [Modifier un systeme](#modifier-un-systeme)
-9. [Supprimer un systeme](#supprimer-un-systeme)
+4. [Design des cartes](#design-des-cartes)
+5. [Pages de projet individuelles](#pages-de-projet-individuelles)
+6. [Ajouter un projet](#ajouter-un-projet)
+7. [Modifier un projet](#modifier-un-projet)
+8. [Supprimer un projet](#supprimer-un-projet)
+9. [Ajouter un systeme](#ajouter-un-systeme)
 10. [Gestion des categories](#gestion-des-categories)
 11. [Gestion des images et medias](#gestion-des-images-et-medias)
 12. [Modifier les textes de l'interface](#modifier-les-textes-de-linterface)
@@ -21,16 +21,25 @@
 
 ```
 julienpirat.github.io/
-├── index.html          # Page principale du site
-├── data.json           # FICHIER PRINCIPAL - Donnees projets/systemes + traductions
+├── index.html              # Page principale du site
+├── data.json               # FICHIER PRINCIPAL - Donnees projets/systemes + traductions
 ├── css/
-│   └── style.css       # Styles visuels du site
+│   └── style.css           # Styles visuels du site
 ├── js/
-│   └── main.js         # Logique JavaScript (generation, modals, filtres, langue)
+│   ├── main.js             # Logique principale (cartes, filtres, langue)
+│   └── project.js          # Logique des pages projet individuelles
+├── projects/               # Pages de projet individuelles
+│   ├── arcanthys.html
+│   ├── green-rebirth.html
+│   ├── clean-dream.html
+│   ├── vrecycle.html
+│   ├── temple-trap.html
+│   ├── vivaldi.html
+│   └── tower-defense.html
 ├── Assets/
-│   ├── Images/         # Images des projets
-│   └── Gifs/           # GIFs pour les systemes
-└── DOCUMENTATION.md    # Ce fichier
+│   ├── Images/             # Images des projets
+│   └── Gifs/               # GIFs pour les systemes
+└── DOCUMENTATION.md        # Ce fichier
 ```
 
 ---
@@ -44,11 +53,18 @@ Le site fonctionne sur un principe simple : **toutes les donnees sont centralise
 Quand le site se charge :
 1. Le fichier `main.js` charge `data.json`
 2. La langue est recuperee depuis `localStorage` (defaut: francais)
-3. Les cartes de projets et systemes sont generees dans la langue active
+3. Les cartes de projets sont generees avec leur video YouTube (si disponible)
 4. Les filtres sont crees a partir des categories definies dans `data.json`
-5. Quand on clique sur une carte, le modal s'ouvre avec les details traduits
+5. Quand on clique sur "Voir details", on navigue vers la page du projet
 
-**Avantage** : Pour ajouter, modifier ou supprimer un projet, il suffit de modifier `data.json`. Aucune modification de code HTML ou JavaScript n'est necessaire.
+### Nouveau design des cartes
+
+Chaque carte de projet affiche :
+- Une video YouTube (miniature avec lecture au survol) ou une image
+- Le nom du projet et le role
+- Les metadonnees : taille de l'equipe, duree, technologies
+- Une courte description
+- Les liens (GitHub, itch.io, Voir details)
 
 ### Structure de data.json
 
@@ -93,60 +109,78 @@ Tous les textes traduisibles utilisent un objet avec les cles `fr` et `en` :
 }
 ```
 
-### Champs bilingues dans les projets
+---
 
-| Champ | Bilingue | Exemple |
-|-------|----------|---------|
-| `name` | Non | `"Arcanthys"` |
-| `category` | Oui | `{ "fr": "Game Jam", "en": "Game Jam" }` |
-| `shortDescription` | Oui | `{ "fr": "...", "en": "..." }` |
-| `fullDescription` | Oui | `{ "fr": "...", "en": "..." }` |
-| `contributions` | Oui | `{ "fr": ["..."], "en": ["..."] }` |
-| `role` | Oui | `{ "fr": "Programmeur Gameplay", "en": "Gameplay Programmer" }` |
-| `team` | Oui | `{ "fr": "6 developpeurs", "en": "6 developers" }` |
-| `date` | Oui | `{ "fr": "Juin 2024", "en": "June 2024" }` |
-| `award` | Oui | `{ "fr": "Meilleur Prototype", "en": "Best Prototype" }` |
-| `tags` | Non | `["Unreal Engine", "C++"]` |
-| `technologies` | Non | `"Unreal Engine, C++"` |
-| `videoUrl` | Non | `"https://..."` |
-| `images` | Non | `["Assets/Images/..."]` |
+## Design des cartes
 
-### Champs bilingues dans les systemes
+### Nouveau format des cartes
 
-| Champ | Bilingue | Exemple |
-|-------|----------|---------|
-| `name` | Non | `"DetourCrowd Navigation"` |
-| `category` | Oui | `{ "fr": "Systemes IA", "en": "AI Systems" }` |
-| `shortDescription` | Oui | `{ "fr": "...", "en": "..." }` |
-| `fullDescription` | Oui | `{ "fr": "...", "en": "..." }` |
-| `technicalDetails` | Oui | `{ "fr": ["..."], "en": ["..."] }` |
-| `tags` | Non | `["IA", "Navigation"]` |
-| `technologies` | Non | `"Unreal Engine, C++"` |
-| `context` | Non | `"Arcanthys"` |
+Les cartes de projet suivent le design de loreark.github.io :
+
+```
+┌─────────────────────────────────┐
+│   [Video YouTube / Image]       │
+│                                 │
+├─────────────────────────────────┤
+│ Nom du Projet   🏆 Prix         │
+│ Role (couleur accent)           │
+│                                 │
+│ 👥 8   ⏱️ 3 mois   </> Tech     │
+│                                 │
+│ Description courte du projet... │
+│                                 │
+│ [GitHub] [itch.io] [Voir →]     │
+└─────────────────────────────────┘
+```
+
+### Video au survol
+
+Quand on survole une carte avec une video YouTube :
+1. Apres 500ms, la video se charge automatiquement
+2. La video joue en boucle, en sourdine
+3. En quittant la carte, la video s'arrete
+
+---
+
+## Pages de projet individuelles
+
+### Fonctionnement
+
+Chaque projet a sa propre page HTML dans le dossier `projects/`.
+
+Ces pages :
+- Chargent les donnees depuis `../data.json`
+- Identifient le projet via le nom du fichier (ex: `arcanthys.html` → projet `arcanthys`)
+- Affichent tous les details du projet
+- Supportent le changement de langue
+- Incluent la navigation vers les projets precedent/suivant
+
+### Contenu d'une page projet
+
+- Video YouTube en grand format (ou image)
+- Description complete
+- Carte d'informations (equipe, duree, technologies, role)
+- Liste des contributions
+- Tags/Technologies
+- Liens externes
+- Navigation entre projets
 
 ---
 
 ## Ajouter un projet
 
-### Etape 1 : Ouvrir data.json
+### Etape 1 : Ajouter les donnees dans data.json
 
-### Etape 2 : Trouver le tableau "projects"
-
-```json
-"projects": [
-  { ... projet existant ... },
-  { ... projet existant ... }
-]
-```
-
-### Etape 3 : Ajouter un nouvel objet projet
-
-Ajouter une virgule apres le dernier projet, puis coller ce template :
+Trouver le tableau `"projects"` et ajouter un nouvel objet :
 
 ```json
 {
   "id": "nom-unique-du-projet",
   "name": "Nom du Projet",
+  "subtitle": {
+    "fr": "Type de jeu",
+    "en": "Game Type"
+  },
   "category": {
     "fr": "Game Jam",
     "en": "Game Jam"
@@ -175,52 +209,71 @@ Ajouter une virgule apres le dernier projet, puis coller ce template :
     "fr": "",
     "en": ""
   },
-  "videoUrl": "",
+  "videoUrl": "https://www.youtube.com/embed/VIDEO_ID",
+  "videoId": "VIDEO_ID",
   "images": [],
-  "technologies": "Unreal Engine 5, C++, Blueprints",
+  "technologies": "Unreal Engine 5 / C++ / Blueprints",
   "role": {
     "fr": "Programmeur Gameplay",
     "en": "Gameplay Programmer"
   },
+  "teamSize": 4,
   "team": {
     "fr": "4 developpeurs",
     "en": "4 developers"
+  },
+  "duration": {
+    "fr": "2 mois",
+    "en": "2 months"
   },
   "date": {
     "fr": "Juin 2024",
     "en": "June 2024"
   },
-  "institution": "",
   "links": {
-    "itch": "",
-    "github": ""
+    "itch": "https://xxx.itch.io/projet",
+    "github": "https://github.com/xxx/projet"
   }
 }
 ```
+
+### Etape 2 : Creer la page projet
+
+Copier un fichier existant dans `projects/` (ex: `arcanthys.html`) et le renommer avec l'`id` du projet.
+
+```bash
+cp projects/arcanthys.html projects/mon-nouveau-projet.html
+```
+
+**Important** : Le nom du fichier doit correspondre exactement a l'`id` du projet dans `data.json`.
 
 ### Champs obligatoires
 
 | Champ | Description | Exemple |
 |-------|-------------|---------|
-| `id` | Identifiant unique (pas d'espaces, minuscules, tirets) | `"mon-super-projet"` |
+| `id` | Identifiant unique (minuscules, tirets) | `"mon-super-projet"` |
 | `name` | Nom affiche du projet | `"Mon Super Projet"` |
+| `subtitle` | Sous-titre bilingue (type de jeu) | `{ "fr": "Roguelite 3D", "en": "3D Roguelite" }` |
 | `category` | Categorie bilingue | `{ "fr": "Game Jam", "en": "Game Jam" }` |
 | `categoryId` | ID correspondant au filtre | `"game-jam"` |
 | `tags` | Technologies utilisees (tableau) | `["Unreal Engine", "C++"]` |
 | `shortDescription` | Description courte bilingue | `{ "fr": "...", "en": "..." }` |
 | `fullDescription` | Description complete bilingue | `{ "fr": "...", "en": "..." }` |
-| `technologies` | Technologies (texte simple) | `"Unreal Engine 5, C++"` |
+| `technologies` | Technologies (format "X / Y / Z") | `"Unreal Engine / C++"` |
 | `role` | Role bilingue | `{ "fr": "...", "en": "..." }` |
-| `team` | Taille equipe bilingue | `{ "fr": "...", "en": "..." }` |
+| `teamSize` | Nombre de personnes (entier) | `8` |
+| `team` | Description equipe bilingue | `{ "fr": "8 developpeurs", "en": "8 developers" }` |
+| `duration` | Duree bilingue | `{ "fr": "3 mois", "en": "3 months" }` |
 | `date` | Date bilingue | `{ "fr": "Juin 2024", "en": "June 2024" }` |
 
 ### Champs optionnels
 
 | Champ | Description | Exemple |
 |-------|-------------|---------|
-| `contributions` | Liste bilingue des taches | `{ "fr": [...], "en": [...] }` |
+| `contributions` | Liste bilingue des contributions | `{ "fr": [...], "en": [...] }` |
 | `award` | Prix obtenu bilingue | `{ "fr": "Meilleur Prototype", "en": "Best Prototype" }` |
-| `videoUrl` | URL YouTube embed | `"https://www.youtube.com/embed/VIDEO_ID"` |
+| `videoUrl` | URL YouTube embed complète | `"https://www.youtube.com/embed/VIDEO_ID"` |
+| `videoId` | ID de la video YouTube seul | `"VIDEO_ID"` |
 | `images` | Chemins vers les images | `["Assets/Images/projet.png"]` |
 | `institution` | Universite/ecole | `"UQAC"` |
 | `links.itch` | Lien itch.io | `"https://xxx.itch.io/projet"` |
@@ -236,64 +289,6 @@ Ajouter une virgule apres le dernier projet, puis coller ce template :
 | `university` | Universitaire | University |
 | `personal` | Personnel | Personal |
 
-### Exemple complet bilingue
-
-```json
-{
-  "id": "space-explorer",
-  "name": "Space Explorer",
-  "category": {
-    "fr": "Game Jam",
-    "en": "Game Jam"
-  },
-  "categoryId": "game-jam",
-  "tags": ["Unreal Engine", "Blueprints", "Sci-Fi"],
-  "shortDescription": {
-    "fr": "Jeu d'exploration spatiale realise en 48h lors de la Global Game Jam 2024.",
-    "en": "Space exploration game made in 48h during Global Game Jam 2024."
-  },
-  "fullDescription": {
-    "fr": "Space Explorer est un jeu d'exploration spatiale ou le joueur doit naviguer entre les asteroides pour trouver des ressources.\n\nLe jeu a ete realise en 48 heures avec une equipe de 5 personnes.",
-    "en": "Space Explorer is a space exploration game where the player must navigate between asteroids to find resources.\n\nThe game was made in 48 hours with a team of 5 people."
-  },
-  "contributions": {
-    "fr": [
-      "Systeme de deplacement du vaisseau",
-      "Generation procedurale des asteroides",
-      "Systeme de collecte de ressources"
-    ],
-    "en": [
-      "Spaceship movement system",
-      "Procedural asteroid generation",
-      "Resource collection system"
-    ]
-  },
-  "award": {
-    "fr": "Prix du Public",
-    "en": "Audience Award"
-  },
-  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  "images": ["Assets/Images/space-explorer.png"],
-  "technologies": "Unreal Engine 5.3, Blueprints",
-  "role": {
-    "fr": "Programmeur Gameplay",
-    "en": "Gameplay Programmer"
-  },
-  "team": {
-    "fr": "5 developpeurs",
-    "en": "5 developers"
-  },
-  "date": {
-    "fr": "Janvier 2024",
-    "en": "January 2024"
-  },
-  "links": {
-    "itch": "https://exemple.itch.io/space-explorer",
-    "github": ""
-  }
-}
-```
-
 ---
 
 ## Modifier un projet
@@ -308,25 +303,10 @@ Ajouter une virgule apres le dernier projet, puis coller ce template :
 ## Supprimer un projet
 
 1. Ouvrir `data.json`
-2. Trouver le projet dans le tableau `"projects"`
-3. Supprimer l'objet entier (avec les accolades `{ }`)
-4. Verifier qu'il n'y a pas de virgule orpheline
-5. Sauvegarder le fichier
-
-**Attention aux virgules :**
-
-```json
-// CORRECT
-"projects": [
-  { "id": "projet-1", ... },
-  { "id": "projet-2", ... }
-]
-
-// INCORRECT (virgule en trop)
-"projects": [
-  { "id": "projet-1", ... },
-]
-```
+2. Trouver et supprimer l'objet du projet dans `"projects"`
+3. Verifier qu'il n'y a pas de virgule orpheline
+4. Supprimer le fichier HTML correspondant dans `projects/`
+5. Sauvegarder
 
 ---
 
@@ -370,32 +350,7 @@ Ajouter dans le tableau `"systems"` de `data.json` :
 }
 ```
 
-### Categories de systemes disponibles
-
-| categoryId | Categorie FR | Categorie EN | Icone |
-|------------|--------------|--------------|-------|
-| `ai-systems` | Systemes IA | AI Systems | Cerveau |
-| `performance` | Performance | Performance | CPU |
-| `debug-tools` | Outils de Debug | Debug Tools | Cle a molette |
-
----
-
-## Modifier un systeme
-
-Meme principe que pour les projets :
-1. Ouvrir `data.json`
-2. Trouver le systeme dans le tableau `"systems"`
-3. Modifier les champs (penser aux deux langues)
-4. Sauvegarder
-
----
-
-## Supprimer un systeme
-
-1. Ouvrir `data.json`
-2. Trouver et supprimer l'objet du systeme dans `"systems"`
-3. Verifier les virgules
-4. Sauvegarder
+**Note** : Les systemes utilisent toujours le modal (pas de page dediee).
 
 ---
 
@@ -403,61 +358,12 @@ Meme principe que pour les projets :
 
 ### Categories actuelles
 
-Les categories sont definies dans `data.json` sous `"categories"` avec les deux langues :
-
-```json
-"categories": {
-  "fr": [
-    { "id": "all", "name": "Tous", "icon": "grid" },
-    { "id": "in-development", "name": "En developpement", "icon": "rocket" },
-    { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
-    { "id": "competition", "name": "Concours", "icon": "award" },
-    { "id": "university", "name": "Universitaire", "icon": "graduation-cap" },
-    { "id": "personal", "name": "Personnel", "icon": "code" },
-    { "id": "systems", "name": "Systemes & Outils", "icon": "cog" }
-  ],
-  "en": [
-    { "id": "all", "name": "All", "icon": "grid" },
-    { "id": "in-development", "name": "In Development", "icon": "rocket" },
-    { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
-    { "id": "competition", "name": "Competition", "icon": "award" },
-    { "id": "university", "name": "University", "icon": "graduation-cap" },
-    { "id": "personal", "name": "Personal", "icon": "code" },
-    { "id": "systems", "name": "Systems & Tools", "icon": "cog" }
-  ]
-}
-```
+Les categories sont definies dans `data.json` sous `"categories"` avec les deux langues.
 
 ### Ajouter une nouvelle categorie
 
-1. Ajouter l'objet dans les DEUX tableaux (`fr` et `en`) :
-
-```json
-"categories": {
-  "fr": [
-    ...
-    { "id": "professional", "name": "Professionnel", "icon": "briefcase" }
-  ],
-  "en": [
-    ...
-    { "id": "professional", "name": "Professional", "icon": "briefcase" }
-  ]
-}
-```
-
-2. Utiliser cette categorie dans vos projets avec le `categoryId` correspondant :
-
-```json
-{
-  "id": "mon-projet-pro",
-  "categoryId": "professional",
-  "category": {
-    "fr": "Professionnel",
-    "en": "Professional"
-  },
-  ...
-}
-```
+1. Ajouter l'objet dans les DEUX tableaux (`fr` et `en`) de `"categories"`
+2. Utiliser cette categorie dans vos projets avec le `categoryId` correspondant
 
 ### Icones disponibles
 
@@ -483,7 +389,20 @@ Assets/
 └── Gifs/       # GIFs animes pour les systemes
 ```
 
-### Ajouter une image a un projet
+### Ajouter une video YouTube
+
+1. Aller sur la video YouTube
+2. Copier l'ID de la video (la partie apres `v=` dans l'URL)
+3. Ajouter dans le projet :
+
+```json
+"videoUrl": "https://www.youtube.com/embed/VIDEO_ID",
+"videoId": "VIDEO_ID"
+```
+
+**Note** : `videoId` est utilise pour la miniature et la lecture au survol. `videoUrl` est utilise sur la page projet.
+
+### Ajouter une image
 
 1. Placer l'image dans `Assets/Images/`
 2. Ajouter le chemin dans `data.json` :
@@ -492,27 +411,7 @@ Assets/
 "images": ["Assets/Images/mon-projet.png"]
 ```
 
-### Ajouter un GIF a un systeme
-
-1. Placer le GIF dans `Assets/Gifs/`
-2. Ajouter le chemin :
-
-```json
-"images": ["Assets/Gifs/mon-systeme.gif"]
-```
-
-### Ajouter une video YouTube
-
-1. Aller sur la video YouTube
-2. Cliquer sur "Partager" > "Integrer"
-3. Copier l'URL du `src` (format : `https://www.youtube.com/embed/VIDEO_ID`)
-4. Ajouter dans le projet :
-
-```json
-"videoUrl": "https://www.youtube.com/embed/VIDEO_ID"
-```
-
-**Note** : La video a priorite sur l'image dans le modal.
+**Note** : Si une video est disponible, elle sera utilisee en priorite.
 
 ---
 
@@ -520,81 +419,20 @@ Assets/
 
 ### Ou sont les textes UI
 
-Les textes de l'interface (titres de sections, boutons, labels) sont dans `data.json` sous `"ui"` :
+Les textes de l'interface sont dans `data.json` sous `"ui"` avec `"fr"` et `"en"`.
 
-```json
-"ui": {
-  "fr": {
-    "heroAvailable": "Disponible pour opportunites",
-    "heroIntro": "Salut, je suis",
-    "viewWork": "Voir mes projets",
-    "portfolioLabel": "Portfolio",
-    "portfolioTitle": "Projets",
-    "portfolioDescription": "Une collection de jeux...",
-    ...
-  },
-  "en": {
-    "heroAvailable": "Available for opportunities",
-    "heroIntro": "Hi, I'm",
-    "viewWork": "View My Work",
-    "portfolioLabel": "Portfolio",
-    "portfolioTitle": "Featured Projects",
-    "portfolioDescription": "A collection of games...",
-    ...
-  }
-}
-```
-
-### Liste des cles UI disponibles
+### Cles UI importantes
 
 | Cle | Utilisation |
 |-----|-------------|
-| `heroAvailable` | Badge "Disponible" dans le hero |
-| `heroIntro` | "Salut, je suis" |
-| `heroDescription` | Description sous le nom |
-| `viewWork` | Bouton "Voir mes projets" |
-| `portfolioLabel` | Label section projets |
-| `portfolioTitle` | Titre section projets |
-| `portfolioDescription` | Description section projets |
-| `technicalLabel` | Label section systemes |
-| `systemsTitle` | Titre section systemes |
-| `systemsDescription` | Description section systemes |
-| `aboutLabel` | Label section a propos |
-| `aboutTitle` | Titre section a propos |
-| `aboutDescription` | Description section a propos |
-| `skillsTitle` | Titre carte competences |
-| `skillsDescription` | Description carte competences |
-| `teamTitle` | Titre carte equipe |
-| `teamDescription` | Description carte equipe |
-| `educationTitle` | Titre carte formation |
-| `educationDescription` | Description carte formation |
-| `footerText` | Texte du footer |
-| `viewDetails` | "Voir details" sur les cartes |
-| `description` | Label "Description" dans modal |
-| `contributions` | Label "Mes contributions" |
-| `projectDetails` | Label "Details du projet" |
-| `technologies` | Label "Technologies" |
-| `links` | Label "Liens" |
-| `playOnItch` | "Jouer sur itch.io" |
-| `viewOnGitHub` | "Voir sur GitHub" |
-| `date` | Label "Date" |
+| `viewDetails` | Bouton "Voir details" sur les cartes |
+| `duration` | Label "Duree" |
 | `team` | Label "Equipe" |
 | `role` | Label "Role" |
-| `overview` | Label "Apercu" |
-| `technicalDetails` | Label "Details techniques" |
-| `implementationDetails` | Label "Details d'implementation" |
-| `projectContext` | Label "Contexte du projet" |
-| `specialty` | "Specialite" (carte flottante) |
-| `aiSystems` | "Systemes IA" (carte flottante) |
-| `currentTeam` | "Equipe actuelle" (carte flottante) |
-| `award` | "Prix" (carte flottante) |
-
-### Modifier un texte
-
-1. Ouvrir `data.json`
-2. Trouver la cle dans `"ui"` > `"fr"` et `"ui"` > `"en"`
-3. Modifier le texte dans les deux langues
-4. Sauvegarder
+| `technologies` | Label "Technologies" |
+| `contributions` | Label "Mes contributions" |
+| `playOnItch` | "Jouer sur itch.io" |
+| `viewOnGitHub` | "Voir sur GitHub" |
 
 ---
 
@@ -603,48 +441,37 @@ Les textes de l'interface (titres de sections, boutons, labels) sont dans `data.
 ### Valider le JSON
 
 Avant de sauvegarder, verifier que le JSON est valide :
-- Utiliser un validateur en ligne comme [jsonlint.com](https://jsonlint.com)
-- Ou utiliser VS Code qui souligne les erreurs de syntaxe
+- Utiliser [jsonlint.com](https://jsonlint.com)
+- Ou utiliser VS Code qui souligne les erreurs
 
 ### Erreurs courantes
 
 1. **Virgule manquante** entre deux objets
-2. **Virgule en trop** apres le dernier element d'un tableau
-3. **Guillemets manquants** autour des valeurs texte
-4. **Oubli d'une langue** : toujours remplir `fr` ET `en` pour les champs bilingues
-5. **categoryId incorrect** : doit correspondre a un `id` dans `categories`
+2. **Virgule en trop** apres le dernier element
+3. **videoId manquant** : pour avoir la miniature YouTube
+4. **Oubli de creer la page projet** dans `projects/`
+5. **Nom de fichier different de l'id** : `projects/arcanthys.html` doit correspondre a `"id": "arcanthys"`
 
 ### Tester localement
 
 Pour tester le site en local :
-1. Utiliser un serveur local (Live Server dans VS Code)
+1. Utiliser Live Server dans VS Code
 2. Ou `python -m http.server 8000` puis ouvrir `http://localhost:8000`
-
-### Tester le changement de langue
-
-1. Ouvrir le site
-2. Cliquer sur FR ou EN dans le header
-3. Verifier que tous les textes changent
-4. Ouvrir un modal et verifier le contenu
-5. Rafraichir la page : la langue doit etre conservee
 
 ---
 
 ## Resume rapide
 
-| Action | Fichier | Section | Penser aux 2 langues |
-|--------|---------|---------|---------------------|
-| Ajouter un projet | `data.json` | `"projects"` | Oui |
-| Modifier un projet | `data.json` | `"projects"` | Oui |
-| Supprimer un projet | `data.json` | `"projects"` | - |
-| Ajouter un systeme | `data.json` | `"systems"` | Oui |
-| Modifier un systeme | `data.json` | `"systems"` | Oui |
-| Supprimer un systeme | `data.json` | `"systems"` | - |
-| Ajouter une categorie | `data.json` | `"categories"` | Oui (fr + en) |
-| Modifier textes UI | `data.json` | `"ui"` | Oui (fr + en) |
-| Ajouter une image | `Assets/Images/` | ref dans `data.json` | Non |
-| Ajouter un GIF | `Assets/Gifs/` | ref dans `data.json` | Non |
+| Action | Fichier(s) | Notes |
+|--------|------------|-------|
+| Ajouter un projet | `data.json` + `projects/nom.html` | Creer aussi la page HTML |
+| Modifier un projet | `data.json` | Penser aux 2 langues |
+| Supprimer un projet | `data.json` + supprimer `projects/nom.html` | |
+| Ajouter un systeme | `data.json` | Modal uniquement |
+| Modifier textes UI | `data.json` → `"ui"` | FR et EN |
+| Ajouter une video | `data.json` | videoUrl + videoId |
+| Ajouter une image | `Assets/Images/` + ref dans `data.json` | |
 
 ---
 
-*Documentation mise a jour pour le portfolio bilingue de Julien PIRAT*
+*Documentation mise a jour pour le portfolio v2.0 de Julien PIRAT - Design inspire de loreark.github.io*

@@ -375,12 +375,6 @@ ul, ol {
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   color: var(--text-secondary);
-  transition: all var(--transition-fast);
-}
-
-.tech-tag:hover {
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
 }
 
 .hero-cta {
