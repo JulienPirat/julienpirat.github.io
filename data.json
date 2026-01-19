@@ -25,10 +25,10 @@
       "viewWork": "Voir mes projets",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Projets",
-      "portfolioDescription": "Une collection de jeux et projets auxquels j'ai contribue, des game jams aux competitions professionnelles.",
+      "portfolioDescription": "Une collection de jeux et projets auxquels j'ai contribué ainsi que des game jams.",
       "technicalLabel": "Technique",
       "systemsTitle": "Systemes & Outils",
-      "systemsDescription": "Systemes et outils personnalises que j'ai developpes pour l'optimisation des performances, le comportement de l'IA et le debugging.",
+      "systemsDescription": "Systèmes et outils que j'ai développés ainsi que des outils Unreal Engine que je maîtrise et utilise.",
       "aboutLabel": "A propos",
       "aboutTitle": "Developpeur de jeux passionne",
       "aboutDescription": "Actuellement en développement sur Arcanthys avec Ashen Bloom Studio (temps libre), je travaille sur des jeux vidéos personnels ou publics sur mon temps libre.",
@@ -56,8 +56,8 @@
       "implementationDetails": "Details d'implementation",
       "projectContext": "Contexte du projet",
       "specialty": "Specialite",
-      "aiSystems": "Systemes IA",
-      "currentTeam": "Equipe actuelle",
+      "aiSystems": "Gameplay IA",
+      "workAt": "Travail à",
       "award": "Prix"
     },
     "en": {
@@ -67,10 +67,10 @@
       "viewWork": "View My Work",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Featured Projects",
-      "portfolioDescription": "A collection of games and projects I've contributed to, from game jams to professional competitions.",
+      "portfolioDescription": "A collection of games and projects I've contributed to, as well as game jams.",
       "technicalLabel": "Technical",
       "systemsTitle": "Systems & Tools",
-      "systemsDescription": "Custom systems and tools I've developed for performance optimization, AI behavior, and debugging.",
+      "systemsDescription": "Systems and tools I've developed as well as Unreal Engine tools I master and use.",
       "aboutLabel": "About Me",
       "aboutTitle": "Passionate Game Developer",
       "aboutDescription": "Currently developing Arcanthys with Ashen Bloom Studio, I also work on personal and public video game projects in my free time.",
@@ -98,8 +98,8 @@
       "implementationDetails": "Implementation Details",
       "projectContext": "Project Context",
       "specialty": "Specialty",
-      "aiSystems": "AI Systems",
-      "currentTeam": "Current Team",
+      "aiSystems": "AI Gameplay",
+      "workAt": "Work at",
       "award": "Award"
     }
   },
@@ -288,8 +288,8 @@
       "images": [],
       "technologies": "Unreal Engine / Blueprints / RPC",
       "role": {
-        "fr": "Programmeur Gameplay (Specialisation Reseau)",
-        "en": "Gameplay Programmer (Networking Focus)"
+        "fr": "Programmeur Gameplay",
+        "en": "Gameplay Programmer"
       },
       "teamSize": 8,
       "team": {
