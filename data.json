@@ -10,11 +10,11 @@
       "en": "Unreal Engine Specialist | AI Systems | Multiplayer"
     },
     "description": {
-      "fr": "Developpeur de jeux passionne, specialise dans la programmation gameplay, les systemes d'IA et le reseau multijoueur avec Unreal Engine. Actuellement en developpement sur Arcanthys avec Ashen Bloom Studio.",
+      "fr": "Développeur de jeux passionné, spécialisé dans la programmation gameplay, les systèmes d'IA et le réseau multijoueur avec Unreal Engine. Actuellement en développement sur Arcanthys avec Ashen Bloom Studio.",
       "en": "Passionate game developer specializing in gameplay programming, AI systems, and multiplayer networking with Unreal Engine. Currently working on Arcanthys with Ashen Bloom Studio."
     },
     "github": "https://github.com/JulienPirat",
-    "linkedin": "https://linkedin.com/in/julienpirat",
+    "linkedin": "https://www.linkedin.com/in/julien-pirat/",
     "itchio": "https://julien-pirat.itch.io"
   },
   "ui": {
@@ -30,7 +30,7 @@
       "systemsTitle": "Systemes & Outils",
       "systemsDescription": "Systèmes et outils que j'ai développés ainsi que des outils Unreal Engine que je maîtrise et utilise.",
       "aboutLabel": "A propos",
-      "aboutTitle": "Developpeur de jeux passionne",
+      "aboutTitle": "Développeur de jeux passionné",
       "aboutDescription": "Actuellement en développement sur Arcanthys avec Ashen Bloom Studio (temps libre), je travaille sur des jeux vidéos personnels ou publics sur mon temps libre.",
       "skillsTitle": "Competences techniques",
       "skillsDescription": "Maitrise du C++, des Blueprints Unreal Engine, du Gameplay Ability System (GAS), de la programmation IA (Behavior Trees, EQS, StateTree, etc...), Tooling dans Unreal Engine, Optimisation & Performance, et du reseau multijoueur avec replication et RPCs.",
@@ -58,7 +58,8 @@
       "specialty": "Specialite",
       "aiSystems": "Gameplay IA",
       "workAt": "Travail à",
-      "award": "Prix"
+      "award": "Prix",
+      "diploma": "Diplome"
     },
     "en": {
       "heroAvailable": "Available for opportunities",
@@ -100,7 +101,8 @@
       "specialty": "Specialty",
       "aiSystems": "AI Gameplay",
       "workAt": "Work at",
-      "award": "Award"
+      "award": "Award",
+      "diploma": "Diploma"
     }
   },
   "skills": [

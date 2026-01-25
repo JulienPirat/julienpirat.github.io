@@ -458,20 +458,20 @@ ul, ol {
 }
 
 .hero-float-card.card-1 {
-  top: 10%;
-  right: -10%;
+  top: 5%;
+  right: -5%;
   animation-delay: 0s;
 }
 
 .hero-float-card.card-2 {
-  bottom: 20%;
-  left: -10%;
+  bottom: 35%;
+  left: -12%;
   animation-delay: 2s;
 }
 
 .hero-float-card.card-3 {
-  bottom: 5%;
-  right: 10%;
+  bottom: -5%;
+  right: -5%;
   animation-delay: 4s;
 }
 
@@ -830,8 +830,9 @@ ul, ol {
 /* ========== SYSTEMS SECTION ========== */
 .systems-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   gap: var(--spacing-lg);
+  justify-content: center;
 }
 
 .system-card {
