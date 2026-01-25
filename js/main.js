@@ -729,14 +729,21 @@ function setupScrollEffects() {
     observer.observe(el);
   });
 
-  // Scroll to top button visibility
+  // Scroll to top button visibility (throttled for performance)
+  let scrollTicking = false;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-      DOM.scrollTopBtn?.classList.add('visible');
-    } else {
-      DOM.scrollTopBtn?.classList.remove('visible');
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        if (window.scrollY > 500) {
+          DOM.scrollTopBtn?.classList.add('visible');
+        } else {
+          DOM.scrollTopBtn?.classList.remove('visible');
+        }
+        scrollTicking = false;
+      });
+      scrollTicking = true;
     }
-  });
+  }, { passive: true });
 }
 
 function scrollToTop() {
