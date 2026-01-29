@@ -1742,19 +1742,26 @@ ul, ol {
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
-  padding: var(--spacing-md) var(--spacing-xl);
-  background: var(--accent-primary);
+  padding: 12px 20px;
+  background: var(--accent-gradient);
   color: white;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   text-decoration: none;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
   transition: all var(--transition-fast);
+  box-shadow: var(--shadow-md), 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+.back-to-projects svg {
+  width: 18px;
+  height: 18px;
 }
 
 .back-to-projects:hover {
-  background: var(--accent-secondary);
   color: white;
   transform: translateY(-2px);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(99, 102, 241, 0.4);
 }
 
 /* Responsive Project Page */

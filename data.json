@@ -21,7 +21,7 @@
     "fr": {
       "heroAvailable": "Disponible pour opportunites",
       "heroIntro": "Salut, je suis",
-      "heroDescription": "Programmeur Gameplay & Ingénieur R&D spécialisé en IA pour Unreal Engine. Actuellement en CDD chez Corys, je développe des systèmes  gameplay dans Unreal Engine, avec une expertise en C++, Blueprints, tools/widgets et optimisation de performance.",
+      "heroDescription": "Programmeur Gameplay & Ingénieur R&D spécialisé en IA dans Unreal Engine. Actuellement en CDD chez Corys, je développe des systèmes  gameplay dans Unreal Engine, avec une expertise en C++, Blueprints, tools/widgets et optimisation de performance.",
       "viewWork": "Voir mes projets",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Projets",
@@ -64,7 +64,7 @@
     "en": {
       "heroAvailable": "Available for opportunities",
       "heroIntro": "Hi, I'm",
-      "heroDescription": "Gameplay Programmer & R&D Engineer specializing in AI for Unreal Engine. Currently working at Corys, I develop intelligent gameplay systems in Unreal Engine with expertise in C++, Blueprints, tools/widgets, and performance optimization.",
+      "heroDescription": "Gameplay Programmer & R&D Engineer specializing in AI with Unreal Engine. Currently working at Corys, I develop intelligent gameplay systems in Unreal Engine with expertise in C++, Blueprints, tools/widgets, and performance optimization.",
       "viewWork": "View My Work",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Featured Projects",
