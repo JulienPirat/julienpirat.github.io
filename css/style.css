@@ -588,6 +588,18 @@ ul, ol {
   gap: var(--spacing-xl);
 }
 
+/* Career grid uses flexbox so a small number of cards stays centered */
+#career-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#career-grid .project-card {
+  flex: 1 1 380px;
+  max-width: 400px;
+}
+
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -648,6 +660,21 @@ ul, ol {
   width: 64px;
   height: 64px;
   color: var(--border-light);
+}
+
+.career-logo-placeholder {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.career-logo-img {
+  object-fit: contain !important;
+  padding: var(--spacing-xl);
+  background: var(--bg-secondary);
+  box-sizing: border-box;
 }
 
 /* Fullscreen button on video */

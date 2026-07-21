@@ -14,6 +14,7 @@ let allItems = [];
 const DOM = {
   projectsGrid: null,
   systemsGrid: null,
+  careerGrid: null,
   filterContainer: null,
   modal: null,
   modalOverlay: null,
@@ -58,8 +59,7 @@ const categoryIcons = {
   'trophy': ICONS.trophy,
   'award': ICONS.award,
   'graduation-cap': ICONS.graduationCap,
-  'code': ICONS.code,
-  'cog': ICONS.cog
+  'code': ICONS.code
 };
 
 // ========== SYSTEM ICON MAPPING ==========
@@ -91,6 +91,7 @@ async function init() {
 function cacheDOM() {
   DOM.projectsGrid = document.getElementById('projects-grid');
   DOM.systemsGrid = document.getElementById('systems-grid');
+  DOM.careerGrid = document.getElementById('career-grid');
   DOM.filterContainer = document.getElementById('filter-container');
   DOM.modal = document.getElementById('modal');
   DOM.modalOverlay = document.getElementById('modal-overlay');
@@ -196,6 +197,7 @@ function generateFilters() {
 
 // ========== CARD GENERATION ==========
 function generateCards() {
+  generateCareerCards();
   generateProjectCards();
   generateSystemCards();
 }
@@ -317,6 +319,49 @@ function generateProjectCards() {
   setupFullscreenButtons();
 }
 
+function generateCareerCards() {
+  if (!DOM.careerGrid || !portfolioData || !portfolioData.experience) return;
+
+  const cards = portfolioData.experience.map((exp, index) => {
+    const role = getText(exp.role);
+    const period = getText(exp.period);
+    const shortDesc = getText(exp.shortDescription);
+    const statusText = exp.current ? getUI('current') : period;
+
+    const mediaHtml = exp.logo
+      ? `<img src="${exp.logo}" alt="${exp.company}" class="career-logo-img" loading="lazy">`
+      : `<div class="project-card-placeholder"><span class="career-logo-placeholder">${exp.company}</span></div>`;
+
+    return `
+      <article class="project-card animate-fade-in-up animate-delay-${(index % 4) + 1}"
+               data-id="${exp.id}"
+               data-type="career"
+               role="button"
+               tabindex="0"
+               aria-label="${currentLang === 'fr' ? 'Voir les details de' : 'View details of'} ${role}">
+        <div class="project-card-media">
+          ${mediaHtml}
+        </div>
+        <div class="project-card-content">
+          <div class="project-card-header">
+            <h3 class="project-card-title">${role}</h3>
+            <p class="project-card-subtitle">${exp.company}</p>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-meta-item">
+              ${ICONS.clock}
+              <span>${statusText}</span>
+            </span>
+          </div>
+          <p class="project-card-description">${shortDesc}</p>
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  DOM.careerGrid.innerHTML = cards;
+}
+
 function generateSystemCards() {
   if (!DOM.systemsGrid || !portfolioData) return;
 
@@ -337,7 +382,7 @@ function generateSystemCards() {
         <h3 class="system-card-title">${system.name}</h3>
         <p class="system-card-description">${shortDesc}</p>
         <span class="system-card-context">
-          ${ICONS.rocket} ${system.context}
+          ${system.context}
         </span>
       </article>
     `;
@@ -354,6 +399,10 @@ function setupEventListeners() {
   // System cards (still use modal)
   DOM.systemsGrid?.addEventListener('click', handleCardClick);
   DOM.systemsGrid?.addEventListener('keydown', handleCardKeydown);
+
+  // Career cards (also use modal)
+  DOM.careerGrid?.addEventListener('click', handleCareerCardClick);
+  DOM.careerGrid?.addEventListener('keydown', handleCareerCardKeydown);
 
   // Modal
   DOM.modalOverlay?.addEventListener('click', closeModal);
@@ -393,16 +442,11 @@ function handleFilterClick(e) {
 
 function filterCards(filter) {
   const projectCards = DOM.projectsGrid?.querySelectorAll('.project-card') || [];
-  const systemCards = DOM.systemsGrid?.querySelectorAll('.system-card') || [];
   const systemsSection = document.getElementById('systems');
   const projectsSection = document.getElementById('projects');
 
-  // Show/hide systems section
-  if (filter === 'systems') {
-    systemsSection?.style.setProperty('display', 'block');
-    projectsSection?.style.setProperty('display', 'none');
-    return;
-  } else if (filter === 'all') {
+  // Show/hide systems section (only relevant when browsing all projects)
+  if (filter === 'all') {
     systemsSection?.style.setProperty('display', 'block');
     projectsSection?.style.setProperty('display', 'block');
   } else {
@@ -422,11 +466,6 @@ function filterCards(filter) {
       card.style.display = 'none';
     }
   });
-
-  // Show all system cards when filter is 'all'
-  systemCards.forEach(card => {
-    card.style.display = filter === 'all' || filter === 'systems' ? 'block' : 'none';
-  });
 }
 
 function handleCardClick(e) {
@@ -436,6 +475,20 @@ function handleCardClick(e) {
 
   const id = card.dataset.id;
   openModal(id, 'system');
+}
+
+function handleCareerCardClick(e) {
+  const card = e.target.closest('.project-card');
+  if (!card) return;
+
+  openModal(card.dataset.id, 'career');
+}
+
+function handleCareerCardKeydown(e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    handleCareerCardClick(e);
+  }
 }
 
 function handleCardKeydown(e) {
@@ -464,12 +517,16 @@ function handleSmoothScroll(e) {
 function openModal(id, type) {
   const item = type === 'project'
     ? portfolioData.projects.find(p => p.id === id)
+    : type === 'career'
+    ? portfolioData.experience.find(e => e.id === id)
     : portfolioData.systems.find(s => s.id === id);
 
   if (!item) return;
 
   const content = type === 'project'
     ? generateProjectModalContent(item)
+    : type === 'career'
+    ? generateCareerModalContent(item)
     : generateSystemModalContent(item);
 
   DOM.modalContent.innerHTML = content;
@@ -623,6 +680,61 @@ function generateProjectModalContent(project) {
       </div>
 
       ${linksHtml}
+    </div>
+  `;
+}
+
+function generateCareerModalContent(exp) {
+  const role = getText(exp.role);
+  const type = getText(exp.type);
+  const period = getText(exp.period);
+  const fullDesc = getText(exp.fullDescription);
+  const contributions = exp.contributions ? getText(exp.contributions) : [];
+
+  const currentBadge = exp.current
+    ? `<span class="project-card-award" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: #10b981;">${getUI('current')}</span>`
+    : '';
+
+  const contributionsHtml = Array.isArray(contributions) && contributions.length > 0
+    ? contributions.map(c => `
+        <div class="modal-contribution"><span>${c}</span></div>
+      `).join('')
+    : '';
+
+  const tagsHtml = exp.tags.map(tag =>
+    `<span class="modal-tag">${tag}</span>`
+  ).join('');
+
+  const mediaHtml = exp.logo
+    ? `<div class="modal-media"><img src="${exp.logo}" alt="${exp.company}" class="career-logo-img"></div>`
+    : `<div class="modal-media"><div class="modal-media-placeholder"><span class="career-logo-placeholder">${exp.company}</span></div></div>`;
+
+  return `
+    <button class="modal-close" aria-label="${currentLang === 'fr' ? 'Fermer' : 'Close'}">${ICONS.close}</button>
+    ${mediaHtml}
+    <div class="modal-body">
+      <div class="modal-header">
+        <span class="modal-badge">${type}</span>
+        <h2 class="modal-title">${role}${currentBadge}</h2>
+        <p class="modal-subtitle">${exp.company} | ${period}</p>
+      </div>
+
+      <div class="modal-section">
+        <h4 class="modal-section-title">${getUI('description')}</h4>
+        <p class="modal-description">${fullDesc}</p>
+      </div>
+
+      ${contributionsHtml ? `
+        <div class="modal-section">
+          <h4 class="modal-section-title">${getUI('contributions')}</h4>
+          <div class="modal-contributions">${contributionsHtml}</div>
+        </div>
+      ` : ''}
+
+      <div class="modal-section">
+        <h4 class="modal-section-title">${getUI('technologies')}</h4>
+        <div class="modal-tags">${tagsHtml}</div>
+      </div>
     </div>
   `;
 }

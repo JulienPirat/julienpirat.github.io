@@ -2,16 +2,16 @@
   "profile": {
     "name": "Julien PIRAT",
     "title": {
-      "fr": "Programmeur Gameplay & Ingenieur R&D",
-      "en": "Gameplay Programmer & R&D Engineer"
+      "fr": "Ingenieur R&D | Engine & Tools Programmer",
+      "en": "R&D Engineer | Engine & Tools Programmer"
     },
     "subtitle": {
-      "fr": "Specialiste Unreal Engine | Systemes IA | Multijoueur",
-      "en": "Unreal Engine Specialist | AI Systems | Multiplayer"
+      "fr": "Unreal Engine 5 | Outils, IA & Debug",
+      "en": "Unreal Engine 5 | Tools, AI & Debug"
     },
     "description": {
-      "fr": "Développeur de jeux passionné, spécialisé dans la programmation gameplay, les systèmes d'IA et le réseau multijoueur avec Unreal Engine. Actuellement en développement sur Arcanthys avec Ashen Bloom Studio.",
-      "en": "Passionate game developer specializing in gameplay programming, AI systems, and multiplayer networking with Unreal Engine. Currently working on Arcanthys with Ashen Bloom Studio."
+      "fr": "Ingenieur R&D chez CORYS, specialise dans le developpement d'outils, de systemes de navigation et d'IA pour Unreal Engine 5. En recherche d'un poste d'Engine & Tools Programmer, je developpe egalement des plugins et outils personnels comme BTGraphViewer.",
+      "en": "R&D Engineer at CORYS, specializing in tools, navigation systems, and AI development for Unreal Engine 5. Currently looking for an Engine & Tools Programmer role, I also build personal plugins and tools like BTGraphViewer."
     },
     "github": "https://github.com/JulienPirat",
     "linkedin": "https://www.linkedin.com/in/julien-pirat/",
@@ -21,23 +21,27 @@
     "fr": {
       "heroAvailable": "Disponible pour opportunites",
       "heroIntro": "Salut, je suis",
-      "heroDescription": "Programmeur Gameplay & Ingénieur R&D spécialisé en IA dans Unreal Engine. Actuellement en CDD chez Corys, je développe des systèmes  gameplay dans Unreal Engine, avec une expertise en C++, Blueprints, tools/widgets et optimisation de performance.",
+      "heroDescription": "Ingénieur R&D spécialisé sur Unreal Engine 5, j'exploite et j'adapte les systèmes de navigation du moteur (NavMesh, CrowdManager) pour que mes IA se déplacent correctement selon les contraintes de chaque projet. Je développe également des extensions d'outils de debug (Visual Logger, Gameplay Debugger) ainsi que plusieurs outils MCP : pour piloter le Visual Logger, le Chaos Visual Debugger et Unreal Insights, et un autre permettant à une IA de piloter directement l'éditeur. Je vise aujourd'hui un poste d'Engine & Tools Programmer.",
       "viewWork": "Voir mes projets",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Projets",
       "portfolioDescription": "Une collection de jeux et projets auxquels j'ai contribué ainsi que des game jams.",
+      "careerLabel": "Parcours",
+      "careerEyebrow": "Carriere",
+      "careerTitle": "Parcours",
+      "current": "En cours",
       "technicalLabel": "Technique",
       "systemsTitle": "Systemes & Outils",
       "systemsDescription": "Systèmes et outils que j'ai développés ainsi que des outils Unreal Engine que je maîtrise et utilise.",
       "aboutLabel": "A propos",
       "aboutTitle": "Développeur de jeux passionné",
-      "aboutDescription": "Actuellement en développement sur Arcanthys avec Ashen Bloom Studio (temps libre), je travaille sur des jeux vidéos personnels ou publics sur mon temps libre.",
+      "aboutDescription": "Actuellement Ingenieur R&D chez CORYS sur Unreal Engine 5 (navigation, IA, outils internes), je developpe egalement des plugins personnels (BTGraphViewer) et je contribue a Arcanthys avec Ashen Bloom Studio sur mon temps libre. Je suis passionne par la creation d'outils qui facilitent le developpement des jeux.",
       "skillsTitle": "Competences techniques",
-      "skillsDescription": "Maitrise du C++, des Blueprints Unreal Engine, du Gameplay Ability System (GAS), de la programmation IA (Behavior Trees, EQS, StateTree, etc...), Tooling dans Unreal Engine, Optimisation & Performance, et du reseau multijoueur avec replication et RPCs.",
+      "skillsDescription": "Maitrise du C++, des Blueprints, des outils de debug Unreal (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger), du systeme de navigation (NavMesh, Crowd, PathFollowing), du Gameplay Ability System (GAS), de la programmation IA (Behavior Trees, EQS, StateTree) et du developpement de plugins/outils pour Unreal Engine.",
       "teamTitle": "Experience en equipe",
       "teamDescription": "Experience en developpement collaboratif avec des equipes de 4 a 12 developpeurs. Competent en gestion de versions avec Perforce, gestion de projet avec Jira, et communication efficace.",
       "educationTitle": "Formation",
-      "educationDescription": "Etudes universitaires a l'UQAC (Canada) avec une specialisation en developpement de jeux, combinant connaissances theoriques et experience pratique sur divers genres de jeux.",
+      "educationDescription": "Maitrise (2025) et Licence (2023) en Developpement de jeux video a l'UQAC (Canada), precedees d'un DUT Informatique (2022, IUT Dijon/Auxerre). Formation combinant connaissances theoriques et experience pratique sur divers genres de jeux.",
       "footerText": "2025 Julien PIRAT.",
       "viewDetails": "Voir details",
       "description": "Description",
@@ -56,7 +60,7 @@
       "implementationDetails": "Details d'implementation",
       "projectContext": "Contexte du projet",
       "specialty": "Specialite",
-      "aiSystems": "Gameplay IA",
+      "aiSystems": "Moteur, Outils & IA",
       "workAt": "Travail à",
       "award": "Prix",
       "diploma": "Diplome"
@@ -64,23 +68,27 @@
     "en": {
       "heroAvailable": "Available for opportunities",
       "heroIntro": "Hi, I'm",
-      "heroDescription": "Gameplay Programmer & R&D Engineer specializing in AI with Unreal Engine. Currently working at Corys, I develop intelligent gameplay systems in Unreal Engine with expertise in C++, Blueprints, tools/widgets, and performance optimization.",
+      "heroDescription": "R&D Engineer specializing in Unreal Engine 5, I use and adapt the engine's navigation systems (NavMesh, CrowdManager) to get my AI moving correctly within each project's constraints. I also build debug tool extensions (Visual Logger, Gameplay Debugger) and several MCP tools: ones that drive the Visual Logger, Chaos Visual Debugger, and Unreal Insights, plus another that lets an AI directly control the editor. I'm now looking for an Engine & Tools Programmer role.",
       "viewWork": "View My Work",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Featured Projects",
       "portfolioDescription": "A collection of games and projects I've contributed to, as well as game jams.",
+      "careerLabel": "Career",
+      "careerEyebrow": "Career",
+      "careerTitle": "Career",
+      "current": "Ongoing",
       "technicalLabel": "Technical",
       "systemsTitle": "Systems & Tools",
       "systemsDescription": "Systems and tools I've developed as well as Unreal Engine tools I master and use.",
       "aboutLabel": "About Me",
       "aboutTitle": "Passionate Game Developer",
-      "aboutDescription": "Currently developing Arcanthys with Ashen Bloom Studio, I also work on personal and public video game projects in my free time.",
+      "aboutDescription": "Currently an R&D Engineer at CORYS working on Unreal Engine 5 (navigation, AI, internal tools), I also build personal plugins (BTGraphViewer) and contribute to Arcanthys with Ashen Bloom Studio in my free time. I'm passionate about building tools that make game development easier.",
       "skillsTitle": "Technical Skills",
-      "skillsDescription": "Proficiency in C++, Unreal Engine Blueprints, Gameplay Ability System (GAS), AI programming (Behavior Trees, EQS, StateTree, etc.), Unreal Engine tooling, Optimization & Performance, and multiplayer networking with replication and RPCs.",
+      "skillsDescription": "Proficiency in C++, Blueprints, Unreal debug tools (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger), navigation systems (NavMesh, Crowd, PathFollowing), Gameplay Ability System (GAS), AI programming (Behavior Trees, EQS, StateTree), and plugin/tool development for Unreal Engine.",
       "teamTitle": "Team Experience",
       "teamDescription": "Experienced in collaborative development with teams of 4-12 developers. Skilled in version control with Perforce, project management with Jira, and effective communication.",
       "educationTitle": "Education",
-      "educationDescription": "University studies at UQAC (Canada) with focus on game development, combining theoretical knowledge with practical project experience in various game genres.",
+      "educationDescription": "Master's degree (2025) and Bachelor's degree (2023) in Video Game Development from UQAC (Canada), preceded by an Associate's Degree in Computer Science (DUT, 2022, IUT Dijon/Auxerre). Studies combining theoretical knowledge with hands-on experience across various game genres.",
       "footerText": "2025 Julien PIRAT.",
       "viewDetails": "View Details",
       "description": "Description",
@@ -99,7 +107,7 @@
       "implementationDetails": "Implementation Details",
       "projectContext": "Project Context",
       "specialty": "Specialty",
-      "aiSystems": "AI Gameplay",
+      "aiSystems": "Engine, Tools & AI",
       "workAt": "Work at",
       "award": "Award",
       "diploma": "Diploma"
@@ -109,12 +117,105 @@
     "Unreal Engine 5",
     "C++",
     "Blueprints",
+    "Debug Tools (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger)",
+    "Navigation System / NavMesh",
+    "Crowd / PathFollowing",
     "Gameplay Ability System (GAS)",
-    "IA (Behavior Trees, EQS)",
-    "Multijoueur/Reseau",
+    "IA (Behavior Trees, EQS, StateTree)",
     "Perforce",
-    "JetBrains Rider",
-    "Jira"
+    "JetBrains Rider"
+  ],
+  "experience": [
+    {
+      "id": "corys-rd-cdd",
+      "company": "CORYS",
+      "logo": "Assets/Images/Logo-CORYS.png",
+      "role": {
+        "fr": "Ingenieur R&D Unreal Engine 5",
+        "en": "R&D Engineer, Unreal Engine 5"
+      },
+      "type": {
+        "fr": "CDD",
+        "en": "Fixed-term contract"
+      },
+      "period": {
+        "fr": "Juin 2025 - Decembre 2026",
+        "en": "June 2025 - December 2026"
+      },
+      "current": true,
+      "shortDescription": {
+        "fr": "Comportements passagers, navigation (NavMesh/World Partition) et outils internes (MCP, Visual Logger, Widgets) pour des simulations Unreal Engine 5.",
+        "en": "Passenger behaviors, navigation (NavMesh/World Partition), and internal tools (MCP, Visual Logger, Widgets) for Unreal Engine 5 simulations."
+      },
+      "fullDescription": {
+        "fr": "En CDD Ingenieur R&D chez CORYS depuis juin 2025, a la suite de mon stage, je conçois et developpe le module de comportements passagers sur Unreal Engine 5 pour des simulations realistes de train/tram : montee/descente, acteurs speciaux, gestion de foule et echanges passagers avances.\n\nJe travaille egalement sur les systemes de simulation associes (CrowdManager, path following, gestion des collisions) et sur la comprehension et generation du NavMesh sous Unreal Engine en World Partition, adaptes aux environnements de simulation.\n\nEn parallele, je developpe des outils internes pour l'equipe : un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS, ainsi que des extensions du Visual Logger et du Gameplay Debugger. Je participe egalement a la structuration du module passagers/IA, ce qui implique de contribuer aux choix d'architecture et d'interagir avec les equipes de production et les artistes.",
+        "en": "As an R&D Engineer on a fixed-term contract at CORYS since June 2025, following my internship, I design and develop the passenger behavior module on Unreal Engine 5 for realistic train/tram simulations: boarding/alighting, special actors, crowd management, and advanced passenger exchanges.\n\nI also work on the related simulation systems (CrowdManager, path following, collision handling) and on understanding and generating NavMesh under Unreal Engine with World Partition, tailored to simulation environments.\n\nAlongside this, I build internal tools for the team: an MCP tool letting an AI drive the Unreal tools developed by CORYS, plus extensions of the Visual Logger and Gameplay Debugger. I also take part in structuring the passenger/AI module, contributing to architecture decisions and working closely with production teams and artists."
+      },
+      "contributions": {
+        "fr": [
+          "Conception et developpement du module de comportements passagers sur UE5 (montee/descente, acteurs speciaux, gestion de foule, echanges passagers avances)",
+          "Systemes de simulation associes : CrowdManager, path following, gestion des collisions",
+          "Generation du NavMesh sous Unreal Engine (+World Partition) adaptee aux environnements de simulation",
+          "Developpement d'un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS",
+          "Extension du Visual Logger et du Gameplay Debugger",
+          "Creation de Widgets Unreal pour faciliter le developpement des projets",
+          "Optimisation des performances (AIPooling, DelayedSpawning, etc.)",
+          "Participation a la structuration du module passagers/IA"
+        ],
+        "en": [
+          "Design and development of the passenger behavior module on UE5 (boarding/alighting, special actors, crowd management, advanced passenger exchanges)",
+          "Related simulation systems: CrowdManager, path following, collision handling",
+          "NavMesh generation under Unreal Engine (+World Partition) tailored to simulation environments",
+          "Development of an MCP tool letting an AI drive Unreal tools built by CORYS",
+          "Extension of the Visual Logger and Gameplay Debugger",
+          "Creation of Unreal Widgets to speed up project development",
+          "Performance optimization (AIPooling, DelayedSpawning, etc.)",
+          "Contributed to structuring the passenger/AI module"
+        ]
+      },
+      "tags": ["Unreal Engine 5", "C++", "Navigation", "IA", "Outils", "MCP", "Perforce", "Claude AI"],
+      "technologies": "Unreal Engine 5 / C++ / MCP / Outils / Perforce / Claude AI"
+    },
+    {
+      "id": "corys-stage",
+      "company": "CORYS",
+      "logo": "Assets/Images/Logo-CORYS.png",
+      "role": {
+        "fr": "Stage Developpeur Gameplay AI Unreal Engine 5",
+        "en": "Gameplay AI Developer Intern, Unreal Engine 5"
+      },
+      "type": {
+        "fr": "Stage",
+        "en": "Internship"
+      },
+      "period": {
+        "fr": "Decembre 2024 - Juin 2025",
+        "en": "December 2024 - June 2025"
+      },
+      "current": false,
+      "shortDescription": {
+        "fr": "Simulation realiste Train/Tram sur Unreal Engine 5 : module de comportements passagers (montee/descente, choix de place).",
+        "en": "Realistic Train/Tram simulation on Unreal Engine 5: passenger behavior module (boarding/alighting, seat selection)."
+      },
+      "fullDescription": {
+        "fr": "Stage de developpeur Gameplay AI chez CORYS sur une simulation realiste de Train/Tram, exploitant tout le contenu IA d'Unreal Engine 5 (BehaviorTree, StateTree, Task, etc.).\n\nJ'ai conçu et developpe le module de comportements passagers sur UE5 (montee/descente, choix de place), en interaction reguliere avec les equipes de production et les artistes, en cherchant a allier realisme, fluidite et performance.",
+        "en": "Gameplay AI developer internship at CORYS on a realistic Train/Tram simulation, using the full AI toolset of Unreal Engine 5 (BehaviorTree, StateTree, Task, etc.).\n\nI designed and developed the passenger behavior module on UE5 (boarding/alighting, seat selection), working closely with production teams and artists, aiming for a balance of realism, fluidity, and performance."
+      },
+      "contributions": {
+        "fr": [
+          "Conception et developpement du module de comportements passagers sur UE5 (montee/descente, choix de place)",
+          "Interaction avec les equipes de production et des artistes",
+          "Optimisation pour allier realisme, fluidite et performance"
+        ],
+        "en": [
+          "Design and development of the passenger behavior module on UE5 (boarding/alighting, seat selection)",
+          "Interaction with production teams and artists",
+          "Optimization balancing realism, fluidity, and performance"
+        ]
+      },
+      "tags": ["Unreal Engine 5", "IA", "BehaviorTree", "StateTree", "Perforce"],
+      "technologies": "Unreal Engine 5 / BehaviorTree / StateTree / Perforce"
+    }
   ],
   "projects": [
     {
@@ -346,7 +447,7 @@
       },
       "videoUrl": "",
       "videoId": "",
-      "images": [],
+      "images": ["Assets/Images/VRecycle.png"],
       "technologies": "Unreal Engine / VR / Blueprints",
       "role": {
         "fr": "Programmeur Gameplay",
@@ -665,6 +766,166 @@
       "images": ["Assets/Gifs/VisualLogger.gif"],
       "technologies": "Unreal Engine, C++",
       "context": "Arcanthys"
+    },
+    {
+      "id": "bt-graph-viewer",
+      "name": "BTGraphViewer",
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["Unreal Editor", "Plugin", "IA", "Debug", "BehaviorTree"],
+      "shortDescription": {
+        "fr": "Plugin Unreal Editor qui etend le Visual Logger pour visualiser le BehaviorTree et le comportement complet d'une IA.",
+        "en": "Unreal Editor plugin extending the Visual Logger to visualize a BehaviorTree and an AI's full behavior."
+      },
+      "fullDescription": {
+        "fr": "BTGraphViewer est un plugin que j'ai developpe pour etendre le moteur Unreal Engine et que l'on peut ajouter a n'importe quel projet Unreal. Il s'agit d'une extension du Visual Logger permettant de visualiser un BehaviorTree sur une IA et de revoir l'integralite de son comportement.\n\nPour fonctionner, il suffit d'avoir un enregistrement du Visual Logger : le plugin reconstruit alors le graphe du BehaviorTree et permet de rejouer les decisions prises par l'IA au fil du temps, ce qui facilite grandement le debug de comportements complexes.",
+        "en": "BTGraphViewer is a plugin I developed to extend the Unreal Engine and that can be added to any Unreal project. It's an extension of the Visual Logger that allows visualizing an AI's BehaviorTree and reviewing its full behavior.\n\nIt only requires a Visual Logger recording to work: the plugin reconstructs the BehaviorTree graph and lets you replay the AI's decisions over time, making debugging complex behaviors much easier."
+      },
+      "technicalDetails": {
+        "fr": [
+          "Extension du Visual Logger d'Unreal Engine",
+          "Reconstruction du graphe de BehaviorTree a partir d'un enregistrement",
+          "Rejeu des decisions et de l'etat de l'IA dans le temps",
+          "Plugin reutilisable sur n'importe quel projet Unreal"
+        ],
+        "en": [
+          "Extension of Unreal Engine's Visual Logger",
+          "BehaviorTree graph reconstruction from a recording",
+          "Replay of AI decisions and state over time",
+          "Reusable plugin for any Unreal project"
+        ]
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, C++, Editor Plugin",
+      "context": "Unreal Engine"
+    },
+    {
+      "id": "navmesh-generation",
+      "name": "Generation NavMesh",
+      "category": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "categoryId": "navigation",
+      "tags": ["Navigation", "NavMesh", "World Partition", "IA"],
+      "shortDescription": {
+        "fr": "Generation et configuration du NavMesh sous Unreal Engine (World Partition) pour la navigation des IA.",
+        "en": "NavMesh generation and configuration under Unreal Engine (World Partition) for AI navigation."
+      },
+      "fullDescription": {
+        "fr": "Description a venir.",
+        "en": "Description coming soon."
+      },
+      "technicalDetails": {
+        "fr": [],
+        "en": []
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, NavMesh, World Partition",
+      "context": "Unreal Engine"
+    },
+    {
+      "id": "mcp-visual-logger",
+      "name": "Visual Logger MCP",
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["MCP", "Visual Logger", "IA", "Debug"],
+      "shortDescription": {
+        "fr": "Outil MCP permettant a une IA de piloter et d'analyser le Visual Logger d'Unreal Engine.",
+        "en": "MCP tool letting an AI drive and analyze Unreal Engine's Visual Logger."
+      },
+      "fullDescription": {
+        "fr": "Description a venir.",
+        "en": "Description coming soon."
+      },
+      "technicalDetails": {
+        "fr": [],
+        "en": []
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, MCP",
+      "context": "Unreal Engine"
+    },
+    {
+      "id": "mcp-chaos-debugger",
+      "name": "Chaos Visual Debugger MCP",
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["MCP", "Chaos", "Debug", "Physique"],
+      "shortDescription": {
+        "fr": "Outil MCP permettant a une IA de piloter le Chaos Visual Debugger pour analyser les traces de collision et de physique.",
+        "en": "MCP tool letting an AI drive the Chaos Visual Debugger to analyze collision and physics traces."
+      },
+      "fullDescription": {
+        "fr": "Description a venir.",
+        "en": "Description coming soon."
+      },
+      "technicalDetails": {
+        "fr": [],
+        "en": []
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, MCP, Chaos",
+      "context": "Unreal Engine"
+    },
+    {
+      "id": "mcp-unreal-insights",
+      "name": "Unreal Insights MCP",
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["MCP", "Unreal Insights", "Profiling", "Debug"],
+      "shortDescription": {
+        "fr": "Outil MCP permettant a une IA de piloter Unreal Insights pour des sessions de profiling automatisees.",
+        "en": "MCP tool letting an AI drive Unreal Insights for automated profiling sessions."
+      },
+      "fullDescription": {
+        "fr": "Description a venir.",
+        "en": "Description coming soon."
+      },
+      "technicalDetails": {
+        "fr": [],
+        "en": []
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, MCP, Unreal Insights",
+      "context": "Unreal Engine"
+    },
+    {
+      "id": "unreal-companion",
+      "name": "Unreal Companion",
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["MCP", "Editeur", "IA", "Automatisation"],
+      "shortDescription": {
+        "fr": "Outil MCP permettant a une IA de piloter directement l'editeur Unreal Engine.",
+        "en": "MCP tool that lets an AI directly drive the Unreal Editor."
+      },
+      "fullDescription": {
+        "fr": "Description a venir.",
+        "en": "Description coming soon."
+      },
+      "technicalDetails": {
+        "fr": [],
+        "en": []
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, MCP, Editor Scripting",
+      "context": "Unreal Engine"
     }
   ],
   "categories": {
@@ -674,8 +935,7 @@
       { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
       { "id": "competition", "name": "Concours", "icon": "award" },
       { "id": "university", "name": "Universitaire", "icon": "graduation-cap" },
-      { "id": "personal", "name": "Personnel", "icon": "code" },
-      { "id": "systems", "name": "Systemes & Outils", "icon": "cog" }
+      { "id": "personal", "name": "Personnel", "icon": "code" }
     ],
     "en": [
       { "id": "all", "name": "All", "icon": "grid" },
@@ -683,8 +943,7 @@
       { "id": "game-jam", "name": "Game Jam", "icon": "trophy" },
       { "id": "competition", "name": "Competition", "icon": "award" },
       { "id": "university", "name": "University", "icon": "graduation-cap" },
-      { "id": "personal", "name": "Personal", "icon": "code" },
-      { "id": "systems", "name": "Systems & Tools", "icon": "cog" }
+      { "id": "personal", "name": "Personal", "icon": "code" }
     ]
   }
 }
