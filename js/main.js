@@ -382,7 +382,7 @@ function generateSystemCards() {
         <h3 class="system-card-title">${system.name}</h3>
         <p class="system-card-description">${shortDesc}</p>
         <span class="system-card-context">
-          ${system.context}
+          ${getText(system.context)}
         </span>
       </article>
     `;
@@ -782,7 +782,7 @@ function generateSystemModalContent(system) {
       <div class="modal-header">
         <span class="modal-badge">${categoryText}</span>
         <h2 class="modal-title">${system.name}</h2>
-        <p class="modal-subtitle">${currentLang === 'fr' ? 'Developpe pour' : 'Developed for'} ${system.context}</p>
+        <p class="modal-subtitle">${getText(system.context)}</p>
       </div>
 
       <div class="modal-section">
@@ -811,7 +811,7 @@ function generateSystemModalContent(system) {
           </div>
           <div class="modal-meta-item">
             <div class="modal-meta-label">${getUI('projectContext')}</div>
-            <div class="modal-meta-value">${system.context}</div>
+            <div class="modal-meta-value">${getText(system.context)}</div>
           </div>
         </div>
       </div>

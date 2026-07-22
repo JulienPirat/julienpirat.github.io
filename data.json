@@ -58,7 +58,7 @@
       "overview": "Apercu",
       "technicalDetails": "Details techniques",
       "implementationDetails": "Details d'implementation",
-      "projectContext": "Contexte du projet",
+      "projectContext": "Type",
       "specialty": "Specialite",
       "aiSystems": "Moteur, Outils & IA",
       "workAt": "Travail à",
@@ -105,7 +105,7 @@
       "overview": "Overview",
       "technicalDetails": "Technical Details",
       "implementationDetails": "Implementation Details",
-      "projectContext": "Project Context",
+      "projectContext": "Type",
       "specialty": "Specialty",
       "aiSystems": "Engine, Tools & AI",
       "workAt": "Work at",
@@ -695,7 +695,10 @@
       },
       "images": ["Assets/Gifs/DetourCrowd.gif"],
       "technologies": "Unreal Engine, C++, AI Navigation",
-      "context": "Arcanthys"
+      "context": {
+        "fr": "Moteur",
+        "en": "Engine"
+      }
     },
     {
       "id": "ai-pooling",
@@ -730,7 +733,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine, C++",
-      "context": "Arcanthys"
+      "context": {
+        "fr": "Systeme",
+        "en": "System"
+      }
     },
     {
       "id": "visual-logger",
@@ -765,7 +771,10 @@
       },
       "images": ["Assets/Gifs/VisualLogger.gif"],
       "technologies": "Unreal Engine, C++",
-      "context": "Arcanthys"
+      "context": {
+        "fr": "Outil",
+        "en": "Tool"
+      }
     },
     {
       "id": "bt-graph-viewer",
@@ -800,7 +809,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine 5, C++, Editor Plugin",
-      "context": "Unreal Engine"
+      "context": {
+        "fr": "Plugin",
+        "en": "Plugin"
+      }
     },
     {
       "id": "navmesh-generation",
@@ -825,7 +837,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine 5, NavMesh, World Partition",
-      "context": "Unreal Engine"
+      "context": {
+        "fr": "Moteur",
+        "en": "Engine"
+      }
     },
     {
       "id": "mcp-visual-logger",
@@ -850,7 +865,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine 5, MCP",
-      "context": "Unreal Engine"
+      "context": {
+        "fr": "Moteur",
+        "en": "Engine"
+      }
     },
     {
       "id": "mcp-chaos-debugger",
@@ -875,7 +893,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine 5, MCP, Chaos",
-      "context": "Unreal Engine"
+      "context": {
+        "fr": "Moteur",
+        "en": "Engine"
+      }
     },
     {
       "id": "mcp-unreal-insights",
@@ -900,7 +921,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine 5, MCP, Unreal Insights",
-      "context": "Unreal Engine"
+      "context": {
+        "fr": "Moteur",
+        "en": "Engine"
+      }
     },
     {
       "id": "unreal-companion",
@@ -925,7 +949,10 @@
       },
       "images": [],
       "technologies": "Unreal Engine 5, MCP, Editor Scripting",
-      "context": "Unreal Engine"
+      "context": {
+        "fr": "Plugin",
+        "en": "Plugin"
+      }
     }
   ],
   "categories": {
