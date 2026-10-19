@@ -56,6 +56,7 @@
       "duration": "Duree",
       "role": "Role",
       "overview": "Apercu",
+      "capabilities": "Fonctionnalites",
       "technicalDetails": "Details techniques",
       "implementationDetails": "Details d'implementation",
       "projectContext": "Type",
@@ -103,6 +104,7 @@
       "duration": "Duration",
       "role": "Role",
       "overview": "Overview",
+      "capabilities": "Features",
       "technicalDetails": "Technical Details",
       "implementationDetails": "Implementation Details",
       "projectContext": "Type",
@@ -930,28 +932,112 @@
       "id": "unreal-companion",
       "name": "Unreal Companion",
       "category": {
-        "fr": "Outils de Debug",
-        "en": "Debug Tools"
+        "fr": "Outils Editeur",
+        "en": "Editor Tools"
       },
-      "categoryId": "debug-tools",
-      "tags": ["MCP", "Editeur", "IA", "Automatisation"],
+      "categoryId": "editor-tools",
+      "tags": ["MCP", "Editeur", "IA", "Blueprint", "C++", "Slate"],
       "shortDescription": {
-        "fr": "Outil MCP permettant a une IA de piloter directement l'editeur Unreal Engine.",
-        "en": "MCP tool that lets an AI directly drive the Unreal Editor."
+        "fr": "Plugin Unreal Engine 5 exposant l'editeur a une IA via le Model Context Protocol : une soixantaine d'outils pour lire, comprendre et modifier un projet Unreal.",
+        "en": "Unreal Engine 5 plugin exposing the editor to an AI through the Model Context Protocol: around sixty tools to read, understand, and modify an Unreal project."
       },
       "fullDescription": {
-        "fr": "Description a venir.",
-        "en": "Description coming soon."
+        "fr": "Unreal Companion est un plugin editeur pour Unreal Engine 5 que je developpe afin de donner a une IA un acces direct et structure a un projet Unreal. Plutot que de lui decrire son projet, le developpeur la laisse inspecter elle-meme les Blueprints, les assets, les materiaux ou le niveau, analyser un enregistrement de debug, puis appliquer les modifications demandees. Le plugin ne resume jamais : il expose des donnees brutes structurees et laisse l'IA interpreter, ce qui evite toute perte d'information. Chaque ecriture reste annulable au Ctrl-Z et n'est jamais sauvegardee automatiquement, le developpeur gardant la main sur ce qui est reellement enregistre.",
+        "en": "Unreal Companion is an Unreal Engine 5 editor plugin I'm building to give an AI direct, structured access to an Unreal project. Rather than describing the project to it, the developer lets it inspect Blueprints, assets, materials, or the level itself, analyze a debug recording, and then apply the requested changes. The plugin never summarizes: it exposes raw structured data and lets the AI interpret it, so no information is lost along the way. Every write stays undoable with Ctrl-Z and is never saved automatically, leaving the developer in control of what actually gets written to disk."
+      },
+      "capabilities": {
+        "fr": [
+          "Lire et explorer les Blueprints : graphes, nodes, variables, fonctions et composants",
+          "Inspecter les acteurs et assets du niveau, y compris en direct pendant une session Play-In-Editor",
+          "Lire les materiaux, leurs graphes d'expressions et leurs textures",
+          "Lire les Animation Blueprints, state machines, squelettes et sequences d'animation",
+          "Lire les Behavior Trees et les Blackboards",
+          "Analyser un enregistrement Visual Logger, meme sans ouvrir l'editeur",
+          "Retrouver tous les Blueprints appelant une fonction donnee via l'index Find-in-Blueprints",
+          "Modifier le niveau : creation, suppression, deplacement et edition de proprietes d'acteurs",
+          "Editer les graphes Blueprint : pins, connexions, nodes, variables, fonctions et events",
+          "Charger des regions World Partition et gerer la visibilite des Data Layers",
+          "Toujours en developpement : de nouveaux outils sont ajoutes regulierement"
+        ],
+        "en": [
+          "Read and explore Blueprints: graphs, nodes, variables, functions, and components",
+          "Inspect level actors and assets, including live during a Play-In-Editor session",
+          "Read materials, their expression graphs, and their textures",
+          "Read Animation Blueprints, state machines, skeletons, and animation sequences",
+          "Read Behavior Trees and Blackboards",
+          "Analyze a Visual Logger recording, even without opening the editor",
+          "Find every Blueprint calling a given function through the Find-in-Blueprints index",
+          "Modify the level: create, delete, move actors and edit their properties",
+          "Edit Blueprint graphs: pins, connections, nodes, variables, functions, and events",
+          "Load World Partition regions and manage Data Layer visibility",
+          "Still in development: new tools are added regularly"
+        ]
       },
       "technicalDetails": {
-        "fr": [],
-        "en": []
+        "fr": [
+          "Plugin editeur ecrit en C++ sur Unreal Engine 5, decoupe en six modules",
+          "Communication via le Model Context Protocol (MCP) sur un serveur local en loopback",
+          "Interface Slate integree a l'editeur pour suivre les appels en direct",
+          "Introspection via la reflection Unreal, l'Asset Registry et l'index Find-in-Blueprints",
+          "Ecritures transactionnelles (FScopedTransaction) : annulables, jamais sauvegardees, jamais de Perforce",
+          "Commandlet headless pour l'analyse hors editeur",
+          "Aucune modification du moteur : le plugin s'ajoute a un projet existant sans toucher aux sources d'Unreal Engine"
+        ],
+        "en": [
+          "Editor plugin written in C++ on Unreal Engine 5, split into six modules",
+          "Communication through the Model Context Protocol (MCP) over a local loopback server",
+          "Slate interface embedded in the editor to monitor calls live",
+          "Introspection via Unreal reflection, the Asset Registry, and the Find-in-Blueprints index",
+          "Transactional writes (FScopedTransaction): undoable, never saved, never touching Perforce",
+          "Headless commandlet for out-of-editor analysis",
+          "No engine modification: the plugin drops into an existing project without touching Unreal Engine sources"
+        ]
       },
       "images": [],
-      "technologies": "Unreal Engine 5, MCP, Editor Scripting",
+      "technologies": "Unreal Engine 5, C++, MCP, Slate, Editor Plugin",
       "context": {
         "fr": "Plugin",
         "en": "Plugin"
+      }
+    },
+    {
+      "id": "perforce-server",
+      "name": "Serveur Perforce",
+      "category": {
+        "fr": "Infrastructure",
+        "en": "Infrastructure"
+      },
+      "categoryId": "infrastructure",
+      "tags": ["Perforce", "Docker", "Linux", "Versioning"],
+      "shortDescription": {
+        "fr": "Mise en place de serveurs Perforce sous Linux, via Docker et en ligne de commande, avec gestion des depots et des permissions.",
+        "en": "Perforce servers set up on Linux, through Docker and the command line, with depot and permission management."
+      },
+      "fullDescription": {
+        "fr": "Pour mes projets personnels et des game jams, j'ai mis en place mes propres serveurs Perforce sur des machines Linux, soit via Docker, soit directement en ligne de commande. J'ai ensuite gere les depots et les permissions des differents utilisateurs. Perforce etant le standard sur les projets Unreal Engine, ou le volume d'assets binaires rend Git peu adapte, cela m'a permis d'avoir un versioning fonctionnel sans dependre d'une solution hebergee.",
+        "en": "For personal projects and game jams, I set up my own Perforce servers on Linux machines, either through Docker or directly from the command line, then handled the depots and user permissions. Since Perforce is the standard on Unreal Engine projects, where the volume of binary assets makes Git a poor fit, this gave me working version control without depending on a hosted solution."
+      },
+      "technicalDetails": {
+        "fr": [
+          "Installation de Perforce via Docker sur serveur Linux",
+          "Installation et configuration en ligne de commande sous Linux",
+          "Creation et organisation des depots",
+          "Gestion des permissions et des acces utilisateurs",
+          "Utilise sur des game jams et des projets personnels"
+        ],
+        "en": [
+          "Perforce installed through Docker on a Linux server",
+          "Command-line setup and configuration on Linux",
+          "Depot creation and organization",
+          "User permission and access management",
+          "Used on game jams and personal projects"
+        ]
+      },
+      "images": [],
+      "technologies": "Perforce, Docker, Linux",
+      "context": {
+        "fr": "Serveur",
+        "en": "Server"
       }
     }
   ],

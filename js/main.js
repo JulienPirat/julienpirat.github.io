@@ -49,7 +49,8 @@ const ICONS = {
   fullscreen: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>`,
   cpu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>`,
   brain: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.54"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.54"/></svg>`,
-  wrench: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`
+  wrench: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
+  server: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`
 };
 
 // ========== CATEGORY ICON MAPPING ==========
@@ -68,7 +69,10 @@ const systemIcons = {
   'Systemes IA': ICONS.brain,
   'Performance': ICONS.cpu,
   'Debug Tools': ICONS.wrench,
-  'Outils de Debug': ICONS.wrench
+  'Outils de Debug': ICONS.wrench,
+  'Editor Tools': ICONS.wrench,
+  'Outils Editeur': ICONS.wrench,
+  'Infrastructure': ICONS.server
 };
 
 // ========== INITIALIZATION ==========
@@ -745,6 +749,7 @@ function generateSystemModalContent(system) {
   const fullDesc = getText(system.fullDescription);
   const shortDesc = getText(system.shortDescription);
   const technicalDetails = system.technicalDetails ? getText(system.technicalDetails) : [];
+  const capabilities = system.capabilities ? getText(system.capabilities) : [];
 
   // Media section
   let mediaHtml = '';
@@ -770,6 +775,13 @@ function generateSystemModalContent(system) {
       `).join('')
     : '';
 
+  // Capabilities
+  const capabilitiesHtml = Array.isArray(capabilities) && capabilities.length > 0
+    ? capabilities.map(c => `
+        <div class="modal-contribution"><span>${c}</span></div>
+      `).join('')
+    : '';
+
   // Tags
   const tagsHtml = system.tags.map(tag =>
     `<span class="modal-tag">${tag}</span>`
@@ -789,6 +801,13 @@ function generateSystemModalContent(system) {
         <h4 class="modal-section-title">${getUI('overview')}</h4>
         <p class="modal-description">${fullDesc}</p>
       </div>
+
+      ${capabilitiesHtml ? `
+        <div class="modal-section">
+          <h4 class="modal-section-title">${getUI('capabilities')}</h4>
+          <div class="modal-contributions">${capabilitiesHtml}</div>
+        </div>
+      ` : ''}
 
       ${technicalHtml ? `
         <div class="modal-section">
