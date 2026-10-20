@@ -14,6 +14,7 @@
       "en": "R&D Engineer at CORYS, I design navigation and AI behaviors in C++ for train and tram simulators on Unreal Engine 5. Currently looking for an Unreal Engine Programmer role, I also build debug tools and plugins, including BTGraphViewer, published on FAB."
     },
     "github": "https://github.com/JulienPirat",
+    "fab": "https://www.fab.com/sellers/PapyTools",
     "linkedin": "https://www.linkedin.com/in/julien-pirat/",
     "itchio": "https://julien-pirat.itch.io"
   },
@@ -39,7 +40,7 @@
       "skillsTitle": "Compétences techniques",
       "skillsDescription": "Maîtrise du C++, des Blueprints, des outils de debug Unreal (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger), du système de navigation (NavMesh, Crowd, PathFollowing), du Gameplay Ability System (GAS), de la programmation IA (Behavior Trees, EQS, StateTree) et du développement de plugins/outils pour Unreal Engine.",
       "teamTitle": "Expérience en équipe",
-      "teamDescription": "Expérience en développement collaboratif avec des équipes de 4 à 12 développeurs. Compétent en gestion de versions avec Perforce, gestion de projet avec Jira, et communication efficace.",
+      "teamDescription": "Expérience en développement collaboratif avec des équipes de 4 à 12 développeurs. À CORYS, je travaille régulièrement avec des intégrateurs, des TechArts, des artistes et d'autres développeurs. Compétent en gestion de versions avec Perforce et communication efficace.",
       "educationTitle": "Formation",
       "educationDescription": "Maîtrise (2025) et Licence (2023) en Développement de jeux video à l'UQAC (Canada), précédées d'un DUT Informatique (2022, IUT Dijon/Auxerre). Formation combinant connaissances théoriques et expérience pratique sur divers genres de jeux.",
       "footerText": "2025 Julien PIRAT.",
@@ -63,7 +64,7 @@
       "implementationDetails": "Détails d'implémentation",
       "projectContext": "Type",
       "specialty": "Spécialité",
-      "aiSystems": "Moteur, Outils & IA",
+      "aiSystems": "IA, Moteur & Outils",
       "workAt": "Travail à",
       "award": "Prix",
       "diploma": "Diplôme"
@@ -89,7 +90,7 @@
       "skillsTitle": "Technical Skills",
       "skillsDescription": "Proficiency in C++, Blueprints, Unreal debug tools (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger), navigation systems (NavMesh, Crowd, PathFollowing), Gameplay Ability System (GAS), AI programming (Behavior Trees, EQS, StateTree), and plugin/tool development for Unreal Engine.",
       "teamTitle": "Team Experience",
-      "teamDescription": "Experienced in collaborative development with teams of 4-12 developers. Skilled in version control with Perforce, project management with Jira, and effective communication.",
+      "teamDescription": "Experienced in collaborative development with teams of 4-12 developers. At CORYS, I regularly work with integrators, Tech Artists, artists, and other developers. Skilled in version control with Perforce and effective communication.",
       "educationTitle": "Education",
       "educationDescription": "Master's degree (2025) and Bachelor's degree (2023) in Video Game Development from UQAC (Canada), preceded by an Associate's Degree in Computer Science (DUT, 2022, IUT Dijon/Auxerre). Studies combining theoretical knowledge with hands-on experience across various game genres.",
       "footerText": "2025 Julien PIRAT.",
@@ -113,7 +114,7 @@
       "implementationDetails": "Implementation Details",
       "projectContext": "Type",
       "specialty": "Specialty",
-      "aiSystems": "Engine, Tools & AI",
+      "aiSystems": "AI, Engine & Tools",
       "workAt": "Work at",
       "award": "Award",
       "diploma": "Diploma"
@@ -439,7 +440,7 @@
         "en": "Multiplayer co-op game developed for the Ubisoft Competition 2024. Network replication and RPC implementation."
       },
       "fullDescription": {
-        "fr": "Clean Dream est un projet qui a été réalisé lors du concours Ubisoft de 2024. Pour ce projet, nous étions un groupe de huit développeurs.\n\nIl s'agit d'un jeu coopératif en réseau réalisé sur Unreal Engine. Pour assurer la coordination dans notre équipe, nous avons utilise Discord et Jira, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation des taupes principalement ainsi que sur la résolution de bugs, que ce soit du côté de la programmation du gameplay ou du réseau.\n\nDans ce projet, j'ai pu coopérer avec des personnes que je ne connaissais pas avant. Cela m'a permis de me rendre compte que la communication dans une équipe est très importante. De plus, le fait d'avoir des Game Designers dans l'équipe m'a permis d'obtenir un aperçu du travail en entreprise.",
+        "fr": "Clean Dream est un projet qui a été réalisé lors du concours Ubisoft de 2024. Pour ce projet, nous étions un groupe de huit développeurs.\n\nIl s'agit d'un jeu coopératif en réseau réalisé sur Unreal Engine. Pour assurer la coordination dans notre équipe, nous avons utilisé Discord et Jira, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation des taupes principalement ainsi que sur la résolution de bugs, que ce soit du côté de la programmation du gameplay ou du réseau.\n\nDans ce projet, j'ai pu coopérer avec des personnes que je ne connaissais pas avant. Cela m'a permis de me rendre compte que la communication dans une équipe est très importante. De plus, le fait d'avoir des Game Designers dans l'équipe m'a permis d'obtenir un aperçu du travail en entreprise.",
         "en": "Clean Dream was developed for the Ubisoft Competition 2024 with a team of eight developers.\n\nIt's a networked cooperative game built on Unreal Engine. For team coordination, we used Discord and Jira, along with Perforce for version control.\n\nMy main contribution focused on mole behavior implementation and bug fixing for both gameplay and networking.\n\nThis project taught me the importance of communication in a team, even with people you don't know. Working with Game Designers gave me insight into professional game development workflows."
       },
       "contributions": {
@@ -505,7 +506,7 @@
         "en": "VR serious game about waste sorting developed at UQAC. Educational experience raising awareness about recycling."
       },
       "fullDescription": {
-        "fr": "VRecycle est un projet universitaire impliquant une équipe de six développeurs. Il s'agit d'un jeu sérieux en réalité virtuelle réalisé sur Unreal Engine.\n\nLe but de notre jeu est de sensibiliser un large public au tri des déchets.\n\nPour assurer la coordination, nous avons utilise Discord ainsi que Perforce pour la gestion des versions. Ma contribution au projet a porte sur la modélisation des déchets, le système de tri dans les poubelles et le déplacement du joueur.",
+        "fr": "VRecycle est un projet universitaire impliquant une équipe de six développeurs. Il s'agit d'un jeu sérieux en réalité virtuelle réalisé sur Unreal Engine.\n\nLe but de notre jeu est de sensibiliser un large public au tri des déchets.\n\nPour assurer la coordination, nous avons utilisé Discord ainsi que Perforce pour la gestion des versions. Ma contribution au projet a porte sur la modélisation des déchets, le système de tri dans les poubelles et le déplacement du joueur.",
         "en": "VRecycle is a university project involving a team of six developers. It's a serious game in virtual reality built on Unreal Engine.\n\nThe goal is to raise awareness about waste sorting for a wide audience.\n\nFor coordination, we used Discord and Perforce for version control. My contributions focused on waste modeling, the sorting system for bins, and player movement."
       },
       "contributions": {
@@ -565,7 +566,7 @@
         "en": "3D cooperative puzzle game with duel elements developed at UQAC. Rising water mechanics and respawn systems."
       },
       "fullDescription": {
-        "fr": "TempleTrap est un projet universitaire impliquant une équipe de quatre développeurs. Il s'agit d'un jeu en coopération en 3D réalisé sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation de l'eau qui monte à la fin d'un niveau. J'ai également contribué aux morts temporaires et définitives des joueurs. J'ai aussi ajouté certains éléments artistiques, comme les torches et quelques lumières.",
+        "fr": "TempleTrap est un projet universitaire impliquant une équipe de quatre développeurs. Il s'agit d'un jeu en coopération en 3D réalisé sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilisé Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation de l'eau qui monte à la fin d'un niveau. J'ai également contribué aux morts temporaires et définitives des joueurs. J'ai aussi ajouté certains éléments artistiques, comme les torches et quelques lumières.",
         "en": "TempleTrap is a university project involving a team of four developers. It's a 3D cooperative game built on Unreal Engine.\n\nFor coordination, we used Discord and Perforce for version control.\n\nMy contributions focused on the rising water at the end of levels, temporary and permanent player deaths, and artistic elements like torches and lighting."
       },
       "contributions": {
@@ -628,7 +629,7 @@
         "en": "3D roguelite with advanced AI systems using Behavior Trees and Environment Query System (EQS)."
       },
       "fullDescription": {
-        "fr": "Vivaldi est un projet universitaire impliquant une équipe de sept développeurs. Il s'agit d'un roguelite en 3D réalisé sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Teams et Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation des intelligences artificielles ainsi que sur la résolution de bugs, que ce soit du côté de la programmation ou du côté artistique.",
+        "fr": "Vivaldi est un projet universitaire impliquant une équipe de sept développeurs. Il s'agit d'un roguelite en 3D réalisé sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilisé Teams et Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation des intelligences artificielles ainsi que sur la résolution de bugs, que ce soit du côté de la programmation ou du côté artistique.",
         "en": "Vivaldi is a university project involving a team of seven developers. It's a 3D roguelite built on Unreal Engine.\n\nFor coordination, we used Teams and Discord, along with Perforce for version control.\n\nMy contributions focused on AI implementation and bug fixing for both programming and artistic elements."
       },
       "contributions": {
@@ -991,21 +992,60 @@
         "en": "Navigation"
       },
       "categoryId": "navigation",
-      "tags": ["Navigation", "NavMesh", "IA", "Plateforme mobile"],
+      "tags": [
+        "Navigation",
+        "NavMesh",
+        "IA",
+        "Plateforme mobile",
+        "Recast",
+        "World Partition"
+      ],
       "shortDescription": {
-        "fr": "Système de navigation IA sur une plateforme qui bouge : les agents continuent de naviguer correctement alors que le sol qui les porte est en mouvement.",
-        "en": "AI navigation system on a moving platform: agents keep navigating correctly while the ground carrying them is in motion."
+        "fr": "Système de navigation IA sur une plateforme en mouvement : le chemin est calculé dans une copie immobile de la plateforme, puis exprimé dans son repère local.",
+        "en": "AI navigation system on a moving platform: the path is computed in a static copy of the platform, then expressed in its local frame."
       },
       "fullDescription": {
-        "fr": "Système de navigation permettant à des IA d'évoluer sur une plateforme en mouvement : les agents continuent de se déplacer et de naviguer correctement alors que le sol sur lequel ils se trouvent bouge lui-meme. Je l'ai conçu chez CORYS pour les simulateurs de train/tram : les agents du simulateur se déplacent dans un train en mouvement.\n\nDescription technique à venir.",
-        "en": "Navigation system letting AI agents operate on a moving platform: agents keep moving and navigating correctly while the ground they stand on is itself in motion. I designed it at CORYS for train/tram simulators: the simulator's agents move inside a moving train.\n\nTechnical description coming soon."
+        "fr": "Un navmesh Recast est figé dans le monde : il ne peut pas suivre une plateforme qui se déplace, et le reconstruire en continu serait trop coûteux et toujours en retard. J'ai conçu chez CORYS un système qui permet à des agents IA de marcher sur une plateforme en mouvement avec les outils standards d'Unreal (MoveTo, PathFollowing, Character Movement).\n\nL'idée : on ne cherche pas le chemin dans le monde réel. On le cherche dans une copie statique de la plateforme, posée dans une zone cachée très loin de la scène, où Recast construit un navmesh comme sur n'importe quelle géométrie. L'ensemble repose sur un NavMesh dynamique en World Partition. Le résultat est ensuite exprimé dans le repère de la plateforme réelle.\n\nLa copie a le même repère que la plateforme, donc la position locale d'un point de la copie ne dépend pas de la position de la plateforme. Chaque point du chemin est stocké local à la plateforme, avec la plateforme comme Base du chemin : le moteur relit le chemin en coordonnées monde à chaque frame, et il suit la plateforme sans jamais être recalculé. L'agent est attaché à la plateforme et marche en NavWalking. À chaque pas, la hauteur du sol est lue dans la copie, tandis que le déplacement horizontal reste normal.",
+        "en": "A Recast NavMesh is fixed in the world: it cannot follow a moving platform, and rebuilding it continuously would be too costly and always lagging behind. At CORYS, I designed a system that lets AI agents walk on a moving platform using Unreal's standard tools (MoveTo, PathFollowing, Character Movement).\n\nThe idea: the path is not searched in the real world. It is searched in a static copy of the platform, placed in a hidden zone very far from the scene, where Recast builds a NavMesh like on any other geometry. The whole system relies on a dynamic NavMesh under World Partition. The result is then expressed in the real platform's frame.\n\nThe copy shares the platform's frame, so the local position of a point in the copy does not depend on where the platform is. Each path point is stored local to the platform, with the platform as the path's Base: the engine reads the path back in world coordinates every frame, so it follows the platform without ever being recomputed. The agent is attached to the platform and walks in NavWalking. At each step, the floor height is read from the copy, while horizontal movement stays normal."
+      },
+      "capabilities": {
+        "fr": [
+          "Navigation d'agents IA sur une plateforme en mouvement, sans reconstruire le navmesh pendant le déplacement",
+          "Une copie statique par plateforme, avec liens de passage entre plateformes",
+          "Chemins locaux à la plateforme : ils la suivent sans recalcul",
+          "Changement de plateforme en cours de trajet sans nouveau MoveTo, pour ne pas casser les Behavior Trees",
+          "Sortie de la plateforme : un but extérieur est ramené au bord de la copie",
+          "Compatible avec les Behavior Trees, le PathFollowing et le Character Movement d'Unreal"
+        ],
+        "en": [
+          "AI agent navigation on a moving platform, without rebuilding the NavMesh while it moves",
+          "One static copy per platform, with links between platforms",
+          "Platform-local paths: they follow the platform without recomputation",
+          "Platform change mid-route without a new MoveTo, so Behavior Trees are not broken",
+          "Leaving the platform: a goal outside it is brought back to the edge of the copy",
+          "Works with Unreal's Behavior Trees, PathFollowing, and Character Movement"
+        ]
       },
       "technicalDetails": {
-        "fr": [],
-        "en": []
+        "fr": [
+          "Transformations rigides monde vers copie et copie vers monde propres à chaque plateforme, sans échelle",
+          "Copie navigable avec un NavMesh dynamique en World Partition",
+          "Copie immobile : composants de collision statiques à repère absolu, pour que le navmesh ne soit jamais reconstruit pendant le déplacement",
+          "Chemin stocké avec FNavigationPath::Base et des positions locales (FBasedPosition) : le moteur le relit à chaque frame",
+          "Agent attaché à la plateforme et en MOVE_NavWalking, avec la hauteur du sol lue dans la copie (FindNavFloor) : seul le Z vient de la copie",
+          "Extension du Character Movement Component : machine à états d'entrée et de sortie, rebase du chemin, changement de plateforme"
+        ],
+        "en": [
+          "Rigid world-to-copy and copy-to-world transforms for each platform, with no scale",
+          "Copy made navigable with a dynamic NavMesh under World Partition",
+          "Static copy: static collision components with absolute transforms, so the NavMesh is never rebuilt while the platform moves",
+          "Path stored with FNavigationPath::Base and local positions (FBasedPosition): the engine reads it back every frame",
+          "Agent attached to the platform and in MOVE_NavWalking, with floor height read from the copy (FindNavFloor): only the Z comes from the copy",
+          "Character Movement Component extension: enter/leave state machine, path rebasing, platform switching"
+        ]
       },
       "images": [],
-      "technologies": "Unreal Engine 5, Navigation, IA",
+      "technologies": "Unreal Engine 5, C++, Navigation, Recast, NavMesh, World Partition, IA",
       "context": {
         "fr": "Système",
         "en": "System"
