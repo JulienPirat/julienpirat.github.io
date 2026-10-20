@@ -51,6 +51,7 @@
       "links": "Liens",
       "playOnItch": "Jouer sur itch.io",
       "viewOnGitHub": "Voir sur GitHub",
+      "viewDocs": "Voir la documentation",
       "date": "Date",
       "team": "Equipe",
       "duration": "Duree",
@@ -99,6 +100,7 @@
       "links": "Links",
       "playOnItch": "Play on itch.io",
       "viewOnGitHub": "View on GitHub",
+      "viewDocs": "View documentation",
       "date": "Date",
       "team": "Team",
       "duration": "Duration",
@@ -273,6 +275,72 @@
         "en": "Ongoing"
       },
       "date": "2025",
+      "status": {
+        "fr": "En developpement",
+        "en": "In Development"
+      },
+      "links": {
+        "itch": "",
+        "github": ""
+      }
+    },
+    {
+      "id": "temperdungeon",
+      "name": "TemperDungeon",
+      "subtitle": {
+        "fr": "Gestion de donjon",
+        "en": "Dungeon Management"
+      },
+      "category": {
+        "fr": "En developpement",
+        "en": "In Development"
+      },
+      "categoryId": "in-development",
+      "tags": ["Unreal Engine 5.8", "C++", "Outils", "NavMesh", "Gestion"],
+      "shortDescription": {
+        "fr": "Jeu de gestion de donjon : le joueur construit le donjon et dose le danger pour des aventuriers. Editeur de donjon sur grille en cours de developpement.",
+        "en": "Dungeon management game: the player builds the dungeon and tunes the danger for adventurers. Grid-based dungeon editor under development."
+      },
+      "fullDescription": {
+        "fr": "TemperDungeon est un jeu de gestion dans lequel le joueur est une force invisible qui vit dans un donjon. Il construit le donjon, y place des monstres, et doit doser le danger pour des groupes d'aventuriers qui y entrent : assez de danger pour qu'ils progressent, pas assez pour qu'ils meurent. Le projet cherche une tension attentive plutot que la destruction.\n\nLe projet est parti d'un jeu a clics, abandonne au profit de ce concept. Il est developpe sous Unreal Engine 5.8 en C++. A ce jour, le coeur de l'editeur de donjon est en place ; les aventuriers qui parcourent le donjon construit sont la prochaine etape.",
+        "en": "TemperDungeon is a management game in which the player is an invisible force living inside a dungeon. They build the dungeon, place monsters in it, and must tune the danger for groups of adventurers entering it: enough danger for them to progress, not enough for them to die. The project aims for careful tension rather than destruction.\n\nThe project started as a clicker game, dropped in favor of this concept. It is built in C++ on Unreal Engine 5.8. So far, the core of the dungeon editor is in place; adventurers walking through the built dungeon are the next step."
+      },
+      "contributions": {
+        "fr": [
+          "Editeur de donjon en jeu sur grille : placer, pivoter et effacer des salles",
+          "Trois types de salles (garde, festin, combat) avec decor genere automatiquement",
+          "Couloirs de largeur 1 ou 2 reliant deux salles",
+          "Sauvegarde et chargement du donjon",
+          "NavMesh dynamique qui se met a jour quand le joueur construit",
+          "Conception du jeu et architecture C++ (projet solo)"
+        ],
+        "en": [
+          "In-game grid-based dungeon editor: place, rotate, and erase rooms",
+          "Three room types (guard, feast, combat) with automatically generated decor",
+          "Corridors of width 1 or 2 linking two rooms",
+          "Dungeon save and load",
+          "Dynamic NavMesh that updates as the player builds",
+          "Game design and C++ architecture (solo project)"
+        ]
+      },
+      "videoUrl": "",
+      "videoId": "",
+      "images": [],
+      "technologies": "Unreal Engine 5.8 / C++",
+      "role": {
+        "fr": "Developpeur et Game Designer",
+        "en": "Developer and Game Designer"
+      },
+      "teamSize": 1,
+      "team": {
+        "fr": "Projet personnel (solo)",
+        "en": "Personal project (solo)"
+      },
+      "duration": {
+        "fr": "En cours",
+        "en": "Ongoing"
+      },
+      "date": "2026",
       "status": {
         "fr": "En developpement",
         "en": "In Development"
@@ -665,6 +733,74 @@
   ],
   "systems": [
     {
+      "id": "bt-graph-viewer",
+      "name": "BTGraphViewer",
+      "category": {
+        "fr": "Outils de Debug",
+        "en": "Debug Tools"
+      },
+      "categoryId": "debug-tools",
+      "tags": ["Unreal Editor", "Plugin", "IA", "Debug", "BehaviorTree", "MCP"],
+      "shortDescription": {
+        "fr": "Plugin Unreal Engine 5.8 qui rejoue apres coup l'execution d'un Behavior Tree a partir du Visual Logger : timeline, graphe qui s'allume frame par frame et Blackboard de l'agent.",
+        "en": "Unreal Engine 5.8 plugin that replays a Behavior Tree's execution after the fact from the Visual Logger: timeline, graph lighting up frame by frame, and the agent's Blackboard."
+      },
+      "fullDescription": {
+        "fr": "BTGraphViewer est un plugin editeur pour Unreal Engine 5.8 que j'ai developpe pour rejouer apres coup l'execution d'un Behavior Tree. Le debogueur de Behavior Tree par defaut ne montre que ce que fait un agent a l'instant present. BTGraphViewer part des donnees du Visual Logger : on enregistre une session (ou on ouvre un fichier .bvlog capture par quelqu'un d'autre), puis on parcourt une timeline et on regarde le vrai graphe du Behavior Tree s'allumer frame par frame, avec le Blackboard de l'agent a cote.\n\nC'est utile quand le bug est survenu il y a trois minutes, sur une machine qui n'est pas la sienne. L'outil est strictement en lecture seule : les assets Behavior Tree affiches ne sont jamais modifies. Il s'ajoute a n'importe quel projet C++ ou Blueprint sans changement de code, et dispose d'une documentation publique.\n\nBTGraphViewer est aussi utilisable par un agent IA via le MCP d'Unreal Engine : un plugin optionnel expose le viewer au Toolset Registry du moteur, ce qui permet a l'agent d'ouvrir une capture, de choisir un agent, de se deplacer frame par frame et de lire l'etat du Blackboard, avec le meme viewer que celui utilise par un humain.",
+        "en": "BTGraphViewer is an Unreal Engine 5.8 editor plugin I developed to replay a Behavior Tree's execution after the fact. The default Behavior Tree debugger only shows what an agent is doing right now. BTGraphViewer works from Visual Logger data instead: you record a session (or open a .bvlog file captured by someone else), then scrub a timeline and watch the real Behavior Tree graph light up frame by frame, with the agent's Blackboard next to it.\n\nIt is useful when the bug happened three minutes ago, on a machine that isn't yours. The tool is strictly read-only: the Behavior Tree assets it displays are never modified. It drops into any C++ or Blueprint project with no code changes, and comes with public documentation.\n\nBTGraphViewer can also be used by an AI agent through Unreal Engine's MCP: an optional plugin exposes the viewer to the engine's Toolset Registry, letting the agent open a capture, pick an agent, step through frame by frame, and read the Blackboard state, through the same viewer a human uses."
+      },
+      "capabilities": {
+        "fr": [
+          "Rejouer l'execution d'un Behavior Tree depuis un enregistrement Visual Logger : capture en direct ou fichier .bvlog",
+          "Timeline precise a la frame : le noeud actif s'allume sur le vrai graphe du Behavior Tree",
+          "Vue Blackboard par agent a la frame selectionnee, avec recherche",
+          "Liste des agents avec filtre par classe et recherche par nom",
+          "Utilisable en onglet independant ou integre a la fenetre du Visual Logger, a cote de la timeline et de la liste des logs",
+          "Synchronisation optionnelle avec le Gameplay Debugger",
+          "Export texte d'une frame (frame dump) avec copie dans le presse-papiers",
+          "Utilisable par un agent IA via le MCP d'Unreal : plugin optionnel de 7 outils (BT Graph Viewer AI Toolset)"
+        ],
+        "en": [
+          "Replay a Behavior Tree's execution from a Visual Logger recording: live capture or .bvlog file",
+          "Frame-accurate timeline: the active node lights up on the real Behavior Tree graph",
+          "Per-agent Blackboard view at the selected frame, searchable",
+          "Agent list with class filter and name search",
+          "Usable as a standalone tab or embedded in the Visual Logger window, next to the timeline and log list",
+          "Optional synchronization with the Gameplay Debugger",
+          "Plain-text frame dump with clipboard copy",
+          "Usable by an AI agent through Unreal's MCP: optional 7-tool plugin (BT Graph Viewer AI Toolset)"
+        ]
+      },
+      "technicalDetails": {
+        "fr": [
+          "Plugin editeur uniquement, extension du Visual Logger d'Unreal Engine",
+          "Lecture des captures Visual Logger (.bvlog) et resolution de l'asset Behavior Tree via l'Asset Registry",
+          "Mise en correspondance des noeuds par index d'execution",
+          "Strictement en lecture seule : aucun asset affiche n'est modifie ni marque comme modifie",
+          "Second plugin optionnel exposant un toolset natif (BTGraphViewerToolset) au Toolset Registry d'Unreal, le serveur MCP du moteur",
+          "Documentation publique avec guide de demarrage, limitations connues et changelog"
+        ],
+        "en": [
+          "Editor-only plugin extending Unreal Engine's Visual Logger",
+          "Reads Visual Logger captures (.bvlog) and resolves the Behavior Tree asset through the Asset Registry",
+          "Node matching by execution index",
+          "Strictly read-only: displayed assets are never modified or marked dirty",
+          "Optional second plugin exposing a native toolset (BTGraphViewerToolset) to Unreal's Toolset Registry, the engine's MCP server",
+          "Public documentation with getting-started guide, known limitations, and changelog"
+        ]
+      },
+      "images": ["Assets/Images/BTGraphViewer.png"],
+      "logo": "Assets/Images/BTGraphViewer-logo.png",
+      "links": {
+        "docs": "https://julienpirat.github.io/btgraphviewer-docs/"
+      },
+      "technologies": "Unreal Engine 5.8, C++, Editor Plugin, MCP",
+      "context": {
+        "fr": "Plugin",
+        "en": "Plugin"
+      }
+    },
+    {
       "id": "detour-crowd",
       "name": "DetourCrowd Navigation",
       "category": {
@@ -779,44 +915,6 @@
       }
     },
     {
-      "id": "bt-graph-viewer",
-      "name": "BTGraphViewer",
-      "category": {
-        "fr": "Outils de Debug",
-        "en": "Debug Tools"
-      },
-      "categoryId": "debug-tools",
-      "tags": ["Unreal Editor", "Plugin", "IA", "Debug", "BehaviorTree"],
-      "shortDescription": {
-        "fr": "Plugin Unreal Editor qui etend le Visual Logger pour visualiser le BehaviorTree et le comportement complet d'une IA.",
-        "en": "Unreal Editor plugin extending the Visual Logger to visualize a BehaviorTree and an AI's full behavior."
-      },
-      "fullDescription": {
-        "fr": "BTGraphViewer est un plugin que j'ai developpe pour etendre le moteur Unreal Engine et que l'on peut ajouter a n'importe quel projet Unreal. Il s'agit d'une extension du Visual Logger permettant de visualiser un BehaviorTree sur une IA et de revoir l'integralite de son comportement.\n\nPour fonctionner, il suffit d'avoir un enregistrement du Visual Logger : le plugin reconstruit alors le graphe du BehaviorTree et permet de rejouer les decisions prises par l'IA au fil du temps, ce qui facilite grandement le debug de comportements complexes.",
-        "en": "BTGraphViewer is a plugin I developed to extend the Unreal Engine and that can be added to any Unreal project. It's an extension of the Visual Logger that allows visualizing an AI's BehaviorTree and reviewing its full behavior.\n\nIt only requires a Visual Logger recording to work: the plugin reconstructs the BehaviorTree graph and lets you replay the AI's decisions over time, making debugging complex behaviors much easier."
-      },
-      "technicalDetails": {
-        "fr": [
-          "Extension du Visual Logger d'Unreal Engine",
-          "Reconstruction du graphe de BehaviorTree a partir d'un enregistrement",
-          "Rejeu des decisions et de l'etat de l'IA dans le temps",
-          "Plugin reutilisable sur n'importe quel projet Unreal"
-        ],
-        "en": [
-          "Extension of Unreal Engine's Visual Logger",
-          "BehaviorTree graph reconstruction from a recording",
-          "Replay of AI decisions and state over time",
-          "Reusable plugin for any Unreal project"
-        ]
-      },
-      "images": [],
-      "technologies": "Unreal Engine 5, C++, Editor Plugin",
-      "context": {
-        "fr": "Plugin",
-        "en": "Plugin"
-      }
-    },
-    {
       "id": "navmesh-generation",
       "name": "Generation NavMesh",
       "category": {
@@ -824,24 +922,87 @@
         "en": "Navigation"
       },
       "categoryId": "navigation",
-      "tags": ["Navigation", "NavMesh", "World Partition", "IA"],
+      "tags": [
+        "Navigation",
+        "NavMesh",
+        "World Partition",
+        "NavArea",
+        "Pathfinding",
+        "IA"
+      ],
       "shortDescription": {
-        "fr": "Generation et configuration du NavMesh sous Unreal Engine (World Partition) pour la navigation des IA.",
-        "en": "NavMesh generation and configuration under Unreal Engine (World Partition) for AI navigation."
+        "fr": "Configuration et generation du NavMesh sous Unreal Engine selon les besoins d'un projet : NavMesh dynamique streame en World Partition, NavAreas, obstacles dynamiques et collisions.",
+        "en": "NavMesh configuration and generation in Unreal Engine tailored to a project's needs: streamed dynamic NavMesh under World Partition, NavAreas, dynamic obstacles, and collisions."
       },
       "fullDescription": {
-        "fr": "Description a venir.",
-        "en": "Description coming soon."
+        "fr": "Je concois, configure et optimise le NavMesh d'Unreal Engine pour repondre aux contraintes de chaque projet, de sa generation jusqu'a son execution. J'ai notamment mis en place un NavMesh dynamique en World Partition : il est streame avec le monde, ce qui supprime tout cout de reconstruction a l'execution, tout en laissant la possibilite de le reconstruire localement quand la geometrie bouge, au moment souhaite. J'ai egalement optimise le NavMesh en runtime sur de grands projets chez CORYS.\n\nJe configure les assets et leurs collisions pour optimiser la generation et obtenir exactement le NavMesh voulu. Je sais aussi diagnostiquer pourquoi un NavMesh ne correspond pas a ce qui est attendu. Je maitrise les NavAreas, les Dynamic Obstacles et les canaux de collision qui concernent le NavMesh, ainsi que les etapes de generation et leurs particularites. Je connais egalement tres bien les sujets annexes, comme le pathfinding et le Navigation Octree, qui sont etroitement lies au NavMesh.",
+        "en": "I design, configure, and optimize Unreal Engine's NavMesh to meet each project's constraints, from generation through runtime. In particular, I set up a dynamic NavMesh under World Partition: it is streamed with the world, which removes any runtime rebuild cost, while still allowing a local rebuild when geometry moves, whenever it is wanted. I have also optimized the NavMesh at runtime on large projects at CORYS.\n\nI configure assets and their collisions to optimize generation and get exactly the NavMesh we want. I can also diagnose why a NavMesh does not match what is expected. I know NavAreas, Dynamic Obstacles, and the collision channels that affect the NavMesh, as well as the generation stages and their quirks. I am also very comfortable with closely related topics such as pathfinding and the Navigation Octree."
+      },
+      "capabilities": {
+        "fr": [
+          "Configurer un NavMesh en fonction des besoins d'un projet",
+          "NavMesh dynamique en World Partition : streame avec le monde, aucun cout de reconstruction a l'execution",
+          "Reconstruction locale optionnelle quand la geometrie bouge, au moment voulu",
+          "Optimisation du NavMesh en runtime sur de grands projets chez CORYS",
+          "Configurer les assets et leurs collisions pour optimiser la generation et obtenir le NavMesh souhaite",
+          "Diagnostiquer et expliquer pourquoi un NavMesh n'est pas comme attendu"
+        ],
+        "en": [
+          "Configure a NavMesh to match a project's needs",
+          "Dynamic NavMesh under World Partition: streamed with the world, no runtime rebuild cost",
+          "Optional local rebuild when geometry moves, whenever it is wanted",
+          "NavMesh optimization at runtime on large projects at CORYS",
+          "Configure assets and their collisions to optimize generation and get the desired NavMesh",
+          "Diagnose and explain why a NavMesh is not what was expected"
+        ]
+      },
+      "technicalDetails": {
+        "fr": [
+          "NavAreas, Dynamic Obstacles et canaux de collision qui concernent le NavMesh",
+          "Etapes de generation du NavMesh et leurs particularites",
+          "Navigation Octree et pathfinding, des systemes etroitement lies au NavMesh",
+          "Choix entre NavMesh streame (sans reconstruction) et reconstruction dynamique selon le besoin du projet"
+        ],
+        "en": [
+          "NavAreas, Dynamic Obstacles, and the collision channels that affect the NavMesh",
+          "NavMesh generation stages and their quirks",
+          "Navigation Octree and pathfinding, systems closely tied to the NavMesh",
+          "Choosing between a streamed NavMesh (no rebuild) and dynamic rebuilding depending on the project's needs"
+        ]
+      },
+      "images": [],
+      "technologies": "Unreal Engine 5, NavMesh, World Partition, NavArea, Navigation Octree",
+      "context": {
+        "fr": "Moteur",
+        "en": "Engine"
+      }
+    },
+    {
+      "id": "moving-platform-navigation",
+      "name": "Navigation IA sur Plateforme Mobile",
+      "category": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "categoryId": "navigation",
+      "tags": ["Navigation", "NavMesh", "IA", "Plateforme mobile"],
+      "shortDescription": {
+        "fr": "Systeme de navigation IA sur une plateforme qui bouge : les agents continuent de naviguer correctement alors que le sol qui les porte est en mouvement.",
+        "en": "AI navigation system on a moving platform: agents keep navigating correctly while the ground carrying them is in motion."
+      },
+      "fullDescription": {
+        "fr": "Systeme de navigation permettant a des IA d'evoluer sur une plateforme en mouvement : les agents continuent de se deplacer et de naviguer correctement alors que le sol sur lequel ils se trouvent bouge lui-meme. Il s'inscrit dans le contexte des simulations de train/tram, ou les passagers evoluent dans un vehicule en marche.\n\nDescription technique a venir.",
+        "en": "Navigation system letting AI agents operate on a moving platform: agents keep moving and navigating correctly while the ground they stand on is itself in motion. It fits the context of train/tram simulations, where passengers move inside a running vehicle.\n\nTechnical description coming soon."
       },
       "technicalDetails": {
         "fr": [],
         "en": []
       },
       "images": [],
-      "technologies": "Unreal Engine 5, NavMesh, World Partition",
+      "technologies": "Unreal Engine 5, Navigation, IA",
       "context": {
-        "fr": "Moteur",
-        "en": "Engine"
+        "fr": "Systeme",
+        "en": "System"
       }
     },
     {
@@ -938,8 +1099,8 @@
       "categoryId": "editor-tools",
       "tags": ["MCP", "Editeur", "IA", "Blueprint", "C++", "Slate"],
       "shortDescription": {
-        "fr": "Plugin Unreal Engine 5 exposant l'editeur a une IA via le Model Context Protocol : une soixantaine d'outils pour lire, comprendre et modifier un projet Unreal.",
-        "en": "Unreal Engine 5 plugin exposing the editor to an AI through the Model Context Protocol: around sixty tools to read, understand, and modify an Unreal project."
+        "fr": "Plugin Unreal Engine 5 exposant l'editeur a une IA via le Model Context Protocol : des dizaines d'outils pour lire, comprendre et modifier un projet Unreal, y compris ses Behavior Trees.",
+        "en": "Unreal Engine 5 plugin exposing the editor to an AI through the Model Context Protocol: dozens of tools to read, understand, and modify an Unreal project, including its Behavior Trees."
       },
       "fullDescription": {
         "fr": "Unreal Companion est un plugin editeur pour Unreal Engine 5 que je developpe afin de donner a une IA un acces direct et structure a un projet Unreal. Plutot que de lui decrire son projet, le developpeur la laisse inspecter elle-meme les Blueprints, les assets, les materiaux ou le niveau, analyser un enregistrement de debug, puis appliquer les modifications demandees. Le plugin ne resume jamais : il expose des donnees brutes structurees et laisse l'IA interpreter, ce qui evite toute perte d'information. Chaque ecriture reste annulable au Ctrl-Z et n'est jamais sauvegardee automatiquement, le developpeur gardant la main sur ce qui est reellement enregistre.",
@@ -956,8 +1117,10 @@
           "Retrouver tous les Blueprints appelant une fonction donnee via l'index Find-in-Blueprints",
           "Modifier le niveau : creation, suppression, deplacement et edition de proprietes d'acteurs",
           "Editer les graphes Blueprint : pins, connexions, nodes, variables, fonctions et events",
+          "Editer les Behavior Trees : ajouter et supprimer des noeuds composites et tasks, poser et retirer des decorators et services, regler leurs proprietes, gerer les cles Blackboard",
           "Charger des regions World Partition et gerer la visibilite des Data Layers",
-          "Toujours en developpement : de nouveaux outils sont ajoutes regulierement"
+          "Piloter l'interface de l'editeur avec une souris synthetique : clic, defilement, survol et sequences de clics en un seul appel",
+          "En developpement actif (version 0.46) : chaque fonctionnalite est validee en direct dans l'editeur avant d'etre actee"
         ],
         "en": [
           "Read and explore Blueprints: graphs, nodes, variables, functions, and components",
@@ -969,8 +1132,10 @@
           "Find every Blueprint calling a given function through the Find-in-Blueprints index",
           "Modify the level: create, delete, move actors and edit their properties",
           "Edit Blueprint graphs: pins, connections, nodes, variables, functions, and events",
+          "Edit Behavior Trees: add and remove composite and task nodes, attach and detach decorators and services, set their properties, manage Blackboard keys",
           "Load World Partition regions and manage Data Layer visibility",
-          "Still in development: new tools are added regularly"
+          "Drive the editor UI with a synthetic mouse: click, scroll, hover, and click sequences in a single call",
+          "Under active development (version 0.46): every feature is validated live in the editor before it is accepted"
         ]
       },
       "technicalDetails": {
@@ -980,6 +1145,7 @@
           "Interface Slate integree a l'editeur pour suivre les appels en direct",
           "Introspection via la reflection Unreal, l'Asset Registry et l'index Find-in-Blueprints",
           "Ecritures transactionnelles (FScopedTransaction) : annulables, jamais sauvegardees, jamais de Perforce",
+          "Ecritures sur les graphes Behavior Tree fideles a la semantique du moteur : l'ordre d'execution des enfants derive de leur position X, les freres sont donc reespaces automatiquement",
           "Commandlet headless pour l'analyse hors editeur",
           "Aucune modification du moteur : le plugin s'ajoute a un projet existant sans toucher aux sources d'Unreal Engine"
         ],
@@ -989,6 +1155,7 @@
           "Slate interface embedded in the editor to monitor calls live",
           "Introspection via Unreal reflection, the Asset Registry, and the Find-in-Blueprints index",
           "Transactional writes (FScopedTransaction): undoable, never saved, never touching Perforce",
+          "Behavior Tree graph writes that respect engine semantics: child execution order comes from node X position, so siblings are re-spaced automatically",
           "Headless commandlet for out-of-editor analysis",
           "No engine modification: the plugin drops into an existing project without touching Unreal Engine sources"
         ]

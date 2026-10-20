@@ -5,7 +5,8 @@
       "Bash(do cp arcanthys.html \"$name.html\")",
       "Bash(done)",
       "Bash(where code *)",
-      "Bash(where devenv *)"
+      "Bash(where devenv *)",
+      "Bash(python -c ' *)"
     ]
   }
 }

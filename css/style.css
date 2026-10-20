@@ -949,6 +949,30 @@ ul, ol {
   font-size: 1.5rem;
 }
 
+.system-card-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.modal-title-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: var(--spacing-sm);
+  vertical-align: middle;
+  background: var(--accent-gradient);
+  border-radius: var(--radius-md);
+}
+
+.modal-title-logo img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .system-card-title {
   font-size: 1.125rem;
   font-weight: 600;

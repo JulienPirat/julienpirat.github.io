@@ -382,7 +382,7 @@ function generateSystemCards() {
                role="button"
                tabindex="0"
                aria-label="${currentLang === 'fr' ? 'Voir les details de' : 'View details of'} ${system.name}">
-        <div class="system-card-icon">${icon}</div>
+        <div class="system-card-icon">${system.logo ? `<img src="${system.logo}" alt="" class="system-card-icon-img">` : icon}</div>
         <h3 class="system-card-title">${system.name}</h3>
         <p class="system-card-description">${shortDesc}</p>
         <span class="system-card-context">
@@ -751,13 +751,24 @@ function generateSystemModalContent(system) {
   const technicalDetails = system.technicalDetails ? getText(system.technicalDetails) : [];
   const capabilities = system.capabilities ? getText(system.capabilities) : [];
 
+  // Links
+  const linksHtml = system.links && system.links.docs
+    ? `<div class="modal-section">
+         <h4 class="modal-section-title">${getUI('links')}</h4>
+         <div class="modal-links">
+           <a href="${system.links.docs}" target="_blank" rel="noopener noreferrer" class="modal-link">
+             ${ICONS.externalLink} ${getUI('viewDocs')}
+           </a>
+         </div>
+       </div>`
+    : '';
+
   // Media section
   let mediaHtml = '';
   if (system.images && system.images.length > 0) {
-    const isGif = system.images[0].endsWith('.gif');
     mediaHtml = `
       <div class="modal-media">
-        <img src="${system.images[0]}" alt="${system.name}" ${isGif ? 'style="object-fit: contain; background: #000;"' : ''}>
+        <img src="${system.images[0]}" alt="${system.name}" style="object-fit: contain; background: #000;">
       </div>
     `;
   } else {
@@ -793,7 +804,7 @@ function generateSystemModalContent(system) {
     <div class="modal-body">
       <div class="modal-header">
         <span class="modal-badge">${categoryText}</span>
-        <h2 class="modal-title">${system.name}</h2>
+        <h2 class="modal-title">${system.logo ? `<span class="modal-title-logo"><img src="${system.logo}" alt=""></span>` : ''}${system.name}</h2>
         <p class="modal-subtitle">${getText(system.context)}</p>
       </div>
 
@@ -801,6 +812,8 @@ function generateSystemModalContent(system) {
         <h4 class="modal-section-title">${getUI('overview')}</h4>
         <p class="modal-description">${fullDesc}</p>
       </div>
+
+      ${linksHtml}
 
       ${capabilitiesHtml ? `
         <div class="modal-section">

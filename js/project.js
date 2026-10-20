@@ -125,6 +125,8 @@ function renderProject() {
     `;
   } else if (currentProject.images && currentProject.images.length > 0) {
     videoContainer.innerHTML = `<img src="../${currentProject.images[0]}" alt="${currentProject.name}">`;
+  } else {
+    videoContainer.style.display = 'none';
   }
 
   // Title
