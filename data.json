@@ -2,7 +2,7 @@
   "profile": {
     "name": "Julien PIRAT",
     "title": {
-      "fr": "Ingenieur R&D | Unreal Engine Programmer",
+      "fr": "Ingénieur R&D | Unreal Engine Programmer",
       "en": "R&D Engineer | Unreal Engine Programmer"
     },
     "subtitle": {
@@ -10,7 +10,7 @@
       "en": "Unreal Engine 5 | Tools, AI & Debug"
     },
     "description": {
-      "fr": "Ingenieur R&D chez CORYS, je concois en C++ la navigation et les comportements IA de simulateurs de train et de tramway sous Unreal Engine 5. En recherche d'un poste d'Unreal Engine Programmer, je developpe egalement des outils de debug et des plugins, dont BTGraphViewer, publie sur FAB.",
+      "fr": "Ingénieur R&D chez CORYS, je conçois en C++ la navigation et les comportements IA de simulateurs de train et de tramway sous Unreal Engine 5. En recherche d'un poste d'Unreal Engine Programmer, je développe également des outils de debug et des plugins, dont BTGraphViewer, publié sur FAB.",
       "en": "R&D Engineer at CORYS, I design navigation and AI behaviors in C++ for train and tram simulators on Unreal Engine 5. Currently looking for an Unreal Engine Programmer role, I also build debug tools and plugins, including BTGraphViewer, published on FAB."
     },
     "github": "https://github.com/JulienPirat",
@@ -19,7 +19,7 @@
   },
   "ui": {
     "fr": {
-      "heroAvailable": "Disponible pour opportunites",
+      "heroAvailable": "Disponible pour opportunités",
       "heroIntro": "Salut, je suis",
       "heroDescription": "Ingénieur R&D spécialisé sur Unreal Engine 5, j'exploite et j'adapte les systèmes de navigation du moteur (NavMesh, CrowdManager) pour que mes IA se déplacent correctement selon les contraintes de chaque projet. Je développe également des extensions d'outils de debug (Visual Logger, Gameplay Debugger) ainsi que plusieurs outils MCP : pour piloter le Visual Logger, le Chaos Visual Debugger et Unreal Insights, et un autre permettant à une IA de piloter directement l'éditeur. Je vise aujourd'hui un poste d'Unreal Engine Programmer.",
       "viewWork": "Voir mes projets",
@@ -27,26 +27,26 @@
       "portfolioTitle": "Projets",
       "portfolioDescription": "Une collection de jeux et projets auxquels j'ai contribué ainsi que des game jams.",
       "careerLabel": "Parcours",
-      "careerEyebrow": "Carriere",
+      "careerEyebrow": "Carrière",
       "careerTitle": "Parcours",
       "current": "En cours",
       "technicalLabel": "Technique",
-      "systemsTitle": "Systemes & Outils",
+      "systemsTitle": "Systèmes & Outils",
       "systemsDescription": "Systèmes et outils que j'ai développés ainsi que des outils Unreal Engine que je maîtrise et utilise.",
-      "aboutLabel": "A propos",
+      "aboutLabel": "À propos",
       "aboutTitle": "Développeur de jeux passionné",
-      "aboutDescription": "Actuellement Ingenieur R&D chez CORYS sur Unreal Engine 5 (navigation, IA, outils internes), je developpe egalement des plugins personnels (BTGraphViewer) et je contribue a Arcanthys avec Ashen Bloom Studio sur mon temps libre. Je suis passionne par la creation d'outils qui facilitent le developpement des jeux.",
-      "skillsTitle": "Competences techniques",
-      "skillsDescription": "Maitrise du C++, des Blueprints, des outils de debug Unreal (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger), du systeme de navigation (NavMesh, Crowd, PathFollowing), du Gameplay Ability System (GAS), de la programmation IA (Behavior Trees, EQS, StateTree) et du developpement de plugins/outils pour Unreal Engine.",
-      "teamTitle": "Experience en equipe",
-      "teamDescription": "Experience en developpement collaboratif avec des equipes de 4 a 12 developpeurs. Competent en gestion de versions avec Perforce, gestion de projet avec Jira, et communication efficace.",
+      "aboutDescription": "Actuellement Ingénieur R&D chez CORYS sur Unreal Engine 5 (navigation, IA, outils internes), je développe également des plugins personnels (BTGraphViewer) et je contribue à Arcanthys avec Ashen Bloom Studio sur mon temps libre. Je suis passionné par la création d'outils qui facilitent le développement des jeux.",
+      "skillsTitle": "Compétences techniques",
+      "skillsDescription": "Maîtrise du C++, des Blueprints, des outils de debug Unreal (Visual Logger, Chaos Debug, Unreal Insights, Gameplay Debugger), du système de navigation (NavMesh, Crowd, PathFollowing), du Gameplay Ability System (GAS), de la programmation IA (Behavior Trees, EQS, StateTree) et du développement de plugins/outils pour Unreal Engine.",
+      "teamTitle": "Expérience en équipe",
+      "teamDescription": "Expérience en développement collaboratif avec des équipes de 4 à 12 développeurs. Compétent en gestion de versions avec Perforce, gestion de projet avec Jira, et communication efficace.",
       "educationTitle": "Formation",
-      "educationDescription": "Maitrise (2025) et Licence (2023) en Developpement de jeux video a l'UQAC (Canada), precedees d'un DUT Informatique (2022, IUT Dijon/Auxerre). Formation combinant connaissances theoriques et experience pratique sur divers genres de jeux.",
+      "educationDescription": "Maîtrise (2025) et Licence (2023) en Développement de jeux video à l'UQAC (Canada), précédées d'un DUT Informatique (2022, IUT Dijon/Auxerre). Formation combinant connaissances théoriques et expérience pratique sur divers genres de jeux.",
       "footerText": "2025 Julien PIRAT.",
-      "viewDetails": "Voir details",
+      "viewDetails": "Voir détails",
       "description": "Description",
       "contributions": "Mes contributions",
-      "projectDetails": "Details du projet",
+      "projectDetails": "Détails du projet",
       "technologies": "Technologies",
       "links": "Liens",
       "playOnItch": "Jouer sur itch.io",
@@ -54,19 +54,19 @@
       "viewDocs": "Voir la documentation",
       "viewFab": "Voir mon profil FAB",
       "date": "Date",
-      "team": "Equipe",
-      "duration": "Duree",
-      "role": "Role",
-      "overview": "Apercu",
-      "capabilities": "Fonctionnalites",
-      "technicalDetails": "Details techniques",
-      "implementationDetails": "Details d'implementation",
+      "team": "Équipe",
+      "duration": "Durée",
+      "role": "Rôle",
+      "overview": "Aperçu",
+      "capabilities": "Fonctionnalités",
+      "technicalDetails": "Détails techniques",
+      "implementationDetails": "Détails d'implémentation",
       "projectContext": "Type",
-      "specialty": "Specialite",
+      "specialty": "Spécialité",
       "aiSystems": "Moteur, Outils & IA",
       "workAt": "Travail à",
       "award": "Prix",
-      "diploma": "Diplome"
+      "diploma": "Diplôme"
     },
     "en": {
       "heroAvailable": "Available for opportunities",
@@ -137,7 +137,7 @@
       "company": "CORYS",
       "logo": "Assets/Images/Logo-CORYS.png",
       "role": {
-        "fr": "Ingenieur R&D Unreal Engine 5",
+        "fr": "Ingénieur R&D Unreal Engine 5",
         "en": "R&D Engineer, Unreal Engine 5"
       },
       "type": {
@@ -145,7 +145,7 @@
         "en": "Fixed-term contract"
       },
       "period": {
-        "fr": "Juin 2025 - Decembre 2026",
+        "fr": "Juin 2025 - Décembre 2026",
         "en": "June 2025 - December 2026"
       },
       "current": true,
@@ -154,20 +154,20 @@
         "en": "Passenger behaviors, AI navigation (NavMesh/World Partition, moving train), and internal tools (MCP, Visual Logger, Widgets) for Unreal Engine 5 simulations."
       },
       "fullDescription": {
-        "fr": "En CDD Ingenieur R&D chez CORYS depuis juin 2025, a la suite de mon stage, je concois et developpe en C++ le module de comportements passagers sur Unreal Engine 5 pour des simulations realistes de train/tram : montee/descente, acteurs speciaux, gestion de foule et echanges passagers avances. Je suis le referent technique du module passagers/IA : je contribue aux choix d'architecture et j'interagis avec les equipes de production et les artistes.\n\nJe travaille egalement sur les systemes de simulation associes (CrowdManager, path following, gestion des collisions) et sur la comprehension approfondie et la generation du NavMesh sous Unreal Engine en World Partition. J'ai concu un systeme de navigation IA permettant aux agents du simulateur de se deplacer dans un train en mouvement.\n\nEn parallele, je developpe des outils internes pour l'equipe : un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS, ainsi que des extensions du Visual Logger et du Gameplay Debugger. Je mene aussi des optimisations de performance (AIPooling, NavWalking, collisions, DelayedSpawning).",
+        "fr": "En CDD Ingénieur R&D chez CORYS depuis juin 2025, à la suite de mon stage, je conçois et développe en C++ le module de comportements passagers sur Unreal Engine 5 pour des simulations réalistes de train/tram : montée/descente, acteurs spéciaux, gestion de foule et échanges passagers avancés. Je suis le référent technique du module passagers/IA : je contribue aux choix d'architecture et j'interagis avec les équipes de production et les artistes.\n\nJe travaille également sur les systèmes de simulation associés (CrowdManager, path following, gestion des collisions) et sur la compréhension approfondie et la génération du NavMesh sous Unreal Engine en World Partition. J'ai conçu un système de navigation IA permettant aux agents du simulateur de se déplacer dans un train en mouvement.\n\nEn parallèle, je développe des outils internes pour l'équipe : un outil MCP permettant à une IA de piloter les outils Unreal développés par CORYS, ainsi que des extensions du Visual Logger et du Gameplay Debugger. Je mène aussi des optimisations de performance (AIPooling, NavWalking, collisions, DelayedSpawning).",
         "en": "As an R&D Engineer on a fixed-term contract at CORYS since June 2025, following my internship, I design and develop in C++ the passenger behavior module on Unreal Engine 5 for realistic train/tram simulations: boarding/alighting, special actors, crowd management, and advanced passenger exchanges. I am the technical lead of the passenger/AI module: I contribute to architecture decisions and work closely with production teams and artists.\n\nI also work on the related simulation systems (CrowdManager, path following, collision handling) and on an in-depth understanding and generation of the NavMesh under Unreal Engine with World Partition. I designed an AI navigation system that lets the simulator's agents move inside a moving train.\n\nAlongside this, I build internal tools for the team: an MCP tool letting an AI drive the Unreal tools developed by CORYS, plus extensions of the Visual Logger and Gameplay Debugger. I also carry out performance optimizations (AIPooling, NavWalking, collisions, DelayedSpawning)."
       },
       "contributions": {
         "fr": [
-          "Conception et developpement du module de comportements passagers sur UE5 (montee/descente, acteurs speciaux, gestion de foule, echanges passagers avances)",
-          "Systemes de simulation associes : CrowdManager, path following, gestion des collisions",
-          "Comprehension approfondie et generation du NavMesh sous Unreal Engine (+World Partition) adaptee aux environnements de simulation",
-          "Conception d'un systeme de navigation IA permettant aux agents du simulateur de se deplacer dans un train en mouvement",
-          "Developpement d'un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS",
+          "Conception et développement du module de comportements passagers sur UE5 (montée/descente, acteurs spéciaux, gestion de foule, échanges passagers avancés)",
+          "Systèmes de simulation associés : CrowdManager, path following, gestion des collisions",
+          "Compréhension approfondie et génération du NavMesh sous Unreal Engine (+World Partition) adaptée aux environnements de simulation",
+          "Conception d'un système de navigation IA permettant aux agents du simulateur de se déplacer dans un train en mouvement",
+          "Développement d'un outil MCP permettant à une IA de piloter les outils Unreal développés par CORYS",
           "Extension du Visual Logger et du Gameplay Debugger",
-          "Creation de Widgets Unreal pour faciliter le developpement des projets",
+          "Création de Widgets Unreal pour faciliter le développement des projets",
           "Optimisation des performances (AIPooling, NavWalking, Collisions, DelayedSpawning, etc.)",
-          "Referent technique sur le module passagers/IA : contribution aux choix d'architecture et interaction avec les equipes de production et les artistes"
+          "Référent technique sur le module passagers/IA : contribution aux choix d'architecture et interaction avec les équipes de production et les artistes"
         ],
         "en": [
           "Design and development of the passenger behavior module on UE5 (boarding/alighting, special actors, crowd management, advanced passenger exchanges)",
@@ -189,7 +189,7 @@
       "company": "CORYS",
       "logo": "Assets/Images/Logo-CORYS.png",
       "role": {
-        "fr": "Stage Developpeur Gameplay AI Unreal Engine 5",
+        "fr": "Stage Développeur Gameplay AI Unreal Engine 5",
         "en": "Gameplay AI Developer Intern, Unreal Engine 5"
       },
       "type": {
@@ -197,23 +197,23 @@
         "en": "Internship"
       },
       "period": {
-        "fr": "Decembre 2024 - Juin 2025",
+        "fr": "Décembre 2024 - Juin 2025",
         "en": "December 2024 - June 2025"
       },
       "current": false,
       "shortDescription": {
-        "fr": "Simulation realiste Train/Tram sur Unreal Engine 5 : module de comportements passagers (montee/descente, choix de place).",
+        "fr": "Simulation réaliste Train/Tram sur Unreal Engine 5 : module de comportements passagers (montée/descente, choix de place).",
         "en": "Realistic Train/Tram simulation on Unreal Engine 5: passenger behavior module (boarding/alighting, seat selection)."
       },
       "fullDescription": {
-        "fr": "Stage de developpeur Gameplay AI chez CORYS sur une simulation realiste de Train/Tram, exploitant tout le contenu IA d'Unreal Engine 5 (BehaviorTree, StateTree, Task, etc.).\n\nJ'ai conçu et developpe le module de comportements passagers sur UE5 (montee/descente, choix de place), en interaction reguliere avec les equipes de production et les artistes, en cherchant a allier realisme, fluidite et performance.",
+        "fr": "Stage de développeur Gameplay AI chez CORYS sur une simulation réaliste de Train/Tram, exploitant tout le contenu IA d'Unreal Engine 5 (BehaviorTree, StateTree, Task, etc.).\n\nJ'ai conçu et développé le module de comportements passagers sur UE5 (montée/descente, choix de place), en interaction régulière avec les équipes de production et les artistes, en cherchant à allier réalisme, fluidité et performance.",
         "en": "Gameplay AI developer internship at CORYS on a realistic Train/Tram simulation, using the full AI toolset of Unreal Engine 5 (BehaviorTree, StateTree, Task, etc.).\n\nI designed and developed the passenger behavior module on UE5 (boarding/alighting, seat selection), working closely with production teams and artists, aiming for a balance of realism, fluidity, and performance."
       },
       "contributions": {
         "fr": [
-          "Conception et developpement du module de comportements passagers sur UE5 (montee/descente, choix de place)",
-          "Interaction avec les equipes de production et des artistes",
-          "Optimisation pour allier realisme, fluidite et performance"
+          "Conception et développement du module de comportements passagers sur UE5 (montée/descente, choix de place)",
+          "Interaction avec les équipes de production et des artistes",
+          "Optimisation pour allier réalisme, fluidité et performance"
         ],
         "en": [
           "Design and development of the passenger behavior module on UE5 (boarding/alighting, seat selection)",
@@ -234,25 +234,25 @@
         "en": "3D/2D Mobile Platformer"
       },
       "category": {
-        "fr": "En developpement",
+        "fr": "En développement",
         "en": "In Development"
       },
       "categoryId": "in-development",
       "tags": ["Unreal Engine", "C++", "GAS", "IA", "BehaviorTree", "Mobile"],
       "shortDescription": {
-        "fr": "Jeu de plateforme 3D/2D sur Android avec Ashen Bloom Studio. Action, narration et exploration dans un monde brise par une catastrophe magique.",
+        "fr": "Jeu de plateforme 3D/2D sur Android avec Ashen Bloom Studio. Action, narration et exploration dans un monde brisé par une catastrophe magique.",
         "en": "3D/2D platformer for Android with Ashen Bloom Studio. Action, narrative, and exploration in a world shattered by magical catastrophe."
       },
       "fullDescription": {
-        "fr": "Dans un monde dechire par une catastrophe magique, l'Eclipse d'Argent, la magie elle-meme s'est brisee, engendrant chaos et monstruosites. De ce cataclysme est nee une entite unique, pure et lumineuse... vous.\n\nArcanthys est un jeu de plateforme en 3D/2D sur Android, melant action, narration et exploration, ou chaque zone raconte les cicatrices laissees par l'Eclipse. C'est un jeu inde aux graphismes stylises et colores pour contraster avec l'univers sombre du scenario.\n\nAu fil de votre periple, vous debloquerez de nouveaux pouvoirs magiques, affronterez des creatures deformees par la corruption, et croiserez les vestiges d'anciennes civilisations oubliees.",
+        "fr": "Dans un monde déchiré par une catastrophe magique, l'Éclipse d'Argent, la magie elle-meme s'est brisée, engendrant chaos et monstruosités. De ce cataclysme est née une entité unique, pure et lumineuse... vous.\n\nArcanthys est un jeu de plateforme en 3D/2D sur Android, mêlant action, narration et exploration, où chaque zone raconte les cicatrices laissées par l'Éclipse. C'est un jeu inde aux graphismes stylisés et colorés pour contraster avec l'univers sombre du scénario.\n\nAu fil de votre périple, vous débloquerez de nouveaux pouvoirs magiques, affronterez des créatures déformées par la corruption, et croiserez les vestiges d'anciennes civilisations oubliées.",
         "en": "In a world torn apart by a magical catastrophe, the Silver Eclipse, magic itself has shattered, spawning chaos and monstrosities. From this cataclysm was born a unique entity, pure and luminous... you.\n\nArcanthys is a 3D/2D platformer on Android, blending action, narrative, and exploration. Each zone tells the story of the scars left by the Eclipse. It's an indie game with stylized, colorful graphics to contrast with the dark narrative universe.\n\nAs you progress, you'll unlock new magical powers, face creatures deformed by corruption, and encounter the remnants of forgotten civilizations."
       },
       "contributions": {
         "fr": [
-          "Integration du Gameplay Ability System (GAS) d'Unreal Engine",
-          "Realisation des competences (Blueprint) et attributs (C++)",
-          "Realisation des comportements des ennemis: BehaviorTree, Blackboard, DetourCrowd",
-          "Ajout du systeme de quetes"
+          "Intégration du Gameplay Ability System (GAS) d'Unreal Engine",
+          "Réalisation des compétences (Blueprint) et attributs (C++)",
+          "Réalisation des comportements des ennemis: BehaviorTree, Blackboard, DetourCrowd",
+          "Ajout du système de quêtes"
         ],
         "en": [
           "Integration of Unreal Engine's Gameplay Ability System (GAS)",
@@ -271,7 +271,7 @@
       },
       "teamSize": 12,
       "team": {
-        "fr": "12 developpeurs (Ashen Bloom Studio)",
+        "fr": "12 développeurs (Ashen Bloom Studio)",
         "en": "12 developers (Ashen Bloom Studio)"
       },
       "duration": {
@@ -280,7 +280,7 @@
       },
       "date": "2025",
       "status": {
-        "fr": "En developpement",
+        "fr": "En développement",
         "en": "In Development"
       },
       "links": {
@@ -296,26 +296,26 @@
         "en": "Dungeon Management"
       },
       "category": {
-        "fr": "En developpement",
+        "fr": "En développement",
         "en": "In Development"
       },
       "categoryId": "in-development",
       "tags": ["Unreal Engine 5.8", "C++", "Outils", "NavMesh", "Gestion"],
       "shortDescription": {
-        "fr": "Jeu de gestion de donjon : le joueur construit le donjon et dose le danger pour des aventuriers. Editeur de donjon sur grille en cours de developpement.",
-        "en": "Dungeon management game: the player builds the dungeon and tunes the danger for adventurers. Grid-based dungeon editor under development."
+        "fr": "Prototype de jeu de gestion de donjon : le joueur construit le donjon et dose le danger pour des aventuriers. Éditeur de donjon sur grille en cours de développement.",
+        "en": "Dungeon management game prototype: the player builds the dungeon and tunes the danger for adventurers. Grid-based dungeon editor under development."
       },
       "fullDescription": {
-        "fr": "TemperDungeon est un jeu de gestion dans lequel le joueur est une force invisible qui vit dans un donjon. Il construit le donjon, y place des monstres, et doit doser le danger pour des groupes d'aventuriers qui y entrent : assez de danger pour qu'ils progressent, pas assez pour qu'ils meurent. Le projet cherche une tension attentive plutot que la destruction.\n\nLe projet est parti d'un jeu a clics, abandonne au profit de ce concept. Il est developpe sous Unreal Engine 5.8 en C++. A ce jour, le coeur de l'editeur de donjon est en place ; les aventuriers qui parcourent le donjon construit sont la prochaine etape.",
-        "en": "TemperDungeon is a management game in which the player is an invisible force living inside a dungeon. They build the dungeon, place monsters in it, and must tune the danger for groups of adventurers entering it: enough danger for them to progress, not enough for them to die. The project aims for careful tension rather than destruction.\n\nThe project started as a clicker game, dropped in favor of this concept. It is built in C++ on Unreal Engine 5.8. So far, the core of the dungeon editor is in place; adventurers walking through the built dungeon are the next step."
+        "fr": "TemperDungeon est un jeu de gestion dans lequel le joueur est une force invisible qui vit dans un donjon. Il construit le donjon, y place des monstres, et doit doser le danger pour des groupes d'aventuriers qui y entrent : assez de danger pour qu'ils progressent, pas assez pour qu'ils meurent. Le projet cherche une tension attentive plutôt que la destruction.\n\nIl s'agit d'un prototype, développé sous Unreal Engine 5.8 en C++. À ce jour, le cœur de l'éditeur de donjon est en place. Les aventuriers qui parcourent le donjon construit sont la prochaine étape.",
+        "en": "TemperDungeon is a management game in which the player is an invisible force living inside a dungeon. They build the dungeon, place monsters in it, and must tune the danger for groups of adventurers entering it: enough danger for them to progress, not enough for them to die. The project aims for careful tension rather than destruction.\n\nIt is a prototype, built in C++ on Unreal Engine 5.8. So far, the core of the dungeon editor is in place. Adventurers walking through the built dungeon are the next step."
       },
       "contributions": {
         "fr": [
-          "Editeur de donjon en jeu sur grille : placer, pivoter et effacer des salles",
-          "Trois types de salles (garde, festin, combat) avec decor genere automatiquement",
+          "Éditeur de donjon en jeu sur grille : placer, pivoter et effacer des salles",
+          "Trois types de salles (garde, festin, combat) avec décor généré automatiquement",
           "Couloirs de largeur 1 ou 2 reliant deux salles",
           "Sauvegarde et chargement du donjon",
-          "NavMesh dynamique qui se met a jour quand le joueur construit",
+          "NavMesh dynamique qui se met à jour quand le joueur construit",
           "Conception du jeu et architecture C++ (projet solo)"
         ],
         "en": [
@@ -332,7 +332,7 @@
       "images": [],
       "technologies": "Unreal Engine 5.8 / C++",
       "role": {
-        "fr": "Developpeur et Game Designer",
+        "fr": "Développeur et Game Designer",
         "en": "Developer and Game Designer"
       },
       "teamSize": 1,
@@ -346,7 +346,7 @@
       },
       "date": "2026",
       "status": {
-        "fr": "En developpement",
+        "fr": "En développement",
         "en": "In Development"
       },
       "links": {
@@ -358,7 +358,7 @@
       "id": "green-rebirth",
       "name": "Green Rebirth",
       "subtitle": {
-        "fr": "Jeu Serieux Environnemental",
+        "fr": "Jeu Sérieux Environnemental",
         "en": "Environmental Serious Game"
       },
       "category": {
@@ -366,21 +366,21 @@
         "en": "Game Jam"
       },
       "categoryId": "game-jam",
-      "tags": ["Unreal Engine", "Blueprints", "Game Jam", "Jeu serieux"],
+      "tags": ["Unreal Engine", "Blueprints", "Game Jam", "Jeu sérieux"],
       "shortDescription": {
-        "fr": "Jeu serieux prime lors de la CREATE Game Jam 2024. Aidez les fees a restaurer une foret mourante dans cette experience environnementale.",
+        "fr": "Jeu sérieux primé lors de la CREATE Game Jam 2024. Aidez les fées à restaurer une forêt mourante dans cette expérience environnementale.",
         "en": "Award-winning serious game from CREATE Game Jam 2024. Help fairies restore a dying forest in this environmental experience."
       },
       "fullDescription": {
-        "fr": "Green Rebirth est un projet qui a ete realise lors de la CREATE Game Jam 2024. Pour ce projet, nous etions un groupe de sept developpeurs et d'une artiste.\n\nIl s'agit d'un jeu ou vous avez quelques jours pour aider les petites fees a restaurer une foret pleine d'arbres morts et d'ordures.\n\nCe projet a ete realise sur Unreal Engine 5.4, en grande partie en Blueprints pour optimiser notre temps. Nous avons pu avoir un scope adapte a nos competences, ce qui nous a permis de consacrer du temps au polish.",
+        "fr": "Green Rebirth est un projet qui a été réalisé lors de la CREATE Game Jam 2024. Pour ce projet, nous étions un groupe de sept développeurs et d'une artiste.\n\nIl s'agit d'un jeu où vous avez quelques jours pour aider les petites fées à restaurer une forêt pleine d'arbres morts et d'ordures.\n\nCe projet a été réalisé sur Unreal Engine 5.4, en grande partie en Blueprints pour optimiser notre temps. Nous avons pu avoir un scope adapté à nos compétences, ce qui nous a permis de consacrer du temps au polish.",
         "en": "Green Rebirth was created during the CREATE Game Jam 2024 with a team of seven developers and one artist.\n\nIt's a game where you have a few days to help little fairies restore a forest full of dead trees and trash.\n\nThe project was developed on Unreal Engine 5.4, primarily using Blueprints to optimize our time. We managed to scope appropriately for our skills, allowing us to dedicate time to polish."
       },
       "contributions": {
         "fr": [
-          "Realisation du fonctionnement des fleurs qui se propagent",
-          "Realisation du systeme de placement des fleurs et des arbres",
-          "Ajout du parametre de sensibilite de la souris",
-          "Resolution de nombreux bugs de gameplay"
+          "Réalisation du fonctionnement des fleurs qui se propagent",
+          "Réalisation du système de placement des fleurs et des arbres",
+          "Ajout du paramètre de sensibilité de la souris",
+          "Résolution de nombreux bugs de gameplay"
         ],
         "en": [
           "Flower propagation system implementation",
@@ -432,23 +432,23 @@
         "en": "Competition"
       },
       "categoryId": "competition",
-      "tags": ["Unreal Engine", "Multijoueur", "Reseau", "Co-op", "Ubisoft"],
+      "tags": ["Unreal Engine", "Multijoueur", "Réseau", "Co-op", "Ubisoft"],
       "shortDescription": {
-        "fr": "Jeu multijoueur cooperatif developpe pour le concours Ubisoft 2024. Implementation de la replication reseau et des RPCs.",
+        "fr": "Jeu multijoueur coopératif développé pour le concours Ubisoft 2024. Implémentation de la réplication réseau et des RPCs.",
         "en": "Multiplayer co-op game developed for the Ubisoft Competition 2024. Network replication and RPC implementation."
       },
       "fullDescription": {
-        "fr": "Clean Dream est un projet qui a ete realise lors du concours Ubisoft de 2024. Pour ce projet, nous etions un groupe de huit developpeurs.\n\nIl s'agit d'un jeu cooperatif en reseau realise sur Unreal Engine. Pour assurer la coordination dans notre equipe, nous avons utilise Discord et Jira, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la realisation des taupes principalement ainsi que sur la resolution de bugs, que ce soit du cote de la programmation du gameplay ou du reseau.\n\nDans ce projet, j'ai pu cooperer avec des personnes que je ne connaissais pas avant. Cela m'a permis de me rendre compte que la communication dans une equipe est tres importante. De plus, le fait d'avoir des Game Designers dans l'equipe m'a permis d'obtenir un apercu du travail en entreprise.",
+        "fr": "Clean Dream est un projet qui a été réalisé lors du concours Ubisoft de 2024. Pour ce projet, nous étions un groupe de huit développeurs.\n\nIl s'agit d'un jeu coopératif en réseau réalisé sur Unreal Engine. Pour assurer la coordination dans notre équipe, nous avons utilise Discord et Jira, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation des taupes principalement ainsi que sur la résolution de bugs, que ce soit du côté de la programmation du gameplay ou du réseau.\n\nDans ce projet, j'ai pu coopérer avec des personnes que je ne connaissais pas avant. Cela m'a permis de me rendre compte que la communication dans une équipe est très importante. De plus, le fait d'avoir des Game Designers dans l'équipe m'a permis d'obtenir un aperçu du travail en entreprise.",
         "en": "Clean Dream was developed for the Ubisoft Competition 2024 with a team of eight developers.\n\nIt's a networked cooperative game built on Unreal Engine. For team coordination, we used Discord and Jira, along with Perforce for version control.\n\nMy main contribution focused on mole behavior implementation and bug fixing for both gameplay and networking.\n\nThis project taught me the importance of communication in a team, even with people you don't know. Working with Game Designers gave me insight into professional game development workflows."
       },
       "contributions": {
         "fr": [
-          "Realisation du comportement des taupes",
-          "Realisation de l'interaction avec les trous de taupes",
-          "Ajout de l'etourdissement des mobs avec un caillou",
+          "Réalisation du comportement des taupes",
+          "Réalisation de l'interaction avec les trous de taupes",
+          "Ajout de l'étourdissement des mobs avec un caillou",
           "Ajout de l'UI pour les interactions avec les trous de taupes",
-          "Grandes utilisations du reseau impliquant la replication ainsi que les RPC",
-          "Resolution de nombreux bugs de reseau et de gameplay"
+          "Grandes utilisations du réseau impliquant la réplication ainsi que les RPC",
+          "Résolution de nombreux bugs de réseau et de gameplay"
         ],
         "en": [
           "Mole behavior implementation",
@@ -470,7 +470,7 @@
       },
       "teamSize": 8,
       "team": {
-        "fr": "8 developpeurs",
+        "fr": "8 développeurs",
         "en": "8 developers"
       },
       "duration": {
@@ -490,7 +490,7 @@
       "id": "vrecycle",
       "name": "VRecycle",
       "subtitle": {
-        "fr": "Jeu Serieux VR",
+        "fr": "Jeu Sérieux VR",
         "en": "VR Serious Game"
       },
       "category": {
@@ -498,20 +498,20 @@
         "en": "University"
       },
       "categoryId": "university",
-      "tags": ["Unreal Engine", "VR", "Jeu serieux", "GameplayTags"],
+      "tags": ["Unreal Engine", "VR", "Jeu sérieux", "GameplayTags"],
       "shortDescription": {
-        "fr": "Jeu serieux en VR sur le tri des dechets developpe a l'UQAC. Experience educative de sensibilisation au recyclage.",
+        "fr": "Jeu sérieux en VR sur le tri des déchets développé à l'UQAC. Expérience éducative de sensibilisation au recyclage.",
         "en": "VR serious game about waste sorting developed at UQAC. Educational experience raising awareness about recycling."
       },
       "fullDescription": {
-        "fr": "VRecycle est un projet universitaire impliquant une equipe de six developpeurs. Il s'agit d'un jeu serieux en realite virtuelle realise sur Unreal Engine.\n\nLe but de notre jeu est de sensibiliser un large public au tri des dechets.\n\nPour assurer la coordination, nous avons utilise Discord ainsi que Perforce pour la gestion des versions. Ma contribution au projet a porte sur la modelisation des dechets, le systeme de tri dans les poubelles et le deplacement du joueur.",
+        "fr": "VRecycle est un projet universitaire impliquant une équipe de six développeurs. Il s'agit d'un jeu sérieux en réalité virtuelle réalisé sur Unreal Engine.\n\nLe but de notre jeu est de sensibiliser un large public au tri des déchets.\n\nPour assurer la coordination, nous avons utilise Discord ainsi que Perforce pour la gestion des versions. Ma contribution au projet a porte sur la modélisation des déchets, le système de tri dans les poubelles et le déplacement du joueur.",
         "en": "VRecycle is a university project involving a team of six developers. It's a serious game in virtual reality built on Unreal Engine.\n\nThe goal is to raise awareness about waste sorting for a wide audience.\n\nFor coordination, we used Discord and Perforce for version control. My contributions focused on waste modeling, the sorting system for bins, and player movement."
       },
       "contributions": {
         "fr": [
-          "Realisation de tous les dechets en utilisant les GameplayTags",
-          "Realisation du deplacement au controller",
-          "Realisation du systeme de tri des dechets"
+          "Réalisation de tous les déchets en utilisant les GameplayTags",
+          "Réalisation du déplacement au controller",
+          "Réalisation du système de tri des déchets"
         ],
         "en": [
           "All waste items implementation using GameplayTags",
@@ -529,7 +529,7 @@
       },
       "teamSize": 6,
       "team": {
-        "fr": "6 developpeurs",
+        "fr": "6 développeurs",
         "en": "6 developers"
       },
       "duration": {
@@ -560,19 +560,19 @@
       "categoryId": "university",
       "tags": ["Unreal Engine", "Co-op", "Puzzle", "3D"],
       "shortDescription": {
-        "fr": "Jeu de puzzle cooperatif en 3D avec elements de duel developpe a l'UQAC. Mecaniques d'eau montante et systemes de reapparition.",
+        "fr": "Jeu de puzzle coopératif en 3D avec éléments de duel développé à l'UQAC. Mécaniques d'eau montante et systèmes de réapparition.",
         "en": "3D cooperative puzzle game with duel elements developed at UQAC. Rising water mechanics and respawn systems."
       },
       "fullDescription": {
-        "fr": "TempleTrap est un projet universitaire impliquant une equipe de quatre developpeurs. Il s'agit d'un jeu en cooperation en 3D realise sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la realisation de l'eau qui monte a la fin d'un niveau. J'ai egalement contribue aux morts temporaires et definitives des joueurs. J'ai aussi ajoute certains elements artistiques, comme les torches et quelques lumieres.",
+        "fr": "TempleTrap est un projet universitaire impliquant une équipe de quatre développeurs. Il s'agit d'un jeu en coopération en 3D réalisé sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation de l'eau qui monte à la fin d'un niveau. J'ai également contribué aux morts temporaires et définitives des joueurs. J'ai aussi ajouté certains éléments artistiques, comme les torches et quelques lumières.",
         "en": "TempleTrap is a university project involving a team of four developers. It's a 3D cooperative game built on Unreal Engine.\n\nFor coordination, we used Discord and Perforce for version control.\n\nMy contributions focused on the rising water at the end of levels, temporary and permanent player deaths, and artistic elements like torches and lighting."
       },
       "contributions": {
         "fr": [
-          "Implementation d'un systeme de fin de niveau",
-          "Correction de bugs lies aux deplacements d'un pilier",
-          "Implementation du mecanisme de reapparition et de gestion de la mort des joueurs",
-          "Ajout des elements artistiques"
+          "Implémentation d'un système de fin de niveau",
+          "Correction de bugs liés aux déplacements d'un pilier",
+          "Implémentation du mécanisme de réapparition et de gestion de la mort des joueurs",
+          "Ajout des éléments artistiques"
         ],
         "en": [
           "End-of-level system implementation",
@@ -592,7 +592,7 @@
       },
       "teamSize": 4,
       "team": {
-        "fr": "4 developpeurs",
+        "fr": "4 développeurs",
         "en": "4 developers"
       },
       "duration": {
@@ -600,7 +600,7 @@
         "en": "2 months"
       },
       "date": {
-        "fr": "Decembre 2023",
+        "fr": "Décembre 2023",
         "en": "December 2023"
       },
       "institution": "UQAC",
@@ -623,19 +623,19 @@
       "categoryId": "university",
       "tags": ["Unreal Engine", "Roguelite", "IA", "EQS", "C++", "3D"],
       "shortDescription": {
-        "fr": "Roguelite en 3D avec systemes d'IA avances utilisant les Behavior Trees et l'Environment Query System (EQS).",
+        "fr": "Roguelite en 3D avec systèmes d'IA avancés utilisant les Behavior Trees et l'Environment Query System (EQS).",
         "en": "3D roguelite with advanced AI systems using Behavior Trees and Environment Query System (EQS)."
       },
       "fullDescription": {
-        "fr": "Vivaldi est un projet universitaire impliquant une equipe de sept developpeurs. Il s'agit d'un roguelite en 3D realise sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Teams et Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la realisation des intelligences artificielles ainsi que sur la resolution de bugs, que ce soit du cote de la programmation ou du cote artistique.",
+        "fr": "Vivaldi est un projet universitaire impliquant une équipe de sept développeurs. Il s'agit d'un roguelite en 3D réalisé sur Unreal Engine.\n\nPour assurer la coordination, nous avons utilise Teams et Discord, ainsi que Perforce pour la gestion des versions.\n\nMa contribution dans le projet a porte sur la réalisation des intelligences artificielles ainsi que sur la résolution de bugs, que ce soit du côté de la programmation ou du côté artistique.",
         "en": "Vivaldi is a university project involving a team of seven developers. It's a 3D roguelite built on Unreal Engine.\n\nFor coordination, we used Teams and Discord, along with Perforce for version control.\n\nMy contributions focused on AI implementation and bug fixing for both programming and artistic elements."
       },
       "contributions": {
         "fr": [
           "Utilisation des Tasks pour la gestion des intelligences artificielles",
-          "Realisation de deux intelligences artificielles, l'une pour le combat rapproche et l'autre pour le combat a distance",
+          "Réalisation de deux intelligences artificielles, l'une pour le combat rapproché et l'autre pour le combat à distance",
           "Utilisation de l'Environment Query System (EQS)",
-          "Utilisation des Blueprints et du C++ pour la realisation des intelligences artificielles"
+          "Utilisation des Blueprints et du C++ pour la réalisation des intelligences artificielles"
         ],
         "en": [
           "AI Task system implementation",
@@ -655,7 +655,7 @@
       },
       "teamSize": 7,
       "team": {
-        "fr": "7 developpeurs",
+        "fr": "7 développeurs",
         "en": "7 developers"
       },
       "duration": {
@@ -686,19 +686,19 @@
       "categoryId": "personal",
       "tags": ["Unreal Engine", "C++", "DataTables", "Tower Defense"],
       "shortDescription": {
-        "fr": "Jeu de tower defense construit en C++ pour ameliorer mes competences sur Unreal Engine. Systeme de vagues utilisant les DataTables.",
+        "fr": "Jeu de tower defense construit en C++ pour améliorer mes compétences sur Unreal Engine. Système de vagues utilisant les DataTables.",
         "en": "Tower defense game built in C++ to improve Unreal Engine skills. Wave system using DataTables."
       },
       "fullDescription": {
-        "fr": "Ce projet avait pour but de realiser un petit systeme permettant de positionner des acteurs sur un niveau. J'ai ensuite poursuivi pour creer un petit jeu de tower defense dans le but d'ameliorer mes competences lors de mes debuts dans Unreal Engine.\n\nLe projet comprend une boucle de gameplay complete de tower defense avec le placement, le deplacement et la destruction des tourelles, ainsi qu'un systeme de vagues d'ennemis utilisant les DataTables.",
+        "fr": "Ce projet avait pour but de réaliser un petit système permettant de positionner des acteurs sur un niveau. J'ai ensuite poursuivi pour créer un petit jeu de tower defense dans le but d'améliorer mes compétences lors de mes débuts dans Unreal Engine.\n\nLe projet comprend une boucle de gameplay complète de tower defense avec le placement, le déplacement et la destruction des tourelles, ainsi qu'un système de vagues d'ennemis utilisant les DataTables.",
         "en": "This personal project aimed to create a small system for positioning actors in a level. I continued developing it into a tower defense game to improve my skills when starting with Unreal Engine.\n\nThe project features a complete tower defense gameplay loop with turret placement, movement, and destruction, plus an enemy wave system using DataTables."
       },
       "contributions": {
         "fr": [
           "Positionner des tourelles dans des emplacements valides",
-          "Deplacer des tourelles",
-          "Detruire des tourelles",
-          "Creer un systeme de vagues pour l'apparition des ennemis en utilisant des DataTables"
+          "Déplacer des tourelles",
+          "Détruire des tourelles",
+          "Créer un système de vagues pour l'apparition des ennemis en utilisant des DataTables"
         ],
         "en": [
           "Turret placement in valid locations",
@@ -713,7 +713,7 @@
       "images": [],
       "technologies": "Unreal Engine / C++",
       "role": {
-        "fr": "Developpeur Solo",
+        "fr": "Développeur Solo",
         "en": "Solo Developer"
       },
       "teamSize": 1,
@@ -746,20 +746,20 @@
       "categoryId": "debug-tools",
       "tags": ["Unreal Editor", "Plugin", "IA", "Debug", "BehaviorTree", "MCP"],
       "shortDescription": {
-        "fr": "Plugin Unreal Engine 5.8 qui rejoue apres coup l'execution d'un Behavior Tree a partir du Visual Logger : timeline, graphe qui s'allume frame par frame et Blackboard de l'agent.",
+        "fr": "Plugin Unreal Engine 5.8 qui rejoue après coup l'exécution d'un Behavior Tree à partir du Visual Logger : timeline, graphe qui s'allume frame par frame et Blackboard de l'agent.",
         "en": "Unreal Engine 5.8 plugin that replays a Behavior Tree's execution after the fact from the Visual Logger: timeline, graph lighting up frame by frame, and the agent's Blackboard."
       },
       "fullDescription": {
-        "fr": "BTGraphViewer est un plugin editeur pour Unreal Engine 5.8 que j'ai developpe et publie sur FAB pour rejouer apres coup l'execution d'un Behavior Tree. Le debogueur de Behavior Tree par defaut ne montre que ce que fait un agent a l'instant present. BTGraphViewer part des donnees du Visual Logger : on enregistre une session (ou on ouvre un fichier .bvlog capture par quelqu'un d'autre), puis on parcourt une timeline et on regarde le vrai graphe du Behavior Tree s'allumer frame par frame, avec le Blackboard de l'agent a cote.\n\nC'est utile quand le bug est survenu il y a trois minutes, sur une machine qui n'est pas la sienne. L'outil est strictement en lecture seule : les assets Behavior Tree affiches ne sont jamais modifies. Il s'ajoute a n'importe quel projet C++ ou Blueprint sans changement de code, et dispose d'une documentation publique.\n\nBTGraphViewer est aussi utilisable par un agent IA via le MCP d'Unreal Engine : un plugin optionnel expose le viewer au Toolset Registry du moteur, ce qui permet a l'agent d'ouvrir une capture, de choisir un agent, de se deplacer frame par frame et de lire l'etat du Blackboard, avec le meme viewer que celui utilise par un humain.",
+        "fr": "BTGraphViewer est un plugin éditeur pour Unreal Engine 5.8 que j'ai développé et publié sur FAB pour rejouer après coup l'exécution d'un Behavior Tree. Le débogueur de Behavior Tree par défaut ne montre que ce que fait un agent à l'instant présent. BTGraphViewer part des données du Visual Logger : on enregistre une session (ou on ouvre un fichier .bvlog capture par quelqu'un d'autre), puis on parcourt une timeline et on regarde le vrai graphe du Behavior Tree s'allumer frame par frame, avec le Blackboard de l'agent à côté.\n\nC'est utile quand le bug est survenu il y a trois minutes, sur une machine qui n'est pas la sienne. L'outil est strictement en lecture seule : les assets Behavior Tree affichés ne sont jamais modifiés. Il s'ajoute à n'importe quel projet C++ ou Blueprint sans changement de code, et dispose d'une documentation publique.\n\nBTGraphViewer est aussi utilisable par un agent IA via le MCP d'Unreal Engine : un plugin optionnel expose le viewer au Toolset Registry du moteur, ce qui permet à l'agent d'ouvrir une capture, de choisir un agent, de se déplacer frame par frame et de lire l'état du Blackboard, avec le meme viewer que celui utilise par un humain.",
         "en": "BTGraphViewer is an Unreal Engine 5.8 editor plugin I developed and published on FAB to replay a Behavior Tree's execution after the fact. The default Behavior Tree debugger only shows what an agent is doing right now. BTGraphViewer works from Visual Logger data instead: you record a session (or open a .bvlog file captured by someone else), then scrub a timeline and watch the real Behavior Tree graph light up frame by frame, with the agent's Blackboard next to it.\n\nIt is useful when the bug happened three minutes ago, on a machine that isn't yours. The tool is strictly read-only: the Behavior Tree assets it displays are never modified. It drops into any C++ or Blueprint project with no code changes, and comes with public documentation.\n\nBTGraphViewer can also be used by an AI agent through Unreal Engine's MCP: an optional plugin exposes the viewer to the engine's Toolset Registry, letting the agent open a capture, pick an agent, step through frame by frame, and read the Blackboard state, through the same viewer a human uses."
       },
       "capabilities": {
         "fr": [
-          "Rejouer l'execution d'un Behavior Tree depuis un enregistrement Visual Logger : capture en direct ou fichier .bvlog",
-          "Timeline precise a la frame : le noeud actif s'allume sur le vrai graphe du Behavior Tree",
-          "Vue Blackboard par agent a la frame selectionnee, avec recherche",
+          "Rejouer l'exécution d'un Behavior Tree depuis un enregistrement Visual Logger : capture en direct ou fichier .bvlog",
+          "Timeline précise à la frame : le nœud actif s'allume sur le vrai graphe du Behavior Tree",
+          "Vue Blackboard par agent à la frame sélectionnée, avec recherche",
           "Liste des agents avec filtre par classe et recherche par nom",
-          "Utilisable en onglet independant ou integre a la fenetre du Visual Logger, a cote de la timeline et de la liste des logs",
+          "Utilisable en onglet indépendant ou intégré à la fenêtre du Visual Logger, à côté de la timeline et de la liste des logs",
           "Synchronisation optionnelle avec le Gameplay Debugger",
           "Export texte d'une frame (frame dump) avec copie dans le presse-papiers",
           "Utilisable par un agent IA via le MCP d'Unreal : plugin optionnel de 7 outils (BT Graph Viewer AI Toolset)"
@@ -777,12 +777,12 @@
       },
       "technicalDetails": {
         "fr": [
-          "Plugin editeur uniquement, extension du Visual Logger d'Unreal Engine",
-          "Lecture des captures Visual Logger (.bvlog) et resolution de l'asset Behavior Tree via l'Asset Registry",
-          "Mise en correspondance des noeuds par index d'execution",
-          "Strictement en lecture seule : aucun asset affiche n'est modifie ni marque comme modifie",
+          "Plugin éditeur uniquement, extension du Visual Logger d'Unreal Engine",
+          "Lecture des captures Visual Logger (.bvlog) et résolution de l'asset Behavior Tree via l'Asset Registry",
+          "Mise en correspondance des nœuds par index d'exécution",
+          "Strictement en lecture seule : aucun asset affiché n'est modifié ni marqué comme modifié",
           "Second plugin optionnel exposant un toolset natif (BTGraphViewerToolset) au Toolset Registry d'Unreal, le serveur MCP du moteur",
-          "Documentation publique avec guide de demarrage, limitations connues et changelog"
+          "Documentation publique avec guide de démarrage, limitations connues et changelog"
         ],
         "en": [
           "Editor-only plugin extending Unreal Engine's Visual Logger",
@@ -809,22 +809,22 @@
       "id": "detour-crowd",
       "name": "DetourCrowd Navigation",
       "category": {
-        "fr": "Systemes IA",
+        "fr": "Systèmes IA",
         "en": "AI Systems"
       },
       "categoryId": "ai-systems",
       "tags": ["IA", "Navigation", "Unreal Engine", "Performance"],
       "shortDescription": {
-        "fr": "Systeme DetourCrowd pour ameliorer la navigation et l'evitement dynamique entre IA.",
+        "fr": "Système DetourCrowd pour améliorer la navigation et l'évitement dynamique entre IA.",
         "en": "DetourCrowd system for improved navigation and dynamic avoidance between AI agents."
       },
       "fullDescription": {
-        "fr": "Mise en place du systeme DetourCrowd d'Unreal Engine pour ameliorer la navigation et l'evitement dynamique entre IA. Ce systeme permet des deplacements plus fluides et realistes des agents, notamment dans des environnements denses ou lors de croisements de foule.\n\nLe systeme ameliore considerablement le ressenti naturel des mouvements de l'IA lorsque plusieurs agents doivent naviguer dans la meme zone, evitant les problemes courants d'agents bloques ou se traversant.",
+        "fr": "Mise en place du système DetourCrowd d'Unreal Engine pour améliorer la navigation et l'évitement dynamique entre IA. Ce système permet des déplacements plus fluides et réalistes des agents, notamment dans des environnements denses ou lors de croisements de foule.\n\nLe système améliore considérablement le ressenti naturel des mouvements de l'IA lorsque plusieurs agents doivent naviguer dans la meme zone, évitant les problèmes courants d'agents bloqués ou se traversant.",
         "en": "Implementation of Unreal Engine's DetourCrowd system to improve navigation and dynamic avoidance between AI agents. This system enables smoother and more realistic agent movement, especially in dense environments or during crowd crossings.\n\nThe system significantly improves the natural feel of AI movement when multiple agents need to navigate in the same area, preventing common issues of agents getting stuck or moving through each other."
       },
       "technicalDetails": {
         "fr": [
-          "Evitement dynamique des obstacles",
+          "Évitement dynamique des obstacles",
           "Optimisation de la simulation de foule",
           "Algorithmes de lissage de trajectoire",
           "Gestion des environnements denses"
@@ -853,19 +853,19 @@
       "categoryId": "performance",
       "tags": ["IA", "Performance", "Optimisation", "Unreal Engine"],
       "shortDescription": {
-        "fr": "Systeme de pooling d'IA pour reutiliser les agents plutot que de les detruire/recreer.",
+        "fr": "Système de pooling d'IA pour réutiliser les agents plutôt que de les détruire/recréer.",
         "en": "AI pooling system for reusing agents instead of destroy/recreate cycles."
       },
       "fullDescription": {
-        "fr": "Mise en place d'un systeme de pooling d'IA afin de reutiliser les agents plutot que de les detruire et recreer a chaque apparition. Cette approche reduit considerablement le cout CPU et les pics de performance lors des tests de foule a grande echelle.\n\nLe systeme de pooling maintient une collection d'agents IA pre-instancies qui peuvent etre actives et desactives selon les besoins, evitant les operations couteuses de spawn et de destruction d'acteurs.",
+        "fr": "Mise en place d'un système de pooling d'IA afin de réutiliser les agents plutôt que de les détruire et recréer à chaque apparition. Cette approche réduit considérablement le coût CPU et les pics de performance lors des tests de foule à grande échelle.\n\nLe système de pooling maintient une collection d'agents IA pré-instanciés qui peuvent être activés et désactivés selon les besoins, évitant les opérations coûteuses de spawn et de destruction d'acteurs.",
         "en": "Implementation of an AI pooling system to reuse agents rather than destroying and recreating them at each spawn. This approach significantly reduces CPU cost and performance spikes during large-scale crowd testing.\n\nThe pooling system maintains a collection of pre-instantiated AI agents that can be activated and deactivated as needed, avoiding the expensive operations of spawning and destroying actors."
       },
       "technicalDetails": {
         "fr": [
           "Gestion du pool d'objets",
-          "Systeme de reinitialisation de l'etat des agents",
-          "Optimisation memoire",
-          "Amelioration des performances de spawn/despawn"
+          "Système de réinitialisation de l'état des agents",
+          "Optimisation mémoire",
+          "Amélioration des performances de spawn/despawn"
         ],
         "en": [
           "Object pool management",
@@ -877,7 +877,7 @@
       "images": [],
       "technologies": "Unreal Engine, C++",
       "context": {
-        "fr": "Systeme",
+        "fr": "Système",
         "en": "System"
       }
     },
@@ -895,14 +895,14 @@
         "en": "Customized Visual Logger for analyzing AI behavior during simulation."
       },
       "fullDescription": {
-        "fr": "Utilisation et personnalisation du Visual Logger d'Unreal Engine pour analyser le comportement des IA pendant la simulation. Permet de visualiser les decisions, comportements et deplacements directement dans le moteur pour un debug plus precis et rapide.\n\nL'implementation personnalisee ajoute des categories de logging specifiques au projet et des aides a la visualisation qui facilitent la comprehension des processus de prise de decision complexes de l'IA.",
+        "fr": "Utilisation et personnalisation du Visual Logger d'Unreal Engine pour analyser le comportement des IA pendant la simulation. Permet de visualiser les décisions, comportements et déplacements directement dans le moteur pour un debug plus précis et rapide.\n\nL'implémentation personnalisee ajoute des catégories de logging spécifiques au projet et des aides à la visualisation qui facilitent la compréhension des processus de prise de décision complexes de l'IA.",
         "en": "Utilization and customization of Unreal Engine's Visual Logger to analyze AI behavior during simulation. This tool allows visualization of decisions, behaviors, and movements directly in the engine for faster and more precise debugging.\n\nThe custom implementation adds project-specific logging categories and visualization helpers that make it easier to understand complex AI decision-making processes."
       },
       "technicalDetails": {
         "fr": [
-          "Categories de logging personnalisees",
-          "Visualisation des decisions de l'IA",
-          "Suivi de l'etat du Behavior Tree",
+          "Catégories de logging personnalisees",
+          "Visualisation des décisions de l'IA",
+          "Suivi de l'état du Behavior Tree",
           "Visualisation des trajectoires de mouvement"
         ],
         "en": [
@@ -921,7 +921,7 @@
     },
     {
       "id": "navmesh-generation",
-      "name": "Generation NavMesh",
+      "name": "Génération NavMesh",
       "category": {
         "fr": "Navigation",
         "en": "Navigation"
@@ -936,20 +936,20 @@
         "IA"
       ],
       "shortDescription": {
-        "fr": "Configuration et generation du NavMesh sous Unreal Engine selon les besoins d'un projet : NavMesh dynamique streame en World Partition, NavAreas, obstacles dynamiques et collisions.",
+        "fr": "Configuration et génération du NavMesh sous Unreal Engine selon les besoins d'un projet : NavMesh dynamique streamé en World Partition, NavAreas, obstacles dynamiques et collisions.",
         "en": "NavMesh configuration and generation in Unreal Engine tailored to a project's needs: streamed dynamic NavMesh under World Partition, NavAreas, dynamic obstacles, and collisions."
       },
       "fullDescription": {
-        "fr": "Je concois, configure et optimise le NavMesh d'Unreal Engine pour repondre aux contraintes de chaque projet, de sa generation jusqu'a son execution. J'ai notamment mis en place un NavMesh dynamique en World Partition : il est streame avec le monde, ce qui supprime tout cout de reconstruction a l'execution, tout en laissant la possibilite de le reconstruire localement quand la geometrie bouge, au moment souhaite. J'ai egalement optimise le NavMesh en runtime sur de grands projets chez CORYS.\n\nJe configure les assets et leurs collisions pour optimiser la generation et obtenir exactement le NavMesh voulu. Je sais aussi diagnostiquer pourquoi un NavMesh ne correspond pas a ce qui est attendu. Je maitrise les NavAreas, les Dynamic Obstacles et les canaux de collision qui concernent le NavMesh, ainsi que les etapes de generation et leurs particularites. Je connais egalement tres bien les sujets annexes, comme le pathfinding et le Navigation Octree, qui sont etroitement lies au NavMesh.",
+        "fr": "Je conçois, configure et optimise le NavMesh d'Unreal Engine pour répondre aux contraintes de chaque projet, de sa génération jusqu'à son exécution. J'ai notamment mis en place un NavMesh dynamique en World Partition : il est streamé avec le monde, ce qui supprime tout coût de reconstruction à l'exécution, tout en laissant la possibilité de le reconstruire localement quand la géométrie bouge, au moment souhaité. J'ai également optimise le NavMesh en runtime sur de grands projets chez CORYS.\n\nJe configure les assets et leurs collisions pour optimiser la génération et obtenir exactement le NavMesh voulu. Je sais aussi diagnostiquer pourquoi un NavMesh ne correspond pas à ce qui est attendu. Je maîtrise les NavAreas, les Dynamic Obstacles et les canaux de collision qui concernent le NavMesh, ainsi que les étapes de génération et leurs particularités. Je connais également très bien les sujets annexes, comme le pathfinding et le Navigation Octree, qui sont étroitement liés au NavMesh.",
         "en": "I design, configure, and optimize Unreal Engine's NavMesh to meet each project's constraints, from generation through runtime. In particular, I set up a dynamic NavMesh under World Partition: it is streamed with the world, which removes any runtime rebuild cost, while still allowing a local rebuild when geometry moves, whenever it is wanted. I have also optimized the NavMesh at runtime on large projects at CORYS.\n\nI configure assets and their collisions to optimize generation and get exactly the NavMesh we want. I can also diagnose why a NavMesh does not match what is expected. I know NavAreas, Dynamic Obstacles, and the collision channels that affect the NavMesh, as well as the generation stages and their quirks. I am also very comfortable with closely related topics such as pathfinding and the Navigation Octree."
       },
       "capabilities": {
         "fr": [
           "Configurer un NavMesh en fonction des besoins d'un projet",
-          "NavMesh dynamique en World Partition : streame avec le monde, aucun cout de reconstruction a l'execution",
-          "Reconstruction locale optionnelle quand la geometrie bouge, au moment voulu",
+          "NavMesh dynamique en World Partition : streamé avec le monde, aucun coût de reconstruction à l'exécution",
+          "Reconstruction locale optionnelle quand la géométrie bouge, au moment voulu",
           "Optimisation du NavMesh en runtime sur de grands projets chez CORYS",
-          "Configurer les assets et leurs collisions pour optimiser la generation et obtenir le NavMesh souhaite",
+          "Configurer les assets et leurs collisions pour optimiser la génération et obtenir le NavMesh souhaité",
           "Diagnostiquer et expliquer pourquoi un NavMesh n'est pas comme attendu"
         ],
         "en": [
@@ -964,9 +964,9 @@
       "technicalDetails": {
         "fr": [
           "NavAreas, Dynamic Obstacles et canaux de collision qui concernent le NavMesh",
-          "Etapes de generation du NavMesh et leurs particularites",
-          "Navigation Octree et pathfinding, des systemes etroitement lies au NavMesh",
-          "Choix entre NavMesh streame (sans reconstruction) et reconstruction dynamique selon le besoin du projet"
+          "Étapes de génération du NavMesh et leurs particularités",
+          "Navigation Octree et pathfinding, des systèmes étroitement liés au NavMesh",
+          "Choix entre NavMesh streamé (sans reconstruction) et reconstruction dynamique selon le besoin du projet"
         ],
         "en": [
           "NavAreas, Dynamic Obstacles, and the collision channels that affect the NavMesh",
@@ -992,11 +992,11 @@
       "categoryId": "navigation",
       "tags": ["Navigation", "NavMesh", "IA", "Plateforme mobile"],
       "shortDescription": {
-        "fr": "Systeme de navigation IA sur une plateforme qui bouge : les agents continuent de naviguer correctement alors que le sol qui les porte est en mouvement.",
+        "fr": "Système de navigation IA sur une plateforme qui bouge : les agents continuent de naviguer correctement alors que le sol qui les porte est en mouvement.",
         "en": "AI navigation system on a moving platform: agents keep navigating correctly while the ground carrying them is in motion."
       },
       "fullDescription": {
-        "fr": "Systeme de navigation permettant a des IA d'evoluer sur une plateforme en mouvement : les agents continuent de se deplacer et de naviguer correctement alors que le sol sur lequel ils se trouvent bouge lui-meme. Je l'ai concu chez CORYS pour les simulateurs de train/tram : les agents du simulateur se deplacent dans un train en mouvement.\n\nDescription technique a venir.",
+        "fr": "Système de navigation permettant à des IA d'évoluer sur une plateforme en mouvement : les agents continuent de se déplacer et de naviguer correctement alors que le sol sur lequel ils se trouvent bouge lui-meme. Je l'ai conçu chez CORYS pour les simulateurs de train/tram : les agents du simulateur se déplacent dans un train en mouvement.\n\nDescription technique à venir.",
         "en": "Navigation system letting AI agents operate on a moving platform: agents keep moving and navigating correctly while the ground they stand on is itself in motion. I designed it at CORYS for train/tram simulators: the simulator's agents move inside a moving train.\n\nTechnical description coming soon."
       },
       "technicalDetails": {
@@ -1006,7 +1006,7 @@
       "images": [],
       "technologies": "Unreal Engine 5, Navigation, IA",
       "context": {
-        "fr": "Systeme",
+        "fr": "Système",
         "en": "System"
       }
     },
@@ -1020,11 +1020,11 @@
       "categoryId": "debug-tools",
       "tags": ["MCP", "Visual Logger", "IA", "Debug"],
       "shortDescription": {
-        "fr": "Outil MCP permettant a une IA de piloter et d'analyser le Visual Logger d'Unreal Engine.",
+        "fr": "Outil MCP permettant à une IA de piloter et d'analyser le Visual Logger d'Unreal Engine.",
         "en": "MCP tool letting an AI drive and analyze Unreal Engine's Visual Logger."
       },
       "fullDescription": {
-        "fr": "Description a venir.",
+        "fr": "Description à venir.",
         "en": "Description coming soon."
       },
       "technicalDetails": {
@@ -1048,11 +1048,11 @@
       "categoryId": "debug-tools",
       "tags": ["MCP", "Chaos", "Debug", "Physique"],
       "shortDescription": {
-        "fr": "Outil MCP permettant a une IA de piloter le Chaos Visual Debugger pour analyser les traces de collision et de physique.",
+        "fr": "Outil MCP permettant à une IA de piloter le Chaos Visual Debugger pour analyser les traces de collision et de physique.",
         "en": "MCP tool letting an AI drive the Chaos Visual Debugger to analyze collision and physics traces."
       },
       "fullDescription": {
-        "fr": "Description a venir.",
+        "fr": "Description à venir.",
         "en": "Description coming soon."
       },
       "technicalDetails": {
@@ -1076,11 +1076,11 @@
       "categoryId": "debug-tools",
       "tags": ["MCP", "Unreal Insights", "Profiling", "Debug"],
       "shortDescription": {
-        "fr": "Outil MCP permettant a une IA de piloter Unreal Insights pour des sessions de profiling automatisees.",
+        "fr": "Outil MCP permettant à une IA de piloter Unreal Insights pour des sessions de profiling automatisées.",
         "en": "MCP tool letting an AI drive Unreal Insights for automated profiling sessions."
       },
       "fullDescription": {
-        "fr": "Description a venir.",
+        "fr": "Description à venir.",
         "en": "Description coming soon."
       },
       "technicalDetails": {
@@ -1098,34 +1098,34 @@
       "id": "unreal-companion",
       "name": "Unreal Companion",
       "category": {
-        "fr": "Outils Editeur",
+        "fr": "Outils Éditeur",
         "en": "Editor Tools"
       },
       "categoryId": "editor-tools",
-      "tags": ["MCP", "Editeur", "IA", "Blueprint", "C++", "Slate"],
+      "tags": ["MCP", "Éditeur", "IA", "Blueprint", "C++", "Slate"],
       "shortDescription": {
-        "fr": "Plugin Unreal Engine 5 exposant l'editeur a une IA via le Model Context Protocol : des dizaines d'outils pour lire, comprendre et modifier un projet Unreal, y compris ses Behavior Trees.",
+        "fr": "Plugin Unreal Engine 5 exposant l'éditeur à une IA via le Model Context Protocol : des dizaines d'outils pour lire, comprendre et modifier un projet Unreal, y compris ses Behavior Trees.",
         "en": "Unreal Engine 5 plugin exposing the editor to an AI through the Model Context Protocol: dozens of tools to read, understand, and modify an Unreal project, including its Behavior Trees."
       },
       "fullDescription": {
-        "fr": "Unreal Companion est un plugin editeur pour Unreal Engine 5 que je developpe afin de donner a une IA un acces direct et structure a un projet Unreal. Plutot que de lui decrire son projet, le developpeur la laisse inspecter elle-meme les Blueprints, les assets, les materiaux ou le niveau, analyser un enregistrement de debug, puis appliquer les modifications demandees. Le plugin ne resume jamais : il expose des donnees brutes structurees et laisse l'IA interpreter, ce qui evite toute perte d'information. Chaque ecriture reste annulable au Ctrl-Z et n'est jamais sauvegardee automatiquement, le developpeur gardant la main sur ce qui est reellement enregistre.",
+        "fr": "Unreal Companion est un plugin éditeur pour Unreal Engine 5 que je développe afin de donner à une IA un accès direct et structure à un projet Unreal. Plutôt que de lui décrire son projet, le développeur la laisse inspecter elle-meme les Blueprints, les assets, les matériaux ou le niveau, analyser un enregistrement de debug, puis appliquer les modifications demandées. Le plugin ne résume jamais : il expose des données brutes structurées et laisse l'IA interpréter, ce qui évite toute perte d'information. Chaque écriture reste annulable au Ctrl-Z et n'est jamais sauvegardée automatiquement, le développeur gardant la main sur ce qui est réellement enregistre.",
         "en": "Unreal Companion is an Unreal Engine 5 editor plugin I'm building to give an AI direct, structured access to an Unreal project. Rather than describing the project to it, the developer lets it inspect Blueprints, assets, materials, or the level itself, analyze a debug recording, and then apply the requested changes. The plugin never summarizes: it exposes raw structured data and lets the AI interpret it, so no information is lost along the way. Every write stays undoable with Ctrl-Z and is never saved automatically, leaving the developer in control of what actually gets written to disk."
       },
       "capabilities": {
         "fr": [
           "Lire et explorer les Blueprints : graphes, nodes, variables, fonctions et composants",
           "Inspecter les acteurs et assets du niveau, y compris en direct pendant une session Play-In-Editor",
-          "Lire les materiaux, leurs graphes d'expressions et leurs textures",
-          "Lire les Animation Blueprints, state machines, squelettes et sequences d'animation",
+          "Lire les matériaux, leurs graphes d'expressions et leurs textures",
+          "Lire les Animation Blueprints, state machines, squelettes et séquences d'animation",
           "Lire les Behavior Trees et les Blackboards",
-          "Analyser un enregistrement Visual Logger, meme sans ouvrir l'editeur",
-          "Retrouver tous les Blueprints appelant une fonction donnee via l'index Find-in-Blueprints",
-          "Modifier le niveau : creation, suppression, deplacement et edition de proprietes d'acteurs",
-          "Editer les graphes Blueprint : pins, connexions, nodes, variables, fonctions et events",
-          "Editer les Behavior Trees : ajouter et supprimer des noeuds composites et tasks, poser et retirer des decorators et services, regler leurs proprietes, gerer les cles Blackboard",
-          "Charger des regions World Partition et gerer la visibilite des Data Layers",
-          "Piloter l'interface de l'editeur avec une souris synthetique : clic, defilement, survol et sequences de clics en un seul appel",
-          "En developpement actif (version 0.46) : chaque fonctionnalite est validee en direct dans l'editeur avant d'etre actee"
+          "Analyser un enregistrement Visual Logger, meme sans ouvrir l'éditeur",
+          "Retrouver tous les Blueprints appelant une fonction donnée via l'index Find-in-Blueprints",
+          "Modifier le niveau : création, suppression, déplacement et édition de propriétés d'acteurs",
+          "Éditer les graphes Blueprint : pins, connexions, nodes, variables, fonctions et events",
+          "Éditer les Behavior Trees : ajouter et supprimer des nœuds composites et tasks, poser et retirer des decorators et services, régler leurs propriétés, gérer les clés Blackboard",
+          "Charger des régions World Partition et gérer la visibilité des Data Layers",
+          "Piloter l'interface de l'éditeur avec une souris synthétique : clic, défilement, survol et séquences de clics en un seul appel",
+          "En développement actif (version 0.46) : chaque fonctionnalité est validée en direct dans l'éditeur avant d'être actée"
         ],
         "en": [
           "Read and explore Blueprints: graphs, nodes, variables, functions, and components",
@@ -1145,14 +1145,14 @@
       },
       "technicalDetails": {
         "fr": [
-          "Plugin editeur ecrit en C++ sur Unreal Engine 5, decoupe en six modules",
+          "Plugin éditeur écrit en C++ sur Unreal Engine 5, découpé en six modules",
           "Communication via le Model Context Protocol (MCP) sur un serveur local en loopback",
-          "Interface Slate integree a l'editeur pour suivre les appels en direct",
-          "Introspection via la reflection Unreal, l'Asset Registry et l'index Find-in-Blueprints",
-          "Ecritures transactionnelles (FScopedTransaction) : annulables, jamais sauvegardees, jamais de Perforce",
-          "Ecritures sur les graphes Behavior Tree fideles a la semantique du moteur : l'ordre d'execution des enfants derive de leur position X, les freres sont donc reespaces automatiquement",
-          "Commandlet headless pour l'analyse hors editeur",
-          "Aucune modification du moteur : le plugin s'ajoute a un projet existant sans toucher aux sources d'Unreal Engine"
+          "Interface Slate intégrée à l'éditeur pour suivre les appels en direct",
+          "Introspection via la réflexion Unreal, l'Asset Registry et l'index Find-in-Blueprints",
+          "Écritures transactionnelles (FScopedTransaction) : annulables, jamais sauvegardées, jamais de Perforce",
+          "Écritures sur les graphes Behavior Tree fidèles à la sémantique du moteur : l'ordre d'exécution des enfants dérive de leur position X, les frères sont donc réespacés automatiquement",
+          "Commandlet headless pour l'analyse hors éditeur",
+          "Aucune modification du moteur : le plugin s'ajoute à un projet existant sans toucher aux sources d'Unreal Engine"
         ],
         "en": [
           "Editor plugin written in C++ on Unreal Engine 5, split into six modules",
@@ -1182,19 +1182,19 @@
       "categoryId": "infrastructure",
       "tags": ["Perforce", "Docker", "Linux", "Versioning"],
       "shortDescription": {
-        "fr": "Mise en place de serveurs Perforce sous Linux, via Docker et en ligne de commande, avec gestion des depots et des permissions.",
+        "fr": "Mise en place de serveurs Perforce sous Linux, via Docker et en ligne de commande, avec gestion des dépôts et des permissions.",
         "en": "Perforce servers set up on Linux, through Docker and the command line, with depot and permission management."
       },
       "fullDescription": {
-        "fr": "Pour mes projets personnels et des game jams, j'ai mis en place mes propres serveurs Perforce sur des machines Linux, soit via Docker, soit directement en ligne de commande. J'ai ensuite gere les depots et les permissions des differents utilisateurs. Perforce etant le standard sur les projets Unreal Engine, ou le volume d'assets binaires rend Git peu adapte, cela m'a permis d'avoir un versioning fonctionnel sans dependre d'une solution hebergee.",
+        "fr": "Pour mes projets personnels et des game jams, j'ai mis en place mes propres serveurs Perforce sur des machines Linux, soit via Docker, soit directement en ligne de commande. J'ai ensuite géré les dépôts et les permissions des différents utilisateurs. Perforce étant le standard sur les projets Unreal Engine, où le volume d'assets binaires rend Git peu adapté, cela m'a permis d'avoir un versioning fonctionnel sans dépendre d'une solution hébergée.",
         "en": "For personal projects and game jams, I set up my own Perforce servers on Linux machines, either through Docker or directly from the command line, then handled the depots and user permissions. Since Perforce is the standard on Unreal Engine projects, where the volume of binary assets makes Git a poor fit, this gave me working version control without depending on a hosted solution."
       },
       "technicalDetails": {
         "fr": [
           "Installation de Perforce via Docker sur serveur Linux",
           "Installation et configuration en ligne de commande sous Linux",
-          "Creation et organisation des depots",
-          "Gestion des permissions et des acces utilisateurs",
+          "Création et organisation des dépôts",
+          "Gestion des permissions et des accès utilisateurs",
           "Utilise sur des game jams et des projets personnels"
         ],
         "en": [
