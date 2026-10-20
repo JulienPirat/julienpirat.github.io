@@ -2,16 +2,16 @@
   "profile": {
     "name": "Julien PIRAT",
     "title": {
-      "fr": "Ingenieur R&D | Engine & Tools Programmer",
-      "en": "R&D Engineer | Engine & Tools Programmer"
+      "fr": "Ingenieur R&D | Unreal Engine Programmer",
+      "en": "R&D Engineer | Unreal Engine Programmer"
     },
     "subtitle": {
       "fr": "Unreal Engine 5 | Outils, IA & Debug",
       "en": "Unreal Engine 5 | Tools, AI & Debug"
     },
     "description": {
-      "fr": "Ingenieur R&D chez CORYS, specialise dans le developpement d'outils, de systemes de navigation et d'IA pour Unreal Engine 5. En recherche d'un poste d'Engine & Tools Programmer, je developpe egalement des plugins et outils personnels comme BTGraphViewer.",
-      "en": "R&D Engineer at CORYS, specializing in tools, navigation systems, and AI development for Unreal Engine 5. Currently looking for an Engine & Tools Programmer role, I also build personal plugins and tools like BTGraphViewer."
+      "fr": "Ingenieur R&D chez CORYS, je concois en C++ la navigation et les comportements IA de simulateurs de train et de tramway sous Unreal Engine 5. En recherche d'un poste d'Unreal Engine Programmer, je developpe egalement des outils de debug et des plugins, dont BTGraphViewer, publie sur FAB.",
+      "en": "R&D Engineer at CORYS, I design navigation and AI behaviors in C++ for train and tram simulators on Unreal Engine 5. Currently looking for an Unreal Engine Programmer role, I also build debug tools and plugins, including BTGraphViewer, published on FAB."
     },
     "github": "https://github.com/JulienPirat",
     "linkedin": "https://www.linkedin.com/in/julien-pirat/",
@@ -21,7 +21,7 @@
     "fr": {
       "heroAvailable": "Disponible pour opportunites",
       "heroIntro": "Salut, je suis",
-      "heroDescription": "Ingénieur R&D spécialisé sur Unreal Engine 5, j'exploite et j'adapte les systèmes de navigation du moteur (NavMesh, CrowdManager) pour que mes IA se déplacent correctement selon les contraintes de chaque projet. Je développe également des extensions d'outils de debug (Visual Logger, Gameplay Debugger) ainsi que plusieurs outils MCP : pour piloter le Visual Logger, le Chaos Visual Debugger et Unreal Insights, et un autre permettant à une IA de piloter directement l'éditeur. Je vise aujourd'hui un poste d'Engine & Tools Programmer.",
+      "heroDescription": "Ingénieur R&D spécialisé sur Unreal Engine 5, j'exploite et j'adapte les systèmes de navigation du moteur (NavMesh, CrowdManager) pour que mes IA se déplacent correctement selon les contraintes de chaque projet. Je développe également des extensions d'outils de debug (Visual Logger, Gameplay Debugger) ainsi que plusieurs outils MCP : pour piloter le Visual Logger, le Chaos Visual Debugger et Unreal Insights, et un autre permettant à une IA de piloter directement l'éditeur. Je vise aujourd'hui un poste d'Unreal Engine Programmer.",
       "viewWork": "Voir mes projets",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Projets",
@@ -52,6 +52,7 @@
       "playOnItch": "Jouer sur itch.io",
       "viewOnGitHub": "Voir sur GitHub",
       "viewDocs": "Voir la documentation",
+      "viewFab": "Voir mon profil FAB",
       "date": "Date",
       "team": "Equipe",
       "duration": "Duree",
@@ -70,7 +71,7 @@
     "en": {
       "heroAvailable": "Available for opportunities",
       "heroIntro": "Hi, I'm",
-      "heroDescription": "R&D Engineer specializing in Unreal Engine 5, I use and adapt the engine's navigation systems (NavMesh, CrowdManager) to get my AI moving correctly within each project's constraints. I also build debug tool extensions (Visual Logger, Gameplay Debugger) and several MCP tools: ones that drive the Visual Logger, Chaos Visual Debugger, and Unreal Insights, plus another that lets an AI directly control the editor. I'm now looking for an Engine & Tools Programmer role.",
+      "heroDescription": "R&D Engineer specializing in Unreal Engine 5, I use and adapt the engine's navigation systems (NavMesh, CrowdManager) to get my AI moving correctly within each project's constraints. I also build debug tool extensions (Visual Logger, Gameplay Debugger) and several MCP tools: ones that drive the Visual Logger, Chaos Visual Debugger, and Unreal Insights, plus another that lets an AI directly control the editor. I'm now looking for an Unreal Engine Programmer role.",
       "viewWork": "View My Work",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Featured Projects",
@@ -101,6 +102,7 @@
       "playOnItch": "Play on itch.io",
       "viewOnGitHub": "View on GitHub",
       "viewDocs": "View documentation",
+      "viewFab": "View my FAB profile",
       "date": "Date",
       "team": "Team",
       "duration": "Duration",
@@ -148,33 +150,35 @@
       },
       "current": true,
       "shortDescription": {
-        "fr": "Comportements passagers, navigation (NavMesh/World Partition) et outils internes (MCP, Visual Logger, Widgets) pour des simulations Unreal Engine 5.",
-        "en": "Passenger behaviors, navigation (NavMesh/World Partition), and internal tools (MCP, Visual Logger, Widgets) for Unreal Engine 5 simulations."
+        "fr": "Comportements passagers, navigation IA (NavMesh/World Partition, train en mouvement) et outils internes (MCP, Visual Logger, Widgets) pour des simulations Unreal Engine 5.",
+        "en": "Passenger behaviors, AI navigation (NavMesh/World Partition, moving train), and internal tools (MCP, Visual Logger, Widgets) for Unreal Engine 5 simulations."
       },
       "fullDescription": {
-        "fr": "En CDD Ingenieur R&D chez CORYS depuis juin 2025, a la suite de mon stage, je conçois et developpe le module de comportements passagers sur Unreal Engine 5 pour des simulations realistes de train/tram : montee/descente, acteurs speciaux, gestion de foule et echanges passagers avances.\n\nJe travaille egalement sur les systemes de simulation associes (CrowdManager, path following, gestion des collisions) et sur la comprehension et generation du NavMesh sous Unreal Engine en World Partition, adaptes aux environnements de simulation.\n\nEn parallele, je developpe des outils internes pour l'equipe : un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS, ainsi que des extensions du Visual Logger et du Gameplay Debugger. Je participe egalement a la structuration du module passagers/IA, ce qui implique de contribuer aux choix d'architecture et d'interagir avec les equipes de production et les artistes.",
-        "en": "As an R&D Engineer on a fixed-term contract at CORYS since June 2025, following my internship, I design and develop the passenger behavior module on Unreal Engine 5 for realistic train/tram simulations: boarding/alighting, special actors, crowd management, and advanced passenger exchanges.\n\nI also work on the related simulation systems (CrowdManager, path following, collision handling) and on understanding and generating NavMesh under Unreal Engine with World Partition, tailored to simulation environments.\n\nAlongside this, I build internal tools for the team: an MCP tool letting an AI drive the Unreal tools developed by CORYS, plus extensions of the Visual Logger and Gameplay Debugger. I also take part in structuring the passenger/AI module, contributing to architecture decisions and working closely with production teams and artists."
+        "fr": "En CDD Ingenieur R&D chez CORYS depuis juin 2025, a la suite de mon stage, je concois et developpe en C++ le module de comportements passagers sur Unreal Engine 5 pour des simulations realistes de train/tram : montee/descente, acteurs speciaux, gestion de foule et echanges passagers avances. Je suis le referent technique du module passagers/IA : je contribue aux choix d'architecture et j'interagis avec les equipes de production et les artistes.\n\nJe travaille egalement sur les systemes de simulation associes (CrowdManager, path following, gestion des collisions) et sur la comprehension approfondie et la generation du NavMesh sous Unreal Engine en World Partition. J'ai concu un systeme de navigation IA permettant aux agents du simulateur de se deplacer dans un train en mouvement.\n\nEn parallele, je developpe des outils internes pour l'equipe : un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS, ainsi que des extensions du Visual Logger et du Gameplay Debugger. Je mene aussi des optimisations de performance (AIPooling, NavWalking, collisions, DelayedSpawning).",
+        "en": "As an R&D Engineer on a fixed-term contract at CORYS since June 2025, following my internship, I design and develop in C++ the passenger behavior module on Unreal Engine 5 for realistic train/tram simulations: boarding/alighting, special actors, crowd management, and advanced passenger exchanges. I am the technical lead of the passenger/AI module: I contribute to architecture decisions and work closely with production teams and artists.\n\nI also work on the related simulation systems (CrowdManager, path following, collision handling) and on an in-depth understanding and generation of the NavMesh under Unreal Engine with World Partition. I designed an AI navigation system that lets the simulator's agents move inside a moving train.\n\nAlongside this, I build internal tools for the team: an MCP tool letting an AI drive the Unreal tools developed by CORYS, plus extensions of the Visual Logger and Gameplay Debugger. I also carry out performance optimizations (AIPooling, NavWalking, collisions, DelayedSpawning)."
       },
       "contributions": {
         "fr": [
           "Conception et developpement du module de comportements passagers sur UE5 (montee/descente, acteurs speciaux, gestion de foule, echanges passagers avances)",
           "Systemes de simulation associes : CrowdManager, path following, gestion des collisions",
-          "Generation du NavMesh sous Unreal Engine (+World Partition) adaptee aux environnements de simulation",
+          "Comprehension approfondie et generation du NavMesh sous Unreal Engine (+World Partition) adaptee aux environnements de simulation",
+          "Conception d'un systeme de navigation IA permettant aux agents du simulateur de se deplacer dans un train en mouvement",
           "Developpement d'un outil MCP permettant a une IA de piloter les outils Unreal developpes par CORYS",
           "Extension du Visual Logger et du Gameplay Debugger",
           "Creation de Widgets Unreal pour faciliter le developpement des projets",
-          "Optimisation des performances (AIPooling, DelayedSpawning, etc.)",
-          "Participation a la structuration du module passagers/IA"
+          "Optimisation des performances (AIPooling, NavWalking, Collisions, DelayedSpawning, etc.)",
+          "Referent technique sur le module passagers/IA : contribution aux choix d'architecture et interaction avec les equipes de production et les artistes"
         ],
         "en": [
           "Design and development of the passenger behavior module on UE5 (boarding/alighting, special actors, crowd management, advanced passenger exchanges)",
           "Related simulation systems: CrowdManager, path following, collision handling",
-          "NavMesh generation under Unreal Engine (+World Partition) tailored to simulation environments",
+          "In-depth understanding and generation of the NavMesh under Unreal Engine (+World Partition) tailored to simulation environments",
+          "Design of an AI navigation system letting the simulator's agents move inside a moving train",
           "Development of an MCP tool letting an AI drive Unreal tools built by CORYS",
           "Extension of the Visual Logger and Gameplay Debugger",
           "Creation of Unreal Widgets to speed up project development",
-          "Performance optimization (AIPooling, DelayedSpawning, etc.)",
-          "Contributed to structuring the passenger/AI module"
+          "Performance optimization (AIPooling, NavWalking, Collisions, DelayedSpawning, etc.)",
+          "Technical lead on the passenger/AI module: contribution to architecture decisions and interaction with production teams and artists"
         ]
       },
       "tags": ["Unreal Engine 5", "C++", "Navigation", "IA", "Outils", "MCP", "Perforce", "Claude AI"],
@@ -746,8 +750,8 @@
         "en": "Unreal Engine 5.8 plugin that replays a Behavior Tree's execution after the fact from the Visual Logger: timeline, graph lighting up frame by frame, and the agent's Blackboard."
       },
       "fullDescription": {
-        "fr": "BTGraphViewer est un plugin editeur pour Unreal Engine 5.8 que j'ai developpe pour rejouer apres coup l'execution d'un Behavior Tree. Le debogueur de Behavior Tree par defaut ne montre que ce que fait un agent a l'instant present. BTGraphViewer part des donnees du Visual Logger : on enregistre une session (ou on ouvre un fichier .bvlog capture par quelqu'un d'autre), puis on parcourt une timeline et on regarde le vrai graphe du Behavior Tree s'allumer frame par frame, avec le Blackboard de l'agent a cote.\n\nC'est utile quand le bug est survenu il y a trois minutes, sur une machine qui n'est pas la sienne. L'outil est strictement en lecture seule : les assets Behavior Tree affiches ne sont jamais modifies. Il s'ajoute a n'importe quel projet C++ ou Blueprint sans changement de code, et dispose d'une documentation publique.\n\nBTGraphViewer est aussi utilisable par un agent IA via le MCP d'Unreal Engine : un plugin optionnel expose le viewer au Toolset Registry du moteur, ce qui permet a l'agent d'ouvrir une capture, de choisir un agent, de se deplacer frame par frame et de lire l'etat du Blackboard, avec le meme viewer que celui utilise par un humain.",
-        "en": "BTGraphViewer is an Unreal Engine 5.8 editor plugin I developed to replay a Behavior Tree's execution after the fact. The default Behavior Tree debugger only shows what an agent is doing right now. BTGraphViewer works from Visual Logger data instead: you record a session (or open a .bvlog file captured by someone else), then scrub a timeline and watch the real Behavior Tree graph light up frame by frame, with the agent's Blackboard next to it.\n\nIt is useful when the bug happened three minutes ago, on a machine that isn't yours. The tool is strictly read-only: the Behavior Tree assets it displays are never modified. It drops into any C++ or Blueprint project with no code changes, and comes with public documentation.\n\nBTGraphViewer can also be used by an AI agent through Unreal Engine's MCP: an optional plugin exposes the viewer to the engine's Toolset Registry, letting the agent open a capture, pick an agent, step through frame by frame, and read the Blackboard state, through the same viewer a human uses."
+        "fr": "BTGraphViewer est un plugin editeur pour Unreal Engine 5.8 que j'ai developpe et publie sur FAB pour rejouer apres coup l'execution d'un Behavior Tree. Le debogueur de Behavior Tree par defaut ne montre que ce que fait un agent a l'instant present. BTGraphViewer part des donnees du Visual Logger : on enregistre une session (ou on ouvre un fichier .bvlog capture par quelqu'un d'autre), puis on parcourt une timeline et on regarde le vrai graphe du Behavior Tree s'allumer frame par frame, avec le Blackboard de l'agent a cote.\n\nC'est utile quand le bug est survenu il y a trois minutes, sur une machine qui n'est pas la sienne. L'outil est strictement en lecture seule : les assets Behavior Tree affiches ne sont jamais modifies. Il s'ajoute a n'importe quel projet C++ ou Blueprint sans changement de code, et dispose d'une documentation publique.\n\nBTGraphViewer est aussi utilisable par un agent IA via le MCP d'Unreal Engine : un plugin optionnel expose le viewer au Toolset Registry du moteur, ce qui permet a l'agent d'ouvrir une capture, de choisir un agent, de se deplacer frame par frame et de lire l'etat du Blackboard, avec le meme viewer que celui utilise par un humain.",
+        "en": "BTGraphViewer is an Unreal Engine 5.8 editor plugin I developed and published on FAB to replay a Behavior Tree's execution after the fact. The default Behavior Tree debugger only shows what an agent is doing right now. BTGraphViewer works from Visual Logger data instead: you record a session (or open a .bvlog file captured by someone else), then scrub a timeline and watch the real Behavior Tree graph light up frame by frame, with the agent's Blackboard next to it.\n\nIt is useful when the bug happened three minutes ago, on a machine that isn't yours. The tool is strictly read-only: the Behavior Tree assets it displays are never modified. It drops into any C++ or Blueprint project with no code changes, and comes with public documentation.\n\nBTGraphViewer can also be used by an AI agent through Unreal Engine's MCP: an optional plugin exposes the viewer to the engine's Toolset Registry, letting the agent open a capture, pick an agent, step through frame by frame, and read the Blackboard state, through the same viewer a human uses."
       },
       "capabilities": {
         "fr": [
@@ -792,7 +796,8 @@
       "images": ["Assets/Images/BTGraphViewer.png"],
       "logo": "Assets/Images/BTGraphViewer-logo.png",
       "links": {
-        "docs": "https://julienpirat.github.io/btgraphviewer-docs/"
+        "docs": "https://julienpirat.github.io/btgraphviewer-docs/",
+        "fab": "https://www.fab.com/sellers/PapyTools"
       },
       "technologies": "Unreal Engine 5.8, C++, Editor Plugin, MCP",
       "context": {
@@ -991,8 +996,8 @@
         "en": "AI navigation system on a moving platform: agents keep navigating correctly while the ground carrying them is in motion."
       },
       "fullDescription": {
-        "fr": "Systeme de navigation permettant a des IA d'evoluer sur une plateforme en mouvement : les agents continuent de se deplacer et de naviguer correctement alors que le sol sur lequel ils se trouvent bouge lui-meme. Il s'inscrit dans le contexte des simulations de train/tram, ou les passagers evoluent dans un vehicule en marche.\n\nDescription technique a venir.",
-        "en": "Navigation system letting AI agents operate on a moving platform: agents keep moving and navigating correctly while the ground they stand on is itself in motion. It fits the context of train/tram simulations, where passengers move inside a running vehicle.\n\nTechnical description coming soon."
+        "fr": "Systeme de navigation permettant a des IA d'evoluer sur une plateforme en mouvement : les agents continuent de se deplacer et de naviguer correctement alors que le sol sur lequel ils se trouvent bouge lui-meme. Je l'ai concu chez CORYS pour les simulateurs de train/tram : les agents du simulateur se deplacent dans un train en mouvement.\n\nDescription technique a venir.",
+        "en": "Navigation system letting AI agents operate on a moving platform: agents keep moving and navigating correctly while the ground they stand on is itself in motion. I designed it at CORYS for train/tram simulators: the simulator's agents move inside a moving train.\n\nTechnical description coming soon."
       },
       "technicalDetails": {
         "fr": [],

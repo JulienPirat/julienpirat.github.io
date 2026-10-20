@@ -752,14 +752,25 @@ function generateSystemModalContent(system) {
   const capabilities = system.capabilities ? getText(system.capabilities) : [];
 
   // Links
-  const linksHtml = system.links && system.links.docs
+  const systemLinkItems = [];
+  if (system.links && system.links.docs) {
+    systemLinkItems.push(`
+      <a href="${system.links.docs}" target="_blank" rel="noopener noreferrer" class="modal-link">
+        ${ICONS.externalLink} ${getUI('viewDocs')}
+      </a>
+    `);
+  }
+  if (system.links && system.links.fab) {
+    systemLinkItems.push(`
+      <a href="${system.links.fab}" target="_blank" rel="noopener noreferrer" class="modal-link">
+        ${ICONS.externalLink} ${getUI('viewFab')}
+      </a>
+    `);
+  }
+  const linksHtml = systemLinkItems.length > 0
     ? `<div class="modal-section">
          <h4 class="modal-section-title">${getUI('links')}</h4>
-         <div class="modal-links">
-           <a href="${system.links.docs}" target="_blank" rel="noopener noreferrer" class="modal-link">
-             ${ICONS.externalLink} ${getUI('viewDocs')}
-           </a>
-         </div>
+         <div class="modal-links">${systemLinkItems.join('')}</div>
        </div>`
     : '';
 
