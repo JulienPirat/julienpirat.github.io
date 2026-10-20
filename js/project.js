@@ -123,6 +123,8 @@ function renderProject() {
               allowfullscreen>
       </iframe>
     `;
+  } else if (currentProject.videoFile) {
+    videoContainer.innerHTML = `<video src="../${currentProject.videoFile}" autoplay loop muted controls playsinline></video>`;
   } else if (currentProject.images && currentProject.images.length > 0) {
     videoContainer.innerHTML = `<img src="../${currentProject.images[0]}" alt="${currentProject.name}">`;
   } else {

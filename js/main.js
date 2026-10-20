@@ -227,6 +227,12 @@ function generateProjectCards() {
           <button class="project-card-fullscreen" aria-label="Fullscreen">${ICONS.fullscreen}</button>
         </div>
       `;
+    } else if (project.videoFile) {
+      mediaHtml = `
+        <div class="project-card-media">
+          <video src="${project.videoFile}" autoplay loop muted playsinline preload="metadata" aria-label="${project.name}"></video>
+        </div>
+      `;
     } else if (project.images && project.images.length > 0) {
       mediaHtml = `
         <div class="project-card-media">
@@ -565,6 +571,12 @@ function generateProjectModalContent(project) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
         </iframe>
+      </div>
+    `;
+  } else if (project.videoFile) {
+    mediaHtml = `
+      <div class="modal-media">
+        <video src="${project.videoFile}" autoplay loop muted controls playsinline></video>
       </div>
     `;
   } else if (project.images && project.images.length > 0) {
