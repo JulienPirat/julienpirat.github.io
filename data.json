@@ -53,7 +53,7 @@
       "playOnItch": "Jouer sur itch.io",
       "viewOnGitHub": "Voir sur GitHub",
       "viewDocs": "Voir la documentation",
-      "viewFab": "Voir mon profil FAB",
+      "viewFab": "Voir sur FAB",
       "date": "Date",
       "team": "Équipe",
       "duration": "Durée",
@@ -103,7 +103,7 @@
       "playOnItch": "Play on itch.io",
       "viewOnGitHub": "View on GitHub",
       "viewDocs": "View documentation",
-      "viewFab": "View my FAB profile",
+      "viewFab": "View on FAB",
       "date": "Date",
       "team": "Team",
       "duration": "Duration",
@@ -799,7 +799,7 @@
       "logo": "Assets/Images/BTGraphViewer-logo.png",
       "links": {
         "docs": "https://julienpirat.github.io/btgraphviewer-docs/",
-        "fab": "https://www.fab.com/sellers/PapyTools"
+        "fab": "https://www.fab.com/listings/6707cede-9f18-48be-a4f2-70ddb187019a"
       },
       "technologies": "Unreal Engine 5.8, C++, Editor Plugin, MCP",
       "context": {
